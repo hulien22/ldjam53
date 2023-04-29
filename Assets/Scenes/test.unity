@@ -6658,6 +6658,9 @@ MonoBehaviour:
   defaultParent: {fileID: 0}
   thrust: {fileID: -6319652414533116317, guid: c98088f0fd68a444a86ea34904ee52a4, type: 3}
   turn: {fileID: -1948059398987470609, guid: c98088f0fd68a444a86ea34904ee52a4, type: 3}
+  minimumDamageThreshold: 1
+  minimumDamageThresholdLandingGear: 3
+  collisionDamageScale: 1
   gravModifier: 1
 --- !u!60 &1080013564
 PolygonCollider2D:

@@ -29,6 +29,7 @@ public class Rocket : MonoBehaviour
     private int rayCastLayerMask;
 
     public float minimumDamageThreshold;
+    public float minimumDamageThresholdLandingGear;
     public float collisionDamageScale;
 
     public float gravModifier = 1;
@@ -174,8 +175,19 @@ public class Rocket : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+
         Vector2 impactVelocity = other.relativeVelocity;
-        float magnitude = Mathf.Max(0f, impactVelocity.sqrMagnitude - minimumDamageThreshold);
+        float magnitude = 0f;
+
+        Planet planet = other.gameObject.GetComponent<Planet>();
+        if (planet && lastLandTime > 0)
+        {
+            magnitude = Mathf.Max(0f, impactVelocity.sqrMagnitude - minimumDamageThresholdLandingGear);
+        }
+        else
+        {
+            magnitude = Mathf.Max(0f, impactVelocity.sqrMagnitude - minimumDamageThreshold);
+        }
 
         float damage = magnitude * collisionDamageScale;
 
