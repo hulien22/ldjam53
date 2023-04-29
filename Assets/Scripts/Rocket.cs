@@ -10,6 +10,8 @@ public class Rocket : MonoBehaviour
     public CircleCollider2D planetDetector;
     public ParticleSystem particles;
 
+    public int health;
+
     public float thrustModifier;
     public float turnModifier;
 
@@ -18,7 +20,6 @@ public class Rocket : MonoBehaviour
 
     public Transform defaultParent;
 
-
     [SerializeField]
     private InputActionReference thrust, turn;
 
@@ -26,6 +27,9 @@ public class Rocket : MonoBehaviour
     private bool landed;
 
     private int rayCastLayerMask;
+
+    public float minimumDamageThreshold;
+    public float collisionDamageScale;
 
     public float gravModifier = 1;
     // MAX SPEED?
@@ -63,7 +67,8 @@ public class Rocket : MonoBehaviour
                     lastLandTime = 0;
                     Debug.Log("landed on : " + hit.collider.gameObject);
                     // stick to parent.
-                    transform.SetParent(hit.collider.gameObject.transform);
+                    // TODO still need this?
+                    // transform.SetParent(hit.collider.gameObject.transform);
                 }
             }
         }
@@ -157,7 +162,7 @@ public class Rocket : MonoBehaviour
             }
             if (minDistance > 0)
             {
-                Debug.Log("setting parent to " + closestPlanet.gameObject);
+                // Debug.Log("setting parent to " + closestPlanet.gameObject);
                 transform.SetParent(closestPlanet.transform);
             }
             else
@@ -165,6 +170,17 @@ public class Rocket : MonoBehaviour
                 transform.SetParent(null);
             }
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Vector2 impactVelocity = other.relativeVelocity;
+        float magnitude = Mathf.Max(0f, impactVelocity.sqrMagnitude - minimumDamageThreshold);
+
+        float damage = magnitude * collisionDamageScale;
+
+        // var v = Vector2.Dot(other.contacts[0].normal, other.relativeVelocity);
+        Debug.Log("Collision Detected. Damage taken: " + damage);
     }
 
 }
