@@ -12,7 +12,7 @@ public class Orbit : MonoBehaviour
     {
         if (orbitSpeed != 0)
         {
-            transform.RotateAround(new Vector3(orbitCenter.x, orbitCenter.y, transform.position.z), new Vector3(0, 0, 1), orbitSpeed * Time.deltaTime);
+            transform.RotateAround(new Vector3(orbitCenter.x, orbitCenter.y, transform.position.z), Vector3.forward, orbitSpeed * Time.deltaTime);
         }
     }
 }
