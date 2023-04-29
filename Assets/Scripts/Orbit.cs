@@ -6,13 +6,13 @@ public class Orbit : MonoBehaviour
 {
 
     public float orbitSpeed;
-    public Vector2 orbitCenter;
+    public Transform orbitCenter;
 
     private void Update()
     {
         if (orbitSpeed != 0)
         {
-            transform.RotateAround(new Vector3(orbitCenter.x, orbitCenter.y, transform.position.z), Vector3.forward, orbitSpeed * Time.deltaTime);
+            transform.RotateAround(new Vector3(orbitCenter.position.x, orbitCenter.position.y, transform.position.z), Vector3.forward, orbitSpeed * Time.deltaTime);
         }
     }
 }

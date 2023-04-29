@@ -26,6 +26,8 @@ public class Rocket : MonoBehaviour
     private bool landed;
 
     private int rayCastLayerMask;
+
+    public float gravModifier = 1;
     // MAX SPEED?
 
     // Start is called before the first frame update
@@ -37,6 +39,7 @@ public class Rocket : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        float thrustInput = thrust.action.ReadValue<float>();
         // Check landing
 
         Vector2 rayCastDir = -Vector2.up;
@@ -45,7 +48,7 @@ public class Rocket : MonoBehaviour
         Debug.DrawRay(transform.position, rayCastDir * rayCastLength, Color.blue);
         if (hit)
         {
-            if (!landed)
+            if (!landed && thrustInput <= 0)
             {
 
                 if (lastLandTime == 0)
@@ -67,12 +70,14 @@ public class Rocket : MonoBehaviour
         else
         {
             lastLandTime = 0;
-            landed = false;
-            // set back to root node
-            transform.SetParent(null);
+            if (landed)
+            {
+                landed = false;
+                // set back to root node
+                // transform.SetParent(null);
+            }
         }
 
-        float thrustInput = thrust.action.ReadValue<float>();
         if (Mathf.Abs(thrustInput) > 0.1)
         {
             Vector2 velocity = Vector2.up;
@@ -125,6 +130,8 @@ public class Rocket : MonoBehaviour
         List<Collider2D> colliders = new List<Collider2D>();
         if (planetDetector.GetContacts(colliders) > 0)
         {
+            float minDistance = -1;
+            Collider2D closestPlanet = null;
             foreach (var collider in colliders)
             {
                 // collider.gameObject
@@ -134,10 +141,28 @@ public class Rocket : MonoBehaviour
                 Vector2 velocity = direction.normalized;
                 // g = GM / r^2
                 velocity *= planet.gravityStrength / Mathf.Pow(direction.magnitude, 2);
-                rocketBody.AddForce(velocity);
+                rocketBody.AddForce(velocity * gravModifier);
                 // Debug.Log(collider.gameObject.name + " : " + (planet.gravityStrength / Mathf.Pow(direction.magnitude, 2)));
                 Vector2 rb = rocketBody.transform.position;
                 Debug.DrawLine(rb, 100 * velocity + rb, Color.red, 2.5f, false);
+
+                if (direction.magnitude < planet.atmosphereDistance)
+                {
+                    if (minDistance < 0 || direction.magnitude < minDistance)
+                    {
+                        closestPlanet = collider;
+                        minDistance = direction.magnitude;
+                    }
+                }
+            }
+            if (minDistance > 0)
+            {
+                Debug.Log("setting parent to " + closestPlanet.gameObject);
+                transform.SetParent(closestPlanet.transform);
+            }
+            else
+            {
+                transform.SetParent(null);
             }
         }
     }
