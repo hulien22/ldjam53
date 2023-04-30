@@ -7,7 +7,7 @@ public class Rotation : MonoBehaviour
 
     public float rotationSpeed;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (rotationSpeed != 0)
         {

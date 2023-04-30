@@ -35,7 +35,12 @@ public class Rocket : MonoBehaviour
     public float gravModifier = 1;
 
     public float atmosMod = 1;
-    private Vector2 lastWorldVelocity;
+
+
+    public Vector3 previousPosition;
+    private Vector2 worldVelocity;
+
+    private Vector3 previousRelativePosition = Vector3.zero;
     // MAX SPEED?
 
     // Start is called before the first frame update
@@ -47,6 +52,10 @@ public class Rocket : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        worldVelocity = (GetRocketPosition() - previousPosition) / Time.deltaTime;
+        Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
+        previousPosition = GetRocketPosition();
+
         float thrustInput = thrust.action.ReadValue<float>();
 
         // Check landing
@@ -117,7 +126,7 @@ public class Rocket : MonoBehaviour
             ApplyTorque();
             ApplyPlanetGravity();
         }
-        // Debug.DrawLine(rocketBody.transform.position, Vector3.zero, Color.red, 2.5f);
+        // Debug.DrawLine(GetRocketPosition(), Vector3.zero, Color.red, 2.5f);
     }
 
     private void ApplyTorque()
@@ -146,44 +155,56 @@ public class Rocket : MonoBehaviour
                 // collider.gameObject
                 // Debug.Log(collider.gameObject);
                 Planet planet = collider.gameObject.GetComponent<Planet>();
-                Vector2 direction = collider.transform.position - rocketBody.transform.position;
+                Vector2 direction = collider.transform.position - GetRocketPosition();
                 Vector2 velocity = direction.normalized;
                 // g = GM / r^2
                 velocity *= planet.gravityStrength / Mathf.Pow(direction.magnitude, 2);
-                // rocketBody.AddForce(velocity * gravModifier);
+                rocketBody.AddForce(velocity * gravModifier);
                 // Debug.Log(collider.gameObject.name + " : " + (planet.gravityStrength / Mathf.Pow(direction.magnitude, 2)));
-                Vector2 rb = rocketBody.transform.position;
+                Vector2 rb = GetRocketPosition();
                 Debug.DrawLine(rb, 100 * velocity + rb, Color.red, 2.5f, false);
 
-                if (direction.magnitude < planet.atmosphereDistance)
+                // if (direction.magnitude < planet.atmosphereDistance)
+                // {
+                if (minDistance < 0 || direction.magnitude < minDistance)
                 {
-                    if (minDistance < 0 || direction.magnitude < minDistance)
-                    {
-                        closestPlanet = planet;
-                        minDistance = direction.magnitude;
-                    }
+                    closestPlanet = planet;
+                    minDistance = direction.magnitude;
                 }
+                // }
             }
-            if (minDistance > 0)
+            if (minDistance > 0 && minDistance < closestPlanet.atmosphereDistance)
             {
                 if (transform.parent != closestPlanet.transform)
                 {
                     // Debug.Log("setting parent to " + closestPlanet.gameObject);
                     transform.SetParent(closestPlanet.transform);
-                    rocketBody.velocity -= closestPlanet.worldVelocity * atmosMod;
+
+                    if (previousRelativePosition.magnitude > 0)
+                    {
+                        Vector3 relativePosn = GetRocketPosition() - closestPlanet.transform.position;
+
+                        Vector2 relativeVelocity = (relativePosn - previousRelativePosition) / Time.deltaTime;
+                        rocketBody.velocity = relativeVelocity * atmosMod;
+                    }
                 }
-                lastWorldVelocity = closestPlanet.worldVelocity;
+                // lastWorldVelocity = closestPlanet.worldVelocity;
             }
             else
             {
+                if (minDistance > 0)
+                {
+                    // Close to a planet, calculate relative posn.
+                    previousRelativePosition = GetRocketPosition() - closestPlanet.transform.position;
+                }
                 if (transform.parent != null)
                 {
                     transform.SetParent(null);
-                    rocketBody.velocity += lastWorldVelocity * atmosMod;
-                    lastWorldVelocity = Vector2.zero;
+                    rocketBody.velocity = worldVelocity * atmosMod;
+                    // lastWorldVelocity = Vector2.zero;
                 }
             }
-            Debug.Log(rocketBody.velocity);
+            // Debug.Log(rocketBody.velocity);
         }
     }
 
@@ -207,6 +228,13 @@ public class Rocket : MonoBehaviour
 
         // var v = Vector2.Dot(other.contacts[0].normal, other.relativeVelocity);
         Debug.Log("Collision Detected. Damage taken: " + damage);
+    }
+
+    Vector3 GetRocketPosition()
+    {
+        // Vector3 com = rocketBody.centerOfMass;
+        // return rocketBody.transform.position + com;
+        return rocketBody.worldCenterOfMass;
     }
 
 }
