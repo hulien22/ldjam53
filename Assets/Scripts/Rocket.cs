@@ -49,7 +49,7 @@ public class Rocket : MonoBehaviour
     void Start()
     {
         rayCastLayerMask = LayerMask.GetMask("Planets");
-        GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
+        // GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
     }
 
     // Update is called once per frame

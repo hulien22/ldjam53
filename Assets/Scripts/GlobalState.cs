@@ -6,6 +6,7 @@ public static class GlobalState
 {
 
     public static HashSet<Planet> knownLocations { get; }
+    public static PlanetDropdown planetDropdown { get; set; }
 
     public static void AddKnownLocation(GameObject obj)
     {
@@ -14,10 +15,13 @@ public static class GlobalState
         {
             // Debug.Log(knownLocations.Count);
             // knownLocations.Add(obj);
-            knownLocations.Add(planet);
+            if (knownLocations.Add(planet) && planetDropdown)
+            {
+                planetDropdown.UpdateItems();
+            }
+
         }
         Debug.Log("added planet " + planet + " | " + knownLocations.Count);
-
     }
 
     static GlobalState()
