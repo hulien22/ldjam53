@@ -15,6 +15,8 @@ public class Rocket : MonoBehaviour
     public float thrustModifier;
     public float turnModifier;
 
+    public float turnDamping;
+
     public float rayCastLength = 0.5f;
     public float landingTime;
 
@@ -53,7 +55,7 @@ public class Rocket : MonoBehaviour
     void FixedUpdate()
     {
         worldVelocity = (GetRocketPosition() - previousPosition) / Time.deltaTime;
-        Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
+        // Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
         previousPosition = GetRocketPosition();
 
         float thrustInput = thrust.action.ReadValue<float>();
@@ -134,11 +136,13 @@ public class Rocket : MonoBehaviour
         float turnInput = turn.action.ReadValue<float>();
         if (Mathf.Abs(turnInput) > 0.1)
         {
+            rocketBody.angularDrag = 0;
             rocketBody.AddTorque(turnInput * turnModifier);
         }
         else
         {
-            // angular damping?
+            // up angular damping when not turning
+            rocketBody.angularDrag = turnDamping;
         }
     }
 
