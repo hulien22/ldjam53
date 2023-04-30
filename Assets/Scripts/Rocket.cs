@@ -45,8 +45,8 @@ public class Rocket : MonoBehaviour
     void FixedUpdate()
     {
         float thrustInput = thrust.action.ReadValue<float>();
-        // Check landing
 
+        // Check landing
         Vector2 rayCastDir = -Vector2.up;
         rayCastDir = Quaternion.AngleAxis(rocketBody.rotation, Vector3.forward) * rayCastDir;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, rayCastDir, rayCastLength, rayCastLayerMask);
