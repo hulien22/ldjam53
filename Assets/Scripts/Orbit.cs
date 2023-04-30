@@ -8,7 +8,7 @@ public class Orbit : MonoBehaviour
     public float orbitSpeed;
     public Transform orbitCenter;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (orbitSpeed != 0)
         {
