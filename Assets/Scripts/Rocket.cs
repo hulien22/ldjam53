@@ -240,7 +240,7 @@ public class Rocket : MonoBehaviour
         Debug.Log("Collision Detected. Damage taken: " + damage);
     }
 
-    Vector3 GetRocketPosition()
+    public Vector3 GetRocketPosition()
     {
         // Vector3 com = rocketBody.centerOfMass;
         // return rocketBody.transform.position + com;
