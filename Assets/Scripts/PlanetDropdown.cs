@@ -10,14 +10,6 @@ public class PlanetDropdown : MonoBehaviour
 
     TMP_Dropdown.OptionData defaultOption = new TMP_Dropdown.OptionData("---");
 
-    public static HashSet<Planet> knownLocations { get; }
-
-
-    static PlanetDropdown()
-    {
-        knownLocations = new HashSet<Planet>();
-    }
-
 
     private void Start()
     {
