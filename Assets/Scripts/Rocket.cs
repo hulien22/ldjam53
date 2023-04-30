@@ -33,6 +33,9 @@ public class Rocket : MonoBehaviour
     public float collisionDamageScale;
 
     public float gravModifier = 1;
+
+    public float atmosMod = 1;
+    private Vector2 lastWorldVelocity;
     // MAX SPEED?
 
     // Start is called before the first frame update
@@ -137,7 +140,7 @@ public class Rocket : MonoBehaviour
         if (planetDetector.GetContacts(colliders) > 0)
         {
             float minDistance = -1;
-            Collider2D closestPlanet = null;
+            Planet closestPlanet = null;
             foreach (var collider in colliders)
             {
                 // collider.gameObject
@@ -147,7 +150,7 @@ public class Rocket : MonoBehaviour
                 Vector2 velocity = direction.normalized;
                 // g = GM / r^2
                 velocity *= planet.gravityStrength / Mathf.Pow(direction.magnitude, 2);
-                rocketBody.AddForce(velocity * gravModifier);
+                // rocketBody.AddForce(velocity * gravModifier);
                 // Debug.Log(collider.gameObject.name + " : " + (planet.gravityStrength / Mathf.Pow(direction.magnitude, 2)));
                 Vector2 rb = rocketBody.transform.position;
                 Debug.DrawLine(rb, 100 * velocity + rb, Color.red, 2.5f, false);
@@ -156,20 +159,31 @@ public class Rocket : MonoBehaviour
                 {
                     if (minDistance < 0 || direction.magnitude < minDistance)
                     {
-                        closestPlanet = collider;
+                        closestPlanet = planet;
                         minDistance = direction.magnitude;
                     }
                 }
             }
             if (minDistance > 0)
             {
-                // Debug.Log("setting parent to " + closestPlanet.gameObject);
-                transform.SetParent(closestPlanet.transform);
+                if (transform.parent != closestPlanet.transform)
+                {
+                    // Debug.Log("setting parent to " + closestPlanet.gameObject);
+                    transform.SetParent(closestPlanet.transform);
+                    rocketBody.velocity -= closestPlanet.worldVelocity * atmosMod;
+                }
+                lastWorldVelocity = closestPlanet.worldVelocity;
             }
             else
             {
-                transform.SetParent(null);
+                if (transform.parent != null)
+                {
+                    transform.SetParent(null);
+                    rocketBody.velocity += lastWorldVelocity * atmosMod;
+                    lastWorldVelocity = Vector2.zero;
+                }
             }
+            Debug.Log(rocketBody.velocity);
         }
     }
 
