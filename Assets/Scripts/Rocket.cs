@@ -49,6 +49,7 @@ public class Rocket : MonoBehaviour
     void Start()
     {
         rayCastLayerMask = LayerMask.GetMask("Planets");
+        GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
     }
 
     // Update is called once per frame
@@ -81,6 +82,9 @@ public class Rocket : MonoBehaviour
                     landed = true;
                     lastLandTime = 0;
                     Debug.Log("landed on : " + hit.collider.gameObject);
+                    GlobalState.AddKnownLocation(hit.collider.gameObject);
+
+
                     // stick to parent.
                     // TODO still need this?
                     // transform.SetParent(hit.collider.gameObject.transform);
@@ -168,6 +172,7 @@ public class Rocket : MonoBehaviour
                 Vector2 rb = GetRocketPosition();
                 Debug.DrawLine(rb, 100 * velocity + rb, Color.red, 2.5f, false);
 
+                // bug here with closest and atmosphere distance... test on IRIS
                 // if (direction.magnitude < planet.atmosphereDistance)
                 // {
                 if (minDistance < 0 || direction.magnitude < minDistance)
@@ -196,6 +201,7 @@ public class Rocket : MonoBehaviour
             }
             else
             {
+                // bug with one frame escape?
                 if (minDistance > 0)
                 {
                     // Close to a planet, calculate relative posn.
