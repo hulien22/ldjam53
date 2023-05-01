@@ -2161,9 +2161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 
-  medium: 
-  hard: 
+  easy: 0500000007000000
+  medium: 010000000c000000
+  hard: 08000000090000000a000000
   <SidequestName>k__BackingField: Don'atus
   <SidequestItemName>k__BackingField: box of doughnuts
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
@@ -3687,9 +3687,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 06000000
-  medium: 02000000
-  hard: 04000000
+  easy: 0400000006000000
+  medium: 010000000c000000
+  hard: 020000000300000005000000
   <SidequestName>k__BackingField: Iris 2
   <SidequestItemName>k__BackingField: eye of newt
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
@@ -6543,9 +6543,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 02000000
-  medium: 04000000
-  hard: 01000000
+  easy: 010000000c000000
+  medium: 0400000008000000090000000a000000
+  hard: 0200000005000000
   <SidequestName>k__BackingField: Scrapton
   <SidequestItemName>k__BackingField: scrap metal
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
@@ -8032,8 +8032,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easy: 06000000
-  medium: 05000000
-  hard: 02000000
+  medium: 0400000001000000
+  hard: 0c00000007000000
   <SidequestName>k__BackingField: Miram 5
   <SidequestItemName>k__BackingField: box of memories
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
@@ -8405,6 +8405,7 @@ GameObject:
   - component: {fileID: 1175727110}
   - component: {fileID: 1175727109}
   - component: {fileID: 1175727111}
+  - component: {fileID: 1175727112}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -8535,7 +8536,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5517443eb6b142b3e30cc8dfe8c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {fileID: 0}
+  source: {fileID: 1175727109}
+  background: {fileID: 1175727112}
+  backgroundVolume: 0.5
 --- !u!114 &1175727111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8598,6 +8601,102 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 85c422143f2ad27479bc3ec2e01d398e, type: 3}
   - {fileID: 8300000, guid: 3de22f11eb238214e9716e767bb523a3, type: 3}
   - {fileID: 8300000, guid: 892eb192e4941d549adc86170c2789ab, type: 3}
+--- !u!82 &1175727112
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175727107}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 29e5415e2d8f2fb40a750c03c5539b3b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1177070917
 GameObject:
   m_ObjectHideFlags: 0
@@ -13829,9 +13928,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 03000000
-  medium: 07000000
-  hard: 02000000
+  easy: 0d000000
+  medium: 0c00000001000000
+  hard: 0400000005000000
   <SidequestName>k__BackingField: Haldor
   <SidequestItemName>k__BackingField: shipment of doors
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
@@ -14221,8 +14320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easy: 01000000
-  medium: 02000000
-  hard: 04000000
+  medium: 0600000007000000
+  hard: 0200000005000000
   <SidequestName>k__BackingField: Lunas
   <SidequestItemName>k__BackingField: moon rock sample
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
@@ -15336,6 +15435,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2168536167928990150, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2506299399094526558, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: m_Color.b
       value: 0.34509805
@@ -15423,6 +15526,10 @@ PrefabInstance:
     - target: {fileID: 6265491033437160513, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: m_LocalScale.z
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614306455740127651, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7820235719411870644, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: m_LocalScale.x
@@ -15991,9 +16098,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 07000000
-  medium: 04000000
-  hard: 03000000
+  easy: 0400000006000000
+  medium: 010000000c000000
+  hard: 020000000300000005000000
   <SidequestName>k__BackingField: Iris 1
   <SidequestItemName>k__BackingField: eye of newt
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
@@ -27790,9 +27897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 02000000
-  medium: 04000000
-  hard: 01000000
+  easy: 0200000007000000
+  medium: 0600000001000000
+  hard: 0c00000004000000
   <SidequestName>k__BackingField: Scrapton
   <SidequestItemName>k__BackingField: scrap metal
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
@@ -28633,8 +28740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easy: 0c000000
-  medium: 02000000
-  hard: 04000000
+  medium: 0600000005000000
+  hard: 0200000007000000
   <SidequestName>k__BackingField: Terrus
   <SidequestItemName>k__BackingField: crate of lumber
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
@@ -29287,9 +29394,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 01000000
-  medium: 04000000
-  hard: 06000000
+  easy: 010000000c000000
+  medium: 0500000002000000
+  hard: 0600000004000000
   <SidequestName>k__BackingField: Erabus 3
   <SidequestItemName>k__BackingField: bus full of air
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
@@ -30172,9 +30279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 02000000
-  medium: 01000000
-  hard: 07000000
+  easy: 010000000c000000
+  medium: 08000000090000000a000000
+  hard: 0300000002000000
   <SidequestName>k__BackingField: Alban
   <SidequestItemName>k__BackingField: crate of alban ore
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
@@ -30392,9 +30499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 05000000
-  medium: 04000000
-  hard: 02000000
+  easy: 0400000006000000
+  medium: 010000000c000000
+  hard: 020000000300000005000000
   <SidequestName>k__BackingField: Iris 3
   <SidequestItemName>k__BackingField: eye of newt
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
@@ -30500,9 +30607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 07000000
-  medium: 06000000
-  hard: 01000000
+  easy: 08000000090000000a000000
+  medium: 060000000400000001000000
+  hard: 020000000c00000007000000
   <SidequestName>k__BackingField: Kantora
   <SidequestItemName>k__BackingField: bag of candy
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}

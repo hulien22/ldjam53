@@ -5,16 +5,16 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour {
     public static AudioManager Instance { get; private set; }
 
-    private AudioSource source;
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioSource background;
+    [SerializeField] private float backgroundVolume;
+    private float backgroundVolumeTarget = 0;
     void Awake() {
         if (Instance != null) {
             Debug.LogError("Duplicate audio manager detected.");
         }
         Instance = this;
-        Instance.source = GetComponent<AudioSource>();
     }
-
-    public AudioClip thrust;
 
     public static void PlaySound(AudioClip clip) {
         Instance.source.clip = clip;
@@ -22,19 +22,29 @@ public class AudioManager : MonoBehaviour {
         Instance.source.Play();
     }
 
-    public static void StartThrust() {
-        Instance.source.clip = Instance.thrust;
-        Instance.source.loop = true;
-        Instance.source.Play();
-    }
-
-    public static void StopThrust() {
-        //Instance.source.clip = clip;
-        Instance.source.loop = false;
-        //Instance.source.Play();
-    }
-
     public static void PlayVoice(AudioClip clip) {
         Instance.source.PlayOneShot(clip);
+    }
+
+    public static void LowerBackground() {
+        Instance.backgroundVolumeTarget = 0;
+    }
+
+    public static void RaiseBackground() {
+        Instance.backgroundVolumeTarget = Instance.backgroundVolume;
+    }
+
+    private void FixedUpdate() {
+        if (Instance.background.volume < Instance.backgroundVolumeTarget) {
+            Instance.background.volume += 0.01f;
+            if (Instance.background.volume >= Instance.backgroundVolumeTarget) {
+                Instance.background.volume = Instance.backgroundVolumeTarget;
+            }
+        } else if (Instance.background.volume > Instance.backgroundVolumeTarget){
+            Instance.background.volume -= 0.05f;
+            if (Instance.background.volume <= Instance.backgroundVolumeTarget) {
+                Instance.background.volume = Instance.backgroundVolumeTarget;
+            }
+        }
     }
 }
