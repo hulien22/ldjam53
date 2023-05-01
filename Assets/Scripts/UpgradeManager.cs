@@ -25,6 +25,7 @@ public class UpgradeManager : MonoBehaviour {
     }
 
     public static void SetHull(int hull) {
+        instance.rocket.maxHealth = 50 * hull + 100;
         instance.rocket.health = 50*hull + 100;
         if (hull >= 3) {
             instance.rocket.immuneToSun = true;
@@ -32,7 +33,8 @@ public class UpgradeManager : MonoBehaviour {
     }
 
     public static void SetFuelCapacity(int fuelCapacity) {
-        //instance.rocket.
+        instance.rocket.maxFuel = 1000 * fuelCapacity;
+        instance.rocket.fuel = 1000 * fuelCapacity;
     }
 
     public static void SetSensor() {

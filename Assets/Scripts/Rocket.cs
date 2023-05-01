@@ -13,8 +13,11 @@ public class Rocket : MonoBehaviour
     public ParticleSystem leftParticles;
     public ParticleSystem rightParticles;
 
+    public int maxHealth;
     public int health;
     public bool immuneToSun;
+    public float maxFuel;
+    public float fuel;
     public bool sensor;
 
     public float thrustModifier;
@@ -104,9 +107,10 @@ public class Rocket : MonoBehaviour
                     GlobalState.AddKnownLocation(hit.collider.gameObject);
                     GlobalState.instance.lastPlanetVisited = hit.collider.gameObject.GetComponent<Planet>();
                     DialogManager.Instance.StartDialog(GlobalState.instance.lastPlanetVisited.location);
-                    // stick to parent.
-                    // TODO still need this?
-                    // transform.SetParent(hit.collider.gameObject.transform);
+
+                    fuel = maxFuel;
+                    health = maxHealth;
+                    // TODO disable controls!
                 }
             }
         }
@@ -134,12 +138,15 @@ public class Rocket : MonoBehaviour
                 {
                     rocketBody.AddForce(velocity * thrustModifier);
                     particles.Emit(1);
+                    fuel -= 0.1f;
                 }
                 else
                 {
                     rocketBody.AddForce(velocity * downThrustModifier);
                     downParticles.Emit(1);
+                    fuel -= 0.1f;
                 }
+                Debug.Log("Fuel: " + fuel);
             }
         }
         // If landed kill all speed.
