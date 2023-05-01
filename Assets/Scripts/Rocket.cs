@@ -84,7 +84,7 @@ public class Rocket : MonoBehaviour
                     Debug.Log("landed on : " + hit.collider.gameObject);
                     GlobalState.AddKnownLocation(hit.collider.gameObject);
                     GlobalState.lastPlanetVisited = hit.collider.gameObject.GetComponent<Planet>();
-
+                    DialogManager.Instance.StartDialog(GlobalState.lastPlanetVisited.location);
                     // stick to parent.
                     // TODO still need this?
                     // transform.SetParent(hit.collider.gameObject.transform);

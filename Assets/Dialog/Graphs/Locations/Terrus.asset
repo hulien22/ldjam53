@@ -95,6 +95,7 @@ MonoBehaviour:
   - {fileID: -5208644154231694008}
   - {fileID: 1820384001538215940}
   - {fileID: -7462094443589067038}
+  - {fileID: 7229243436559053096}
   conditions: []
   enterActions: []
   exitActions: []
@@ -198,8 +199,8 @@ MonoBehaviour:
   _uniqueId: a2d9f0ed-8a6b-4d3b-b9ee-103ce01b8256
   rect:
     serializedVersion: 2
-    x: 51019
-    y: 50496
+    x: 51041
+    y: 50540
     width: 200
     height: 186
   nodeTitle: 
@@ -388,6 +389,23 @@ MonoBehaviour:
   text: Nevermind...
   children: []
   _uniqueId: 51121055-cc3d-40d3-b393-af5201c3032c
+--- !u!114 &-3832318900097222422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 2049b5c8-ec4e-4ce1-b37f-9d326afbbf05
+  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  _comparison: 5
+  _value: 3
 --- !u!114 &-3629175577117546562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -608,8 +626,9 @@ MonoBehaviour:
   - {fileID: -1312876928974138160}
   - {fileID: 3397570177712051538}
   - {fileID: -8694783067799892180}
+  - {fileID: 7229243436559053096}
   root: {fileID: 1961000476301625562}
-  scrollPosition: {x: 49735, y: 50044.5}
+  scrollPosition: {x: 50610, y: 50181.5}
 --- !u!114 &1726325750219350460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +807,7 @@ MonoBehaviour:
   _uniqueId: 4ec93fcb-8220-4ff8-ab26-67836d522ad9
   _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
   _comparison: 0
-  _value: 1
+  _value: 2
 --- !u!114 &4821668009485562612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,6 +939,36 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+--- !u!114 &7229243436559053096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e7f0a9fd-8922-44a8-9a97-1117001a876b
+  rect:
+    serializedVersion: 2
+    x: 51021
+    y: 50832
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9199485515842864458}
+  conditions:
+  - {fileID: -3832318900097222422}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: I don't have anything else to sell.
 --- !u!114 &8345168913405063656
 MonoBehaviour:
   m_ObjectHideFlags: 1
