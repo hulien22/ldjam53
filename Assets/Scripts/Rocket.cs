@@ -13,8 +13,8 @@ public class Rocket : MonoBehaviour
     public ParticleSystem leftParticles;
     public ParticleSystem rightParticles;
 
-    public int maxHealth;
-    public int health;
+    public float maxHealth;
+    public float health;
     public bool immuneToSun;
     public float maxFuel;
     public float fuel;
@@ -110,6 +110,8 @@ public class Rocket : MonoBehaviour
 
                     fuel = maxFuel;
                     health = maxHealth;
+                    GlobalState.instance.fuelBar.SetVal(0);
+                    GlobalState.instance.healthBar.SetVal(0);
                     // TODO disable controls!
                 }
             }
@@ -134,17 +136,21 @@ public class Rocket : MonoBehaviour
             // When landed, only allow thrust
             if (!landed || thrustInput > 0)
             {
-                if (thrustInput > 0)
+                if (fuel > 0)
                 {
-                    rocketBody.AddForce(velocity * thrustModifier);
-                    particles.Emit(1);
+                    if (thrustInput > 0)
+                    {
+                        rocketBody.AddForce(velocity * thrustModifier);
+                        particles.Emit(1);
+                    }
+                    else
+                    {
+                        rocketBody.AddForce(velocity * downThrustModifier);
+                        downParticles.Emit(1);
+                    }
+
                     fuel -= 0.1f;
-                }
-                else
-                {
-                    rocketBody.AddForce(velocity * downThrustModifier);
-                    downParticles.Emit(1);
-                    fuel -= 0.1f;
+                    GlobalState.instance.fuelBar.SetVal(maxFuel - fuel);
                 }
                 Debug.Log("Fuel: " + fuel);
             }
@@ -270,6 +276,8 @@ public class Rocket : MonoBehaviour
         }
 
         float damage = magnitude * collisionDamageScale;
+        health -= damage;
+        GlobalState.instance.healthBar.SetVal(maxHealth - health);
 
         // var v = Vector2.Dot(other.contacts[0].normal, other.relativeVelocity);
         Debug.Log("Collision Detected. Damage taken: " + damage);
@@ -298,6 +306,12 @@ public class Rocket : MonoBehaviour
         previousPosition = GetRocketPosition();
         previousRelativePosition = Vector3.zero;
         landed = false;
+
+        // Refuel + reheal
+        fuel = maxFuel;
+        health = maxHealth;
+        GlobalState.instance.fuelBar.SetVal(0);
+        GlobalState.instance.healthBar.SetVal(0);
 
         // set flag for first physics tick
         reset = true;
