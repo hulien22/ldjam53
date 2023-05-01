@@ -14,9 +14,27 @@ public class AudioManager : MonoBehaviour {
         Instance.source = GetComponent<AudioSource>();
     }
 
+    public AudioClip thrust;
+
     public static void PlaySound(AudioClip clip) {
         Instance.source.clip = clip;
         Instance.source.loop = true;
         Instance.source.Play();
+    }
+
+    public static void StartThrust() {
+        Instance.source.clip = Instance.thrust;
+        Instance.source.loop = true;
+        Instance.source.Play();
+    }
+
+    public static void StopThrust() {
+        //Instance.source.clip = clip;
+        Instance.source.loop = false;
+        //Instance.source.Play();
+    }
+
+    public static void PlayVoice(AudioClip clip) {
+        Instance.source.PlayOneShot(clip);
     }
 }

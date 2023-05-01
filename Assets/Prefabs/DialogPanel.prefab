@@ -575,8 +575,8 @@ MonoBehaviour:
     shield and lasers may be simple right now, but completing deliveries is the best
     way to earn more money for ship upgrades."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2488eb8cc1373f44f96266ed7ff2259f, type: 2}
-  m_sharedMaterial: {fileID: -7077456608780903266, guid: 2488eb8cc1373f44f96266ed7ff2259f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 920ec7a2ac3619943aaceacb147c1be8, type: 2}
+  m_sharedMaterial: {fileID: -3897010099216297034, guid: 920ec7a2ac3619943aaceacb147c1be8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 21.25
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 12.981308, y: 6.4897842, z: -436.02795, w: 35.04933}
+  m_margin: {x: 14.555298, y: 6.4897842, z: -431.3058, w: 35.04933}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -817,8 +817,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Test name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2488eb8cc1373f44f96266ed7ff2259f, type: 2}
-  m_sharedMaterial: {fileID: -7077456608780903266, guid: 2488eb8cc1373f44f96266ed7ff2259f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 920ec7a2ac3619943aaceacb147c1be8, type: 2}
+  m_sharedMaterial: {fileID: -3897010099216297034, guid: 920ec7a2ac3619943aaceacb147c1be8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.9
+  m_fontSize: 21.95
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
