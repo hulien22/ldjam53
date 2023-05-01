@@ -311,21 +311,6 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 2
   _value: 20
---- !u!114 &-5996386957683994021
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 843a669fdb38bf54c8ca5fcbb68523ec, type: 3}
-  m_Name: AcquireCargoAction
-  m_EditorClassIdentifier: 
-  _title: AcquireCargoAction
-  _uniqueId: 2651fed2-f6d0-479f-b640-eab9ab14bca9
-  <Target>k__BackingField: 13
 --- !u!114 &-5911121316575826173
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -725,7 +710,23 @@ MonoBehaviour:
   - {fileID: -7580935996352580516}
   - {fileID: 4727675321738810728}
   root: {fileID: 1961000476301625562}
-  scrollPosition: {x: 51306.668, y: 49953.832}
+  scrollPosition: {x: 49347.668, y: 49667.832}
+--- !u!114 &1561451196376095908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1342d7792ba90aa4a8fb756ae5f01d84, type: 3}
+  m_Name: AcquireSpecialCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireSpecialCargoAction
+  _uniqueId: ab22351e-486f-4763-a519-1ed782aab1de
+  <Target>k__BackingField: 13
+  <Name>k__BackingField: special package
 --- !u!114 &1726325750219350460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,9 +945,11 @@ MonoBehaviour:
   children:
   - {fileID: -1209156263514723140}
   conditions: []
-  enterActions: []
+  enterActions:
+  - {fileID: 1561451196376095908}
   exitActions:
-  - {fileID: -5996386957683994021}
+  - {fileID: 6128548639874884793}
+  - {fileID: 7673937541710457871}
   choices: []
   actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
   audio: {fileID: 0}
@@ -1083,6 +1086,22 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+--- !u!114 &6128548639874884793
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 46e346b8-e3c0-4e47-9706-0be1f89369d8
+  _value: 1
+  _variable: {fileID: 11400000, guid: fabc4aa3e0a3d92448f8505139c3f2da, type: 2}
 --- !u!114 &7229243436559053096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,6 +1132,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
   audio: {fileID: 0}
   dialogue: I don't have anything else to sell.
+--- !u!114 &7673937541710457871
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 49dd4280-d0a6-4294-99a0-1c20da3cc4ed
+  _value: 1
+  _variable: {fileID: 11400000, guid: b2017cb4a7f07c043908a2dc528fcc9f, type: 2}
 --- !u!114 &8345168913405063656
 MonoBehaviour:
   m_ObjectHideFlags: 1
