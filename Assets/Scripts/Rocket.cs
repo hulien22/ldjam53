@@ -56,7 +56,7 @@ public class Rocket : MonoBehaviour
     void FixedUpdate()
     {
         worldVelocity = (GetRocketPosition() - previousPosition) / Time.deltaTime;
-        Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
+        // Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
         previousPosition = GetRocketPosition();
 
         float thrustInput = thrust.action.ReadValue<float>();
@@ -189,7 +189,6 @@ public class Rocket : MonoBehaviour
                     if (previousRelativePosition.magnitude > 0)
                     {
                         Vector3 relativePosn = GetRocketPosition() - closestPlanet.transform.position;
-
                         Vector2 relativeVelocity = (relativePosn - previousRelativePosition) / Time.deltaTime;
                         rocketBody.velocity = relativeVelocity * atmosMod;
                     }
