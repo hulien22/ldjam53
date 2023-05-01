@@ -13,7 +13,7 @@ public class Parallax : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Debug.Log(shader.GetVector("_Offset"));
+        // Debug.Log(shader.GetVector("_Offset"));
         var offset = shader.GetVector("_Offset");
         offset.x = transform.position.x * parallaxStrength;
         offset.y = transform.position.y * parallaxStrength;
