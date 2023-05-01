@@ -49,7 +49,7 @@ public class Rocket : MonoBehaviour
     void Start()
     {
         rayCastLayerMask = LayerMask.GetMask("Planets");
-        GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
+        // GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
     }
 
     // Update is called once per frame
@@ -240,7 +240,7 @@ public class Rocket : MonoBehaviour
         Debug.Log("Collision Detected. Damage taken: " + damage);
     }
 
-    Vector3 GetRocketPosition()
+    public Vector3 GetRocketPosition()
     {
         // Vector3 com = rocketBody.centerOfMass;
         // return rocketBody.transform.position + com;
