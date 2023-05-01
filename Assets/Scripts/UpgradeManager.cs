@@ -16,6 +16,10 @@ public class UpgradeManager : MonoBehaviour {
     [SerializeField]
     private Rocket rocket;
 
+    [SerializeField]
+    private GameObject mists;
+
+
     public static void SetThrust(int thrust) {
         instance.rocket.thrustModifier = thrust + 1;
     }
@@ -33,6 +37,6 @@ public class UpgradeManager : MonoBehaviour {
 
     public static void SetSensor() {
         instance.rocket.sensor = true;
+        instance.mists.SetActive(false);
     }
 }
-
