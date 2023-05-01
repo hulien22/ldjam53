@@ -120,5 +120,16 @@ namespace Assets.Scripts.StorySystem {
             SidequestPlanet planet = GetPlanet(start);
             return planet.GetDifficultyOfJob(end);
         }
+
+        public static int GetReward(Difficulty difficulty) {
+            switch (difficulty) {
+                case Difficulty.Medium:
+                    return instance.mediumReward;
+                case Difficulty.Hard:
+                    return instance.hardReward;
+                default:
+                    return instance.easyReward;
+            }
+        }
     }
 }

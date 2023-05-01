@@ -156,22 +156,6 @@ MonoBehaviour:
   text: Nevermind...
   children: []
   _uniqueId: 454a46a1-7427-4460-a1bb-65598748b54b
---- !u!114 &-5964800583853123633
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 8ca6c12f-d97a-45f0-8664-ca18060cede4
-  _value: 1
-  _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
 --- !u!114 &-5708455934098137024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,27 +215,11 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -5708455934098137024}
-  - {fileID: -119700152442499837}
+  - {fileID: 5136639126422414635}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
   dialogue: 'New upgrade acquired: flame resistant hull coating.'
---- !u!114 &-4911735364328625771
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 32798152-feb4-4141-9677-a1a76eee97f7
-  _value: 2
-  _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
 --- !u!114 &-3737919922372383866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,22 +589,6 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: e7ea80dcb469f98489d0c8611dd64698, type: 2}
   audio: {fileID: 0}
   dialogue: I can upgrade your hull. How does 20 credits sound?
---- !u!114 &-119700152442499837
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 2f924ba9-3df1-4775-8707-ddf77721e45d
-  _value: 3
-  _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,7 +625,7 @@ MonoBehaviour:
   - {fileID: 6887866128196312966}
   - {fileID: -4999010543618985189}
   root: {fileID: -2607164416126842985}
-  scrollPosition: {x: 50574.3, y: 50086.5}
+  scrollPosition: {x: 51353.3, y: 49917.5}
 --- !u!114 &902704734156724416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -707,6 +659,22 @@ MonoBehaviour:
   children:
   - {fileID: -1502817858056640103}
   _uniqueId: 49202176-18da-4cb9-b834-197d89fde207
+--- !u!114 &1084929003956338141
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8027ebc2261e62842abfa255daa13d19, type: 3}
+  m_Name: UpgradeHullAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeHullAction
+  _uniqueId: b5c766ab-8a54-435d-ad5c-7b9f5f880dcb
+  variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
+  value: 2
 --- !u!114 &1241064011898077182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -881,6 +849,22 @@ MonoBehaviour:
   children:
   - {fileID: -2039587639336978092}
   _uniqueId: 41077875-bc10-4299-aec4-77f74e97393c
+--- !u!114 &5136639126422414635
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8027ebc2261e62842abfa255daa13d19, type: 3}
+  m_Name: UpgradeHullAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeHullAction
+  _uniqueId: 8d640507-b455-4ab8-948d-bb2aa3419fb7
+  variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
+  value: 3
 --- !u!114 &5185742123882570864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1037,11 +1021,27 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: 1902230028192333716}
-  - {fileID: -4911735364328625771}
+  - {fileID: 1084929003956338141}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
   dialogue: 'New upgrade acquired: hull Mk 2.'
+--- !u!114 &7129921549014348176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8027ebc2261e62842abfa255daa13d19, type: 3}
+  m_Name: UpgradeHullAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeHullAction
+  _uniqueId: 9e22a830-7bad-4495-ae55-7add657d61a2
+  variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
+  value: 1
 --- !u!114 &7924408440971764597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: 6073229412814740512}
-  - {fileID: -5964800583853123633}
+  - {fileID: 7129921549014348176}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}

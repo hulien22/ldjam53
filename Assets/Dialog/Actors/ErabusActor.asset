@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ErabusActor
   m_EditorClassIdentifier: 
   _displayName: Erabus
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: 451aff19cbac50a4c84a6d1c4c6c2966, type: 3}

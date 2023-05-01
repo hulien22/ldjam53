@@ -9,10 +9,16 @@ public class Rocket : MonoBehaviour
 
     public CircleCollider2D planetDetector;
     public ParticleSystem particles;
+    public ParticleSystem downParticles;
+    public ParticleSystem leftParticles;
+    public ParticleSystem rightParticles;
 
     public int health;
+    public bool immuneToSun;
+    public bool sensor;
 
     public float thrustModifier;
+    public float downThrustModifier;
     public float turnModifier;
 
     public float turnDamping;
@@ -38,6 +44,8 @@ public class Rocket : MonoBehaviour
 
     public float atmosMod = 1;
 
+    private bool reset = false;
+
 
     public Vector3 previousPosition;
     private Vector2 worldVelocity;
@@ -48,6 +56,7 @@ public class Rocket : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        immuneToSun = false;
         rayCastLayerMask = LayerMask.GetMask("Planets");
         // GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
     }
@@ -55,6 +64,16 @@ public class Rocket : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (reset)
+        {
+            rocketBody.velocity = Vector2.zero;
+            rocketBody.angularVelocity = 0;
+            previousPosition = GetRocketPosition();
+            previousRelativePosition = Vector3.zero;
+            landed = false;
+            reset = false;
+            return;
+        }
         worldVelocity = (GetRocketPosition() - previousPosition) / Time.deltaTime;
         // Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
         previousPosition = GetRocketPosition();
@@ -111,11 +130,16 @@ public class Rocket : MonoBehaviour
             // When landed, only allow thrust
             if (!landed || thrustInput > 0)
             {
-                rocketBody.AddForce(velocity * thrustModifier);
-            }
-            if (thrustInput > 0)
-            {
-                particles.Emit(1);
+                if (thrustInput > 0)
+                {
+                    rocketBody.AddForce(velocity * thrustModifier);
+                    particles.Emit(1);
+                }
+                else
+                {
+                    rocketBody.AddForce(velocity * downThrustModifier);
+                    downParticles.Emit(1);
+                }
             }
         }
         // If landed kill all speed.
@@ -142,6 +166,14 @@ public class Rocket : MonoBehaviour
         {
             rocketBody.angularDrag = 0;
             rocketBody.AddTorque(turnInput * turnModifier);
+            if (turnInput < 0)
+            {
+                leftParticles.Emit(1);
+            }
+            else
+            {
+                rightParticles.Emit(1);
+            }
         }
         else
         {
@@ -259,6 +291,9 @@ public class Rocket : MonoBehaviour
         previousPosition = GetRocketPosition();
         previousRelativePosition = Vector3.zero;
         landed = false;
+
+        // set flag for first physics tick
+        reset = true;
     }
 
 }
