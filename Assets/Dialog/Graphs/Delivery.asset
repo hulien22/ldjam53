@@ -78,7 +78,8 @@ MonoBehaviour:
   _uniqueId: 7b280152-363e-42bd-af2c-fa9d59d76619
   _value: 0
   variable: {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 4
 --- !u!114 &-7254083114700185612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,7 +96,8 @@ MonoBehaviour:
   _uniqueId: 3957a1a3-ad7f-43e2-87db-2b57907ad2c8
   _value: 0
   variable: {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 6
 --- !u!114 &-6723666792786543768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +174,8 @@ MonoBehaviour:
   _uniqueId: 064f4dbe-ee1b-4314-9f30-8afec714705f
   _value: 0
   variable: {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 1
 --- !u!114 &-5489020090902380411
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,7 +192,8 @@ MonoBehaviour:
   _uniqueId: c44c8c2e-715e-4817-a358-d23bb626e2ef
   _value: 0
   variable: {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 13
 --- !u!114 &-5230758617137809799
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,7 +210,8 @@ MonoBehaviour:
   _uniqueId: 1d59903e-77c8-483f-a6c0-5b94efc51028
   _value: 0
   variable: {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 2
 --- !u!114 &-4323489114499720679
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,7 +228,8 @@ MonoBehaviour:
   _uniqueId: 92a38977-2277-42b6-8208-1f06fc89090c
   _value: 0
   variable: {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 7
 --- !u!114 &-3942618027195108414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,7 +261,8 @@ MonoBehaviour:
   _uniqueId: 55feb391-43f3-46bd-a74e-dfbdb8f48884
   _value: 0
   variable: {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 14
 --- !u!114 &-2669776581796012005
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -316,7 +323,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
   audio: {fileID: 0}
-  dialogue: I have a delivery from Iris.
+  dialogue: I have a delivery from Iris. Well one of them anyway.
 --- !u!114 &-1056890884278694292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,7 +381,7 @@ MonoBehaviour:
   - {fileID: 5242636712137999134}
   - {fileID: -1617215376243769198}
   root: {fileID: 1046622458957242873}
-  scrollPosition: {x: 49974.5, y: 49839.5}
+  scrollPosition: {x: 50001.5, y: 50037.5}
 --- !u!114 &331523295005627315
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -437,7 +444,8 @@ MonoBehaviour:
   _uniqueId: f7b4c9d2-eb69-4b91-99f9-315176eb00e7
   _value: 0
   variable: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 8
 --- !u!114 &594369612237473794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,7 +493,8 @@ MonoBehaviour:
   _uniqueId: 835afd71-3d06-482a-b64a-6fb3224c81bf
   _value: 0
   variable: {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 5
 --- !u!114 &1046622458957242873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,7 +567,8 @@ MonoBehaviour:
   _uniqueId: 52f0b412-5c7c-4676-a7c2-01eed4ca5047
   _value: 0
   variable: {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 12
 --- !u!114 &2024389630113845460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,7 +635,8 @@ MonoBehaviour:
   _uniqueId: db6047a9-bfdc-4b43-b9d2-0c2427fd12eb
   _value: 0
   variable: {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
-  credits: 0
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 3
 --- !u!114 &5242636712137999134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,7 +760,7 @@ MonoBehaviour:
   _uniqueId: 900d699c-604f-4d80-8522-c0c8785ba30f
   rect:
     serializedVersion: 2
-    x: 50569
+    x: 50567
     y: 50041
     width: 200
     height: 146

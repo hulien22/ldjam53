@@ -29,7 +29,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I'll take the job to Lunas.
+  dialogue: I'll take the job to Alban.
 --- !u!114 &-7412957031997298071
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Delivery to Lunas.
+  text: Delivery to Alban.
   children:
   - {fileID: -8882468678984776102}
   _uniqueId: 5880aa9c-e030-408d-916b-de8f9ab3682d
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: AcquireCargoAction
   _uniqueId: 5626383c-77e3-494f-9b94-84d5acb9a7ea
-  <Target>k__BackingField: 12
+  <Target>k__BackingField: 4
 --- !u!114 &-3410151554461950381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,8 +108,8 @@ MonoBehaviour:
   - {fileID: 2805725690834194877}
   actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
   audio: {fileID: 0}
-  dialogue: There is an easier delivery to Lunas for 5 credits, a standard job to
-    Erabus 3 for 10, and a harder job to Taldoris for 15.
+  dialogue: There is an easier delivery to Alban for 5 credits, a standard job to
+    Don'atus for 10, and a harder job to Taldoris for 15.
 --- !u!114 &-2393947445396022785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I need some work. Do you have any deliveries for me to run?
 --- !u!114 &-2373607221273400919
@@ -195,9 +195,9 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: You don't have enough cargo space.
+  dialogue: 'Error: you don''t have enough cargo space.'
 --- !u!114 &-1082567340561665149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Delivery to Erabus 3.
+  text: Delivery to Don'atus.
   children:
   - {fileID: 9171445805501957287}
   _uniqueId: 8a5b68e9-dd29-4eb4-b9ca-e9a5fc811230
@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: -2373607221273400919}
   - {fileID: -2393947445396022785}
   root: {fileID: -1082567340561665149}
-  scrollPosition: {x: 49493.5, y: 49629}
+  scrollPosition: {x: 49740.5, y: 49668}
 --- !u!114 &2805725690834194877
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: AcquireCargoAction
   _uniqueId: 72139c08-d31d-4477-b1d3-2e6dcd524da0
-  <Target>k__BackingField: 7
+  <Target>k__BackingField: 2
 --- !u!114 &6003116754560903415
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -479,4 +479,4 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I'll take the job to Erabus 3.
+  dialogue: I'll take the job to Don'atus.
