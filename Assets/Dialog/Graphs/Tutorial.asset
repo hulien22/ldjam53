@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8347204893467075341
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I'll watch out!
+  children:
+  - {fileID: -8219585744598070763}
+  _uniqueId: 3a876d24-8d1e-473f-b898-cf84456cd704
+--- !u!114 &-8219585744598070763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4b12b32f-c91c-4347-b846-00eed41c21c3
+  rect:
+    serializedVersion: 2
+    x: 52339
+    y: 50423
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -4860569513310953999}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I'll keep my eyes out for any trouble.
 --- !u!114 &-8113060171759627628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26,7 +71,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Uh... maybe? Why, what do you want?
 --- !u!114 &-7784360270755097705
@@ -86,9 +131,25 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: No, that must be someone else.
+--- !u!114 &-6070346066342764799
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I'm not scared!
+  children:
+  - {fileID: 39850474355980163}
+  _uniqueId: 6dc21e82-069e-4073-bff6-3dd191442c0e
 --- !u!114 &-5815785175104877739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,8 +165,8 @@ MonoBehaviour:
   _uniqueId: 38da637b-73a5-4a2c-bf90-bbc204f1e888
   rect:
     serializedVersion: 2
-    x: 51269
-    y: 50368
+    x: 51174
+    y: 50395
     width: 200
     height: 146
   nodeTitle: 
@@ -115,7 +176,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Yes, of course! I'm an intergalactic ace!
 --- !u!114 &-5366689451684267625
@@ -134,6 +195,36 @@ MonoBehaviour:
   children:
   - {fileID: -8113060171759627628}
   _uniqueId: ab5c53b1-98f7-482e-b967-b9e184589b14
+--- !u!114 &-4860569513310953999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c26f7b95-53b3-4f49-a0c8-4fb0211aba57
+  rect:
+    serializedVersion: 2
+    x: 52889
+    y: 50479
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -1220208927197132595}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: If you do run into any trouble, you can always get towed back to safety.
+    It may cost you though.
 --- !u!114 &-3857444221390803001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +251,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Yes! That's me. I'm so excited!
 --- !u!114 &-1624653335370320075
@@ -178,13 +269,13 @@ MonoBehaviour:
   _uniqueId: 06699e97-e8d9-4a48-b92d-c4214ce04038
   rect:
     serializedVersion: 2
-    x: 52003
-    y: 50212
+    x: 51770
+    y: 50225
     width: 200
     height: 146
   nodeTitle: 
   children:
-  - {fileID: -1220208927197132595}
+  - {fileID: 2699635737788115762}
   conditions: []
   enterActions: []
   exitActions: []
@@ -223,8 +314,8 @@ MonoBehaviour:
   _uniqueId: 0387c1dd-d5d7-4364-a5a3-0d963baec7a2
   rect:
     serializedVersion: 2
-    x: 52316
-    y: 50211
+    x: 53178
+    y: 50473
     width: 200
     height: 146
   nodeTitle: 
@@ -254,6 +345,22 @@ MonoBehaviour:
   children:
   - {fileID: -5815785175104877739}
   _uniqueId: aa7e1c68-7273-400f-9fb8-17d442993132
+--- !u!114 &-344471271788252526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
+  m_Name: SetGlobalInt
+  m_EditorClassIdentifier: 
+  _title: SetGlobalInt
+  _uniqueId: fa958e88-5ef8-4a0b-8219-506f96825071
+  _value: 12
+  _variable: {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,8 +387,43 @@ MonoBehaviour:
   - {fileID: -1624653335370320075}
   - {fileID: -1220208927197132595}
   - {fileID: 7993393095272571262}
+  - {fileID: 2699635737788115762}
+  - {fileID: -8219585744598070763}
+  - {fileID: 39850474355980163}
+  - {fileID: 8133936118126486434}
+  - {fileID: 1557187266867738454}
+  - {fileID: -4860569513310953999}
   root: {fileID: 325792057492883091}
-  scrollPosition: {x: 50182.473, y: 49941.5}
+  scrollPosition: {x: 51877.473, y: 50341.5}
+--- !u!114 &39850474355980163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e6f5db12-96d1-4366-9267-8ff49ae983c0
+  rect:
+    serializedVersion: 2
+    x: 52339
+    y: 50598
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8133936118126486434}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I'm not scared! Nothing can stop me and my deliveries!
 --- !u!114 &325074693448396965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,8 +439,8 @@ MonoBehaviour:
   _uniqueId: 551b552d-3a00-4b6a-a866-5ce9c495767f
   rect:
     serializedVersion: 2
-    x: 51263
-    y: 50115
+    x: 51170
+    y: 50131
     width: 200
     height: 146
   nodeTitle: 
@@ -308,7 +450,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: No, do you have any suggestions?
 --- !u!114 &325792057492883091
@@ -326,8 +468,8 @@ MonoBehaviour:
   _uniqueId: c5b31128-4333-4020-9dc0-5eab977402f7
   rect:
     serializedVersion: 2
-    x: 50048
-    y: 50261
+    x: 49992
+    y: 50256
     width: 100
     height: 57
   nodeTitle: 
@@ -352,22 +494,66 @@ MonoBehaviour:
   children:
   - {fileID: -6540088040502767284}
   _uniqueId: 351eb2ec-10ee-461f-9a2d-ec9d9f762138
---- !u!114 &4302768046096799862
+--- !u!114 &1557187266867738454
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
-  m_Name: SetGlobalBool
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
   m_EditorClassIdentifier: 
-  _title: SetGlobalBool
-  _uniqueId: 38bc03bb-5e66-4bfb-8f0c-459ac762eb87
-  _value: 1
-  _variable: {fileID: 11400000, guid: 4b3b04383ed9fe544a55e2e23018ccf9, type: 2}
+  _uniqueId: 0eb2a8e6-2980-41c7-aa0d-bb2e8c1db41b
+  rect:
+    serializedVersion: 2
+    x: 52064
+    y: 50458
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -8347204893467075341}
+  - {fileID: -6070346066342764799}
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: Also, watch out for space hazards like asteroids or the mist.
+--- !u!114 &2699635737788115762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: b459da24-4e59-46f9-a472-bc6d634c02bb
+  rect:
+    serializedVersion: 2
+    x: 52029
+    y: 50221
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 1557187266867738454}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: A warning though, the solar system isn't all friendly. Be careful around
+    Alban, the Imperius HQ, you know how strict they can be.
 --- !u!114 &4523329890525509050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,8 +569,8 @@ MonoBehaviour:
   _uniqueId: ff1ec2cc-9163-49fa-9cec-9e261a5693d3
   rect:
     serializedVersion: 2
-    x: 51692
-    y: 50214
+    x: 51511
+    y: 50236
     width: 200
     height: 146
   nodeTitle: 
@@ -396,8 +582,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
   audio: {fileID: 0}
-  dialogue: Ok, well use WASD to fly - and make sure to take it slow at first. This
-    ain't the latest Speeder RT 300. Not even close...
+  dialogue: Ok, well use WASD/Arrows/Joysticks to fly - and make sure to take it
+    slow at first. This ain't the latest Speeder RT 300. Not even close...
 --- !u!114 &4634661711859584471
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -429,8 +615,8 @@ MonoBehaviour:
   _uniqueId: 98e1c9a3-ab8d-467b-b87f-5f0a24786820
   rect:
     serializedVersion: 2
-    x: 52638
-    y: 50215
+    x: 53424
+    y: 50474
     width: 200
     height: 146
   nodeTitle: 
@@ -438,12 +624,41 @@ MonoBehaviour:
   - {fileID: 8779665949976088074}
   conditions: []
   enterActions:
-  - {fileID: 4302768046096799862}
+  - {fileID: -344471271788252526}
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
   dialogue: 'New cargo acquired: a crate of tutorial guides.'
+--- !u!114 &8133936118126486434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 70ca6d17-267e-4b10-a2f0-7036c560950b
+  rect:
+    serializedVersion: 2
+    x: 52588
+    y: 50602
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -4860569513310953999}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: Sure, that's what my last delivery worker said.
 --- !u!114 &8589560049494169816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,8 +705,8 @@ MonoBehaviour:
   _uniqueId: 7203e39b-aa01-43b9-bca0-067708755ba3
   rect:
     serializedVersion: 2
-    x: 52939
-    y: 50218
+    x: 53711
+    y: 50468
     width: 200
     height: 146
   nodeTitle: 

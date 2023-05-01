@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Credits
   m_EditorClassIdentifier: 
   key: credits
-  defaultValue: 101
+  defaultValue: 0
