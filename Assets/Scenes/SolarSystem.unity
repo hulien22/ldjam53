@@ -12068,6 +12068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocket: {fileID: 632892449}
+  mists: {fileID: 1166767223}
 --- !u!1 &1329103835
 GameObject:
   m_ObjectHideFlags: 0
