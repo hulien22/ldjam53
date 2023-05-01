@@ -83,7 +83,7 @@ public class Rocket : MonoBehaviour
                     lastLandTime = 0;
                     Debug.Log("landed on : " + hit.collider.gameObject);
                     GlobalState.AddKnownLocation(hit.collider.gameObject);
-
+                    GlobalState.lastPlanetVisited = hit.collider.gameObject.GetComponent<Planet>();
 
                     // stick to parent.
                     // TODO still need this?
@@ -241,6 +241,24 @@ public class Rocket : MonoBehaviour
         // Vector3 com = rocketBody.centerOfMass;
         // return rocketBody.transform.position + com;
         return rocketBody.worldCenterOfMass;
+    }
+
+    public void ResetToLastPlanet()
+    {
+        Debug.Log("RESET SHIP");
+        var lastPlanet = GlobalState.lastPlanetVisited;
+
+        // move to the planet and set relative position/rotation
+        transform.SetParent(lastPlanet.transform);
+        transform.localPosition = Vector3.up * (lastPlanet.planetRadius + 2);
+        transform.localRotation = Quaternion.AngleAxis(0, Vector3.forward);
+
+        // nullify all physics
+        rocketBody.velocity = Vector2.zero;
+        rocketBody.angularVelocity = 0;
+        previousPosition = GetRocketPosition();
+        previousRelativePosition = Vector3.zero;
+        landed = false;
     }
 
 }
