@@ -43,4 +43,13 @@ public class UpgradeManager : MonoBehaviour {
         instance.rocket.sensor = true;
         instance.mists.SetActive(false);
     }
+
+    public static void SetTerrusCargo(int val)
+    {
+
+    }
+    public static void SetKantoraCargo(int val)
+    {
+
+    }
 }
