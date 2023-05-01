@@ -21,6 +21,8 @@ public class GlobalState : MonoBehaviour
     public PlanetDropdown planetDropdown;
 
     public Planet lastPlanetVisited;
+    public StatusBar healthBar;
+    public StatusBar fuelBar;
 
     [SerializeField] private GameObject terrus;
     [SerializeField] private GameObject donatus;
