@@ -8,4 +8,5 @@ public class Planet : MonoBehaviour
     public float gravityStrength;
     public float atmosphereDistance;
     public float planetRadius;
+    public Location location;
 }
