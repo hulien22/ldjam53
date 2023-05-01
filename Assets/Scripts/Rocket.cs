@@ -58,17 +58,89 @@ public class Rocket : MonoBehaviour
     private Vector3 previousRelativePosition = Vector3.zero;
     // MAX SPEED?
 
+    private Inputs inputs;
+    private float thrustInput, turnInput;
+    private float volumeTarget;
+    private AudioSource audioThrust;
+
+    private bool canReset = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        audioThrust = GetComponent<AudioSource>();
+        inputs = new Inputs();
+        inputs.gameplay.thrust.started += ctx => OnThrust(ctx.ReadValue<float>());
+        inputs.gameplay.thrust.canceled += ctx => OnThrust(0);
+        inputs.gameplay.turn.started += ctx => OnTurn(ctx.ReadValue<float>());
+        inputs.gameplay.turn.canceled += ctx => OnTurn(0);
+
         immuneToSun = false;
         rayCastLayerMask = LayerMask.GetMask("Planets");
         // GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
     }
 
+    private void OnThrust(float thrust) {
+        if (thrust == 0) {
+            thrustInput = 0;
+            if (turnInput == 0) {
+                volumeTarget = 0;
+                audioThrust.loop = false;
+            } else {
+                volumeTarget = 0.1f;
+            }
+        } else {
+            if (thrust > 0) {
+                thrustInput = 1;
+                volumeTarget = 0.2f;
+                audioThrust.volume = 0.5f;
+            } else if (thrust < 0) {
+                thrustInput = -1;
+                audioThrust.volume = 0.25f;
+                volumeTarget = 0.1f;
+            }
+            audioThrust.loop = true;
+            audioThrust.Play();
+        }
+    }
+
+    public void SetControls(bool enabled) {
+        if (enabled) {
+            canReset = true;
+            inputs.Enable();
+        } else {
+            canReset = false;
+            inputs.Disable();
+        }
+    }
+
+    private void OnTurn(float turn) {
+        if (thrustInput == 0) {
+            if (turn == 0) {
+                volumeTarget = 0;
+                audioThrust.loop = false;
+            } else {
+                audioThrust.volume = 0.25f;
+                volumeTarget = 0.1f;
+                audioThrust.loop = true;
+                audioThrust.Play();
+            }
+        }
+        if (turn == 0)
+            turnInput = 0;
+        else if (turn > 0) 
+            turnInput = 1;
+        else 
+            turnInput = -1;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        if (audioThrust.volume > volumeTarget) {
+            audioThrust.volume -= 0.02f;
+        }
         if (reset)
         {
             rocketBody.velocity = Vector2.zero;
@@ -95,7 +167,7 @@ public class Rocket : MonoBehaviour
         }
         // TODO check if dead.
 
-        float thrustInput = thrust.action.ReadValue<float>();
+        //float thrustInput = thrust.action.ReadValue<float>();
 
         // Check landing
         Vector2 rayCastDir = -Vector2.up;
@@ -188,7 +260,7 @@ public class Rocket : MonoBehaviour
 
     private void ApplyTorque()
     {
-        float turnInput = turn.action.ReadValue<float>();
+        //float turnInput = turn.action.ReadValue<float>();
         if (Mathf.Abs(turnInput) > 0.1)
         {
             rocketBody.angularDrag = 0;
@@ -305,6 +377,7 @@ public class Rocket : MonoBehaviour
 
     public void ResetToLastPlanet()
     {
+        if (!canReset) return;
         Debug.Log("RESET SHIP");
         var lastPlanet = GlobalState.instance.lastPlanetVisited;
 
