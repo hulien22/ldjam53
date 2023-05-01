@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8703531736811600527
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1342d7792ba90aa4a8fb756ae5f01d84, type: 3}
+  m_Name: AcquireSpecialCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireSpecialCargoAction
+  _uniqueId: f24b5ab1-d326-4033-b833-82fd656f1f71
+  <Target>k__BackingField: 6
+  <Name>k__BackingField: Data Log
+--- !u!114 &-7602420586871408818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 9917b58d-0301-4b95-bf87-e575942936f6
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 56
+  nodeTitle: 
+  children:
+  - {fileID: 1660672635720439586}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &-5600778980789696726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 1b922423-301a-41a9-b8e6-aadf015c8e10
+  _variable: {fileID: 11400000, guid: a5bc6ef9643f24445b7c6378b164674b, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &-4862252219686087302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 84409316-ba4f-4a85-8f74-a055f3ce5a83
+  _variable: {fileID: 11400000, guid: 0b3864dfaea9fe84aa2d4464af0eec0b, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: ImperiusShipwreck
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -7602420586871408818}
+  - {fileID: 1660672635720439586}
+  root: {fileID: -7602420586871408818}
+  scrollPosition: {x: 49651, y: 49758.5}
+--- !u!114 &891466546281999499
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: abecf10c-95c5-44a8-8748-e67d0876d1cc
+  _value: 1
+  _variable: {fileID: 11400000, guid: a5bc6ef9643f24445b7c6378b164674b, type: 2}
+--- !u!114 &1660672635720439586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 61af8b8b-4d57-4acc-8f35-3db32b5b6410
+  rect:
+    serializedVersion: 2
+    x: 50215.668
+    y: 50165.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 2030181630977588710}
+  - {fileID: -5600778980789696726}
+  - {fileID: -4862252219686087302}
+  enterActions: []
+  exitActions:
+  - {fileID: -8703531736811600527}
+  - {fileID: 891466546281999499}
+  - {fileID: 6815697033620994969}
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Acquired Data log (Player note: This can be delivered to the Imperious
+    on Alban or Scientist on Haldor'
+--- !u!114 &2030181630977588710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 2d2d0781-8a45-4783-b7f8-33a8902939fe
+  _variable: {fileID: 11400000, guid: ebf2740de2aa00c43a80820f62a09335, type: 2}
+  _comparison: 0
+  _value: 1
+--- !u!114 &6815697033620994969
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 4282694d-683c-4c73-af7e-d0a39ef2bf0c
+  _value: 1
+  _variable: {fileID: 11400000, guid: de60521105b0faa499464d6436b4cb50, type: 2}

@@ -28,8 +28,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Miram 5. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
+  dialogue: 'Arrived at Miram 5. The moon of Haldor for science. Temp: 289 K. Affiliation:
+    Rebel.'
 --- !u!114 &-8239772032812976618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: -8356145000875689526}
@@ -71,6 +71,71 @@ MonoBehaviour:
   children:
   - {fileID: 8661207046738344222}
   _uniqueId: 6b760da7-7d73-4b5d-bb10-4d06c86fe35e
+--- !u!114 &-6795080519148341067
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 1d4a16a5-dc5b-472a-9f6f-e740fc109f99
+  _variable: {fileID: 11400000, guid: b2017cb4a7f07c043908a2dc528fcc9f, type: 2}
+  _comparison: 0
+  _value: 1
+--- !u!114 &-6695176651398446794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: time to hit the road
+  children:
+  - {fileID: 8666536435186752334}
+  _uniqueId: 85bfa3b6-7808-4cf3-a97f-a8b367ff3498
+--- !u!114 &-6540040692629233582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 54dc02cd-f6f5-4524-85e3-12a894959621
+  _value: 1
+  _variable: {fileID: 11400000, guid: 10690f5b26aefd94f99a542b863bc2c2, type: 2}
+--- !u!114 &-4988596322181362431
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 975a5fd6-54c9-4b10-a306-ccef6856068f
+  _value: 0
+  _variable: {fileID: 11400000, guid: b2017cb4a7f07c043908a2dc528fcc9f, type: 2}
 --- !u!114 &-4649386000947853029
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,6 +151,37 @@ MonoBehaviour:
   text: Nevermind...
   children: []
   _uniqueId: f9e96482-6b0e-43d5-ae80-5a065e63eb6d
+--- !u!114 &-3817424840006306615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: d06ad5c7-0f2b-43a7-b63c-650a9c3bf2e9
+  rect:
+    serializedVersion: 2
+    x: 50975
+    y: 49975
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -6695176651398446794}
+  - {fileID: -682307958723934247}
+  actor: {fileID: 11400000, guid: f6201060d8aa0224aa4589b31aa9a1b1, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'We have discovered an old artifact, a part of ancient history for this
+    solar system.  I need you to safely deliver this to the research lab on Haldor. '
 --- !u!114 &-3470781767344879171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,8 +197,8 @@ MonoBehaviour:
   _uniqueId: d9d972d1-7c41-4e68-98e8-c4281dd29be7
   rect:
     serializedVersion: 2
-    x: 50711
-    y: 50163
+    x: 50697
+    y: 50250
     width: 200
     height: 226
   nodeTitle: Hub
@@ -113,10 +209,108 @@ MonoBehaviour:
   choices:
   - {fileID: 2653131173817825293}
   - {fileID: -6885410146155698473}
+  - {fileID: -2743994211095591257}
   - {fileID: -4649386000947853029}
   actor: {fileID: 11400000, guid: f6201060d8aa0224aa4589b31aa9a1b1, type: 2}
   audio: {fileID: 0}
   dialogue: Welcome to Miram 5.
+--- !u!114 &-2940944030622480659
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Count on me!
+  children:
+  - {fileID: 8034605845481067334}
+  _uniqueId: 1b8fa73b-0e1a-4e7a-aeba-6a6b1afa0533
+--- !u!114 &-2743994211095591257
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I have a special delivery
+  children:
+  - {fileID: -282641626701567345}
+  _uniqueId: 21ad0ad7-b318-45fe-a247-1c139653159a
+--- !u!114 &-682307958723934247
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Inspect the Artifact
+  children:
+  - {fileID: 2003531001719235317}
+  _uniqueId: 3878fd32-c7f4-4b70-bc23-fb992b95e03c
+--- !u!114 &-396622422562210581
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I have other deliveries first
+  children:
+  - {fileID: -3470781767344879171}
+  _uniqueId: b7c02e85-ad4c-4a0c-b198-ec24b64ea60e
+--- !u!114 &-282641626701567345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 99807cc8-d0dd-4a6a-a461-ac58fc61a616
+  rect:
+    serializedVersion: 2
+    x: 50508
+    y: 49935
+    width: 200
+    height: 206
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: -6795080519148341067}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -2940944030622480659}
+  - {fileID: 4971905732707517533}
+  - {fileID: -396622422562210581}
+  actor: {fileID: 11400000, guid: f6201060d8aa0224aa4589b31aa9a1b1, type: 2}
+  audio: {fileID: 0}
+  dialogue: Thank goodness you arrive, I need your help. Terry assured me he sent
+    one of his best
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,8 +329,44 @@ MonoBehaviour:
   - {fileID: -3470781767344879171}
   - {fileID: 5489878087231230224}
   - {fileID: 8661207046738344222}
+  - {fileID: -282641626701567345}
+  - {fileID: 8034605845481067334}
+  - {fileID: 6728068601502461910}
+  - {fileID: -3817424840006306615}
+  - {fileID: 2003531001719235317}
+  - {fileID: 8666536435186752334}
   root: {fileID: -8239772032812976618}
-  scrollPosition: {x: 50392.5, y: 49998.5}
+  scrollPosition: {x: 50351.324, y: 49699.5}
+--- !u!114 &2003531001719235317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: edff214e-cef9-4a3f-a8ff-268a2e54fc72
+  rect:
+    serializedVersion: 2
+    x: 51210
+    y: 49967
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8666536435186752334}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: f6201060d8aa0224aa4589b31aa9a1b1, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'The Artifact text translates to: A power stirs at the centered fiery
+    heart of brilliance!'
 --- !u!114 &2653131173817825293
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,6 +383,54 @@ MonoBehaviour:
   children:
   - {fileID: 5489878087231230224}
   _uniqueId: caffb487-5058-4516-a200-a5b5893466ba
+--- !u!114 &3080841032241138829
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1342d7792ba90aa4a8fb756ae5f01d84, type: 3}
+  m_Name: AcquireSpecialCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireSpecialCargoAction
+  _uniqueId: 75d387ec-8795-4296-90a1-7abda29db68c
+  <Target>k__BackingField: 6
+  <Name>k__BackingField: Ancient Artifact
+--- !u!114 &3355273809335500572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: ff410969-3812-40ce-a896-06aafe8d7745
+  _value: 1
+  _variable: {fileID: 11400000, guid: ca7a03b293a43504b974296d247f6e41, type: 2}
+--- !u!114 &4787632595303855868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 797db51d-3f23-4b5a-b7f6-5ea033aba114
+  _value: 1
+  _variable: {fileID: 11400000, guid: 60c73b90a2f53fc4888ab42e175fd3c2, type: 2}
 --- !u!114 &4921204539794180105
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,6 +456,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
   - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+--- !u!114 &4971905732707517533
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: This is my first day on the job
+  children:
+  - {fileID: 6728068601502461910}
+  _uniqueId: 4e5c6250-c1cb-4694-a724-89aee1c4331e
 --- !u!114 &5489878087231230224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,8 +487,8 @@ MonoBehaviour:
   _uniqueId: 58f9e627-f68f-4dbc-bcc5-edf62117cd9f
   rect:
     serializedVersion: 2
-    x: 51087
-    y: 50160
+    x: 51129
+    y: 50172
     width: 200
     height: 58
   nodeTitle: Side Job
@@ -204,6 +498,78 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+--- !u!114 &6465038379575436189
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674c2fde10b1e8a49ac3d9f9cf04f8f8, type: 3}
+  m_Name: RemoveSpecialCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveSpecialCargoAction
+  _uniqueId: 902c08a4-f799-44ff-b08c-d2e319d1627a
+--- !u!114 &6728068601502461910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: d6c393b5-46b8-4fb3-a2d6-debf2badd14b
+  rect:
+    serializedVersion: 2
+    x: 50739
+    y: 50039
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -3817424840006306615}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: This is my first day on the job
+--- !u!114 &8034605845481067334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4cd86720-0afa-42c1-bc59-24fee75772d4
+  rect:
+    serializedVersion: 2
+    x: 50734
+    y: 49878
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -3817424840006306615}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: You can count on me!
 --- !u!114 &8661207046738344222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,8 +585,8 @@ MonoBehaviour:
   _uniqueId: ab4feb4e-921b-4dc8-895e-3b58f5c78d20
   rect:
     serializedVersion: 2
-    x: 50722
-    y: 50476
+    x: 50738
+    y: 50527
     width: 200
     height: 58
   nodeTitle: Side Delivery
@@ -231,3 +597,34 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   dialogueGraph: {fileID: 11400000, guid: 9432695ee525d524fb31a0ac26b72b4e, type: 2}
+--- !u!114 &8666536435186752334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 72e9f4b6-b6e9-4821-a696-f1fd36c3636e
+  rect:
+    serializedVersion: 2
+    x: 50949.668
+    y: 50162.668
+    width: 100
+    height: 56
+  nodeTitle: 
+  children:
+  - {fileID: -3470781767344879171}
+  conditions: []
+  enterActions:
+  - {fileID: 6465038379575436189}
+  - {fileID: -4988596322181362431}
+  exitActions:
+  - {fileID: 4787632595303855868}
+  - {fileID: 3080841032241138829}
+  - {fileID: -6540040692629233582}
+  - {fileID: 3355273809335500572}

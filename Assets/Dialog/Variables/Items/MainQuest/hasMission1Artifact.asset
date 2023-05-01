@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 604a6ace6b46473fa9efde504ee00623, type: 3}
-  m_Name: Computer
+  m_Script: {fileID: 11500000, guid: eac2c05eace174dfbbc0454793ac4e1b, type: 3}
+  m_Name: hasMission1Artifact
   m_EditorClassIdentifier: 
-  _displayName: Ship Navi 6000
-  _portrait: {fileID: 21300000, guid: 2c1e15007c5c76d4091e97065c04a74b, type: 3}
+  key: hasMission1Artifact
+  defaultValue: 0
