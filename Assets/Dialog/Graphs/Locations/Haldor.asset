@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: IsGlobalInt
   _uniqueId: edfaa5c9-6304-4515-b7bd-7d5d574a041c
-  _variable: {fileID: 0}
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 5
   _value: 20
 --- !u!114 &-6435393856298316192
@@ -155,7 +155,7 @@ MonoBehaviour:
   children:
   - {fileID: -8851266010724654708}
   _uniqueId: 5049a34c-7191-458b-8757-a4364d37e78f
---- !u!114 &-6364869694669451212
+--- !u!114 &-5820991639489031961
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,13 +164,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
   m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 26cfcedd-6c5b-4039-8dcd-260180a8958f
-  _value: 1
+  _title: IsGlobalInt
+  _uniqueId: 06670d6b-32ad-415f-9efc-ef04a71237f7
   _variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  _comparison: 0
+  _value: 0
 --- !u!114 &-5693236506516852730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: IsGlobalInt
   _uniqueId: 50d2d379-2072-4c2b-a13a-117f33fb5fd0
-  _variable: {fileID: 0}
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 5
   _value: 50
 --- !u!114 &-5534665457925398196
@@ -218,6 +219,23 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: 'Arrived at Haldor. You have asked me to label this as ''Home''. Estimated
     temperature: 289 K. Affiliation: neutral.'
+--- !u!114 &-5357021151023684854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: a64a5ae4-70fa-4303-9d36-45c055f10d22
+  _variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  _comparison: 0
+  _value: 1
 --- !u!114 &-5168416536372267929
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -234,22 +252,6 @@ MonoBehaviour:
   children:
   - {fileID: -2287450257587835818}
   _uniqueId: fdefd167-4acf-43eb-ae0b-48dc641c0540
---- !u!114 &-4942557807189458076
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 358bdb71-44e3-405d-bc8a-96a130ab10a9
-  _value: 2
-  _variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
 --- !u!114 &-4774852323735576257
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -264,7 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: IsGlobalInt
   _uniqueId: 7258ccc9-2137-4445-915c-aaccd959246e
-  _variable: {fileID: 0}
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 5
   _value: 30
 --- !u!114 &-4295135510005114850
@@ -284,6 +286,22 @@ MonoBehaviour:
   - {fileID: -7757461207569435308}
   - {fileID: -970198653689605016}
   _uniqueId: b0b1ddd4-7c92-4242-b2d3-87dca86643bd
+--- !u!114 &-3843079175058427562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7d30ffb2ae1cf47979f0577ffdd230, type: 3}
+  m_Name: UpgradeFuelAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeFuelAction
+  _uniqueId: 9ad17191-21f7-4470-ae89-d357e750c183
+  variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  value: 3
 --- !u!114 &-3158922907194438735
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,7 +365,8 @@ MonoBehaviour:
     height: 186
   nodeTitle: 
   children: []
-  conditions: []
+  conditions:
+  - {fileID: -5820991639489031961}
   enterActions: []
   exitActions: []
   choices:
@@ -417,7 +436,7 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: No, thanks.
---- !u!114 &-1398572361497760590
+--- !u!114 &-1815391960380363223
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,13 +445,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
+  m_Script: {fileID: 11500000, guid: fd7d30ffb2ae1cf47979f0577ffdd230, type: 3}
+  m_Name: UpgradeFuelAction
   m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 5c05f60e-0d54-4a59-ab4d-bb9a4d8ecf2f
-  _value: 3
-  _variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  _title: UpgradeFuelAction
+  _uniqueId: 4a2ae70a-4f52-4800-af4e-5a4ef629fc3f
+  variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  value: 1
 --- !u!114 &-1028297803881799552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -520,7 +539,7 @@ MonoBehaviour:
   - {fileID: 9178632116765043648}
   - {fileID: 6862801887806424303}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 51425.5, y: 50297.5}
+  scrollPosition: {x: 51356.5, y: 50260.5}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,13 +562,31 @@ MonoBehaviour:
   nodeTitle: 
   children:
   - {fileID: 1431682803629714306}
-  conditions: []
+  conditions:
+  - {fileID: 101947119138286948}
   enterActions: []
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: fda8cbe283602bc4d8a2b9ba1a38eb78, type: 2}
   audio: {fileID: 0}
   dialogue: You already have the biggest fuel tank I sell.
+--- !u!114 &101947119138286948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 6060c274-bd37-4de8-ab13-5a6c3d9e9444
+  _variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  _comparison: 5
+  _value: 3
 --- !u!114 &510096042608268938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,7 +668,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: 5150793582390426614}
-  - {fileID: -4942557807189458076}
+  - {fileID: 8986721397943952338}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -703,7 +740,8 @@ MonoBehaviour:
     height: 186
   nodeTitle: 
   children: []
-  conditions: []
+  conditions:
+  - {fileID: 5649055004222857444}
   enterActions: []
   exitActions: []
   choices:
@@ -820,6 +858,23 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 2
   _value: 50
+--- !u!114 &5649055004222857444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 03484236-d046-4a09-a744-d961058d8c44
+  _variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  _comparison: 0
+  _value: 2
 --- !u!114 &6862801887806424303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,7 +930,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -8027263305238254300}
-  - {fileID: -6364869694669451212}
+  - {fileID: -1815391960380363223}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -895,17 +950,18 @@ MonoBehaviour:
   _uniqueId: d806ceb0-f214-4022-9697-4d4262d27064
   rect:
     serializedVersion: 2
-    x: 51983
-    y: 50402
+    x: 52042
+    y: 50427
     width: 200
     height: 146
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: 1431682803629714306}
   conditions: []
   enterActions: []
   exitActions:
   - {fileID: 7798462365719443697}
-  - {fileID: -1398572361497760590}
+  - {fileID: -3843079175058427562}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -1021,7 +1077,8 @@ MonoBehaviour:
     height: 186
   nodeTitle: 
   children: []
-  conditions: []
+  conditions:
+  - {fileID: -5357021151023684854}
   enterActions: []
   exitActions: []
   choices:
@@ -1030,6 +1087,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: fda8cbe283602bc4d8a2b9ba1a38eb78, type: 2}
   audio: {fileID: 0}
   dialogue: I can upgrade your fuel capacity for 30 credits.
+--- !u!114 &8986721397943952338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7d30ffb2ae1cf47979f0577ffdd230, type: 3}
+  m_Name: UpgradeFuelAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeFuelAction
+  _uniqueId: f8583ee8-6f77-4ccb-8c5e-d02a04d58aa2
+  variable: {fileID: 11400000, guid: 2ea1043256cffde4385952b231dfbdb2, type: 2}
+  value: 2
 --- !u!114 &9178632116765043648
 MonoBehaviour:
   m_ObjectHideFlags: 0
