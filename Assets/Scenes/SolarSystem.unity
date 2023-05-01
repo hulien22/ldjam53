@@ -8536,13 +8536,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5517443eb6b142b3e30cc8dfe8c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  thrust: {fileID: 0}
-=======
   source: {fileID: 1175727109}
   background: {fileID: 1175727112}
   backgroundVolume: 0.5
->>>>>>> Stashed changes
 --- !u!114 &1175727111
 MonoBehaviour:
   m_ObjectHideFlags: 0
