@@ -383,8 +383,8 @@ MonoBehaviour:
   _uniqueId: a72a0533-4f56-46a3-9e27-f519e4a0851b
   rect:
     serializedVersion: 2
-    x: 51675
-    y: 49915
+    x: 51661
+    y: 49903
     width: 100
     height: 57
   nodeTitle: 
@@ -452,8 +452,8 @@ MonoBehaviour:
   _uniqueId: 35cbde59-cfc9-4fe5-b9d2-33cdd8a2b553
   rect:
     serializedVersion: 2
-    x: 50156
-    y: 50514
+    x: 50315
+    y: 50571
     width: 200
     height: 58
   nodeTitle: 
@@ -512,7 +512,7 @@ MonoBehaviour:
   - {fileID: -1221359623688907011}
   - {fileID: 3721123120546049034}
   root: {fileID: 426936237664981933}
-  scrollPosition: {x: 50053.74, y: 49894}
+  scrollPosition: {x: 51335.74, y: 49818}
 --- !u!114 &373158185418196577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,8 +612,8 @@ MonoBehaviour:
   _uniqueId: f1937fd0-ddc0-4791-a967-64bfd733c095
   rect:
     serializedVersion: 2
-    x: 50453
-    y: 50472
+    x: 50708
+    y: 50556
     width: 200
     height: 146
   nodeTitle: 

@@ -1,0 +1,482 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8882468678984776102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 8703e010-3515-4140-ab61-50e959dbe77d
+  rect:
+    serializedVersion: 2
+    x: 50390
+    y: 49893
+    width: 200
+    height: 146
+  nodeTitle: Easy
+  children:
+  - {fileID: -2373607221273400919}
+  conditions: []
+  enterActions:
+  - {fileID: -6883321207641650197}
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I'll take the job to Lunas.
+--- !u!114 &-7412957031997298071
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Delivery to Lunas.
+  children:
+  - {fileID: -8882468678984776102}
+  _uniqueId: 5880aa9c-e030-408d-916b-de8f9ab3682d
+--- !u!114 &-6966569098371307082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fa26e91bb8cc947837589e5b462b9c, type: 3}
+  m_Name: CanTakeJobCondition
+  m_EditorClassIdentifier: 
+  _title: CanTakeJobCondition
+  _uniqueId: 61a04dfc-9d23-4113-befc-fe4bd693ccef
+  canTake: 1
+--- !u!114 &-6883321207641650197
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a669fdb38bf54c8ca5fcbb68523ec, type: 3}
+  m_Name: AcquireCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireCargoAction
+  _uniqueId: 5626383c-77e3-494f-9b94-84d5acb9a7ea
+  <Target>k__BackingField: 12
+--- !u!114 &-3410151554461950381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c6e50923-76bf-4957-a9dc-9afc105a3944
+  rect:
+    serializedVersion: 2
+    x: 50084
+    y: 50082
+    width: 200
+    height: 206
+  nodeTitle: Jobs
+  children: []
+  conditions:
+  - {fileID: -6966569098371307082}
+  - {fileID: 6003116754560903415}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -7412957031997298071}
+  - {fileID: -205605743336952793}
+  - {fileID: 2805725690834194877}
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: There is an easier delivery to Lunas for 5 credits, a standard job to
+    Erabus 3 for 10, and a harder job to Taldoris for 15.
+--- !u!114 &-2393947445396022785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: da3f5038-06bc-43cf-bbd3-49c5eb3b5a00
+  rect:
+    serializedVersion: 2
+    x: 49722
+    y: 50067
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -2346271715676048395}
+  - {fileID: 7934914419066182361}
+  - {fileID: -3410151554461950381}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  audio: {fileID: 0}
+  dialogue: I need some work. Do you have any deliveries for me to run?
+--- !u!114 &-2373607221273400919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: b14a4983-2caf-494c-b6a8-5a3031a69d9e
+  rect:
+    serializedVersion: 2
+    x: 50715
+    y: 50046
+    width: 200
+    height: 146
+  nodeTitle: Acquired
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'New cargo acquired: crate of lumber from Terrus.'
+--- !u!114 &-2346271715676048395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: bc6feeeb-fc7b-4600-9486-faca6c326a9d
+  rect:
+    serializedVersion: 2
+    x: 50086
+    y: 49667
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: -106874035559830914}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  audio: {fileID: 0}
+  dialogue: You don't have enough cargo space.
+--- !u!114 &-1082567340561665149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: ca2c005b-e83e-4804-b9b0-b0e520d14914
+  rect:
+    serializedVersion: 2
+    x: 49556
+    y: 50133
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -2393947445396022785}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &-205605743336952793
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Delivery to Erabus 3.
+  children:
+  - {fileID: 9171445805501957287}
+  _uniqueId: 8a5b68e9-dd29-4eb4-b9ca-e9a5fc811230
+--- !u!114 &-106874035559830914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb083d19d85ffb44ab5fdb3a004b4fb, type: 3}
+  m_Name: CargoCapacityCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCapacityCondition
+  _uniqueId: 1fb2484e-b1da-43e0-a0b0-901482296c76
+  cargoA: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
+  cargoB: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  hasCapacity: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: SideJob
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -1082567340561665149}
+  - {fileID: -3410151554461950381}
+  - {fileID: -8882468678984776102}
+  - {fileID: 9171445805501957287}
+  - {fileID: 6250415625355162646}
+  - {fileID: 7934914419066182361}
+  - {fileID: -2346271715676048395}
+  - {fileID: -2373607221273400919}
+  - {fileID: -2393947445396022785}
+  root: {fileID: -1082567340561665149}
+  scrollPosition: {x: 49493.5, y: 49629}
+--- !u!114 &2805725690834194877
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Delivery to Taldoris.
+  children:
+  - {fileID: 6250415625355162646}
+  _uniqueId: d98f1798-572e-40d2-b912-370ffd34d92b
+--- !u!114 &3231976392338819531
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a669fdb38bf54c8ca5fcbb68523ec, type: 3}
+  m_Name: AcquireCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireCargoAction
+  _uniqueId: 9cadd221-de62-41b7-bd99-016e172558d7
+  <Target>k__BackingField: 14
+--- !u!114 &3849468994490267768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a669fdb38bf54c8ca5fcbb68523ec, type: 3}
+  m_Name: AcquireCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireCargoAction
+  _uniqueId: 4b7b4fd4-5a92-4da8-840f-02aade708220
+  <Target>k__BackingField: 0
+--- !u!114 &4559017989601301980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88fa26e91bb8cc947837589e5b462b9c, type: 3}
+  m_Name: CanTakeJobCondition
+  m_EditorClassIdentifier: 
+  _title: CanTakeJobCondition
+  _uniqueId: 31f8e64c-787d-4769-aa0f-c0132bf4e4e6
+  canTake: 0
+--- !u!114 &5341216699114843037
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a669fdb38bf54c8ca5fcbb68523ec, type: 3}
+  m_Name: AcquireCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireCargoAction
+  _uniqueId: 72139c08-d31d-4477-b1d3-2e6dcd524da0
+  <Target>k__BackingField: 7
+--- !u!114 &6003116754560903415
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb083d19d85ffb44ab5fdb3a004b4fb, type: 3}
+  m_Name: CargoCapacityCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCapacityCondition
+  _uniqueId: b823ca09-7738-4e0e-984c-7f60a57baa16
+  cargoA: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
+  cargoB: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  hasCapacity: 1
+--- !u!114 &6250415625355162646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 91246295-5b4a-4aaf-894c-d630eaee32dd
+  rect:
+    serializedVersion: 2
+    x: 50395
+    y: 50246
+    width: 200
+    height: 146
+  nodeTitle: Hard
+  children:
+  - {fileID: -2373607221273400919}
+  conditions: []
+  enterActions:
+  - {fileID: 3231976392338819531}
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I'll take the job to Taldoris.
+--- !u!114 &7764102638528565700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb083d19d85ffb44ab5fdb3a004b4fb, type: 3}
+  m_Name: CargoCapacityCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCapacityCondition
+  _uniqueId: f91f32ac-2ffb-48f7-88dd-da088940712d
+  cargoA: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
+  cargoB: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  hasCapacity: 1
+--- !u!114 &7934914419066182361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 234a28ea-4f1c-48b5-8ca0-699255150326
+  rect:
+    serializedVersion: 2
+    x: 50090
+    y: 49870
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 4559017989601301980}
+  - {fileID: 7764102638528565700}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: Complete the job I just gave you first.
+--- !u!114 &9171445805501957287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: b7b22b45-cb30-439e-98b2-375041134bf2
+  rect:
+    serializedVersion: 2
+    x: 50390
+    y: 50075
+    width: 200
+    height: 146
+  nodeTitle: Medium
+  children:
+  - {fileID: -2373607221273400919}
+  conditions: []
+  enterActions:
+  - {fileID: 5341216699114843037}
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I'll take the job to Erabus 3.

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DebugTriggerPlanet : MonoBehaviour {
     [SerializeField]
-    private int planet;
+    private Location planet;
 
     public void OnClick() {
         DialogManager.Instance.StartDialog(planet);

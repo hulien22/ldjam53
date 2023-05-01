@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 58736782}
   - component: {fileID: 58736781}
   - component: {fileID: 58736784}
+  - component: {fileID: 58736785}
   m_Layer: 5
   m_Name: Kantora
   m_TagString: Untagged
@@ -378,6 +379,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 3
+--- !u!114 &58736785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58736779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000020000000500000004000000
+  medium: 06000000070000000e000000
+  hard: 08000000090000000a0000000c0000000d000000
+  <SidequestName>k__BackingField: Kantora
+  <SidequestItemName>k__BackingField: bag of candy
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: 7bf4dea2b0ace304f929e7ee49e7297b, type: 2}
 --- !u!1 &193918938
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +667,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229704163}
+  m_CullTransparentMesh: 1
+--- !u!1 &258123864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258123865}
+  - component: {fileID: 258123867}
+  - component: {fileID: 258123866}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &258123865
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258123864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1366698990}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &258123866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258123864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Iris 3
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &258123867
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258123864}
   m_CullTransparentMesh: 1
 --- !u!1 &293208109
 GameObject:
@@ -931,6 +1086,7 @@ GameObject:
   - component: {fileID: 322591749}
   - component: {fileID: 322591748}
   - component: {fileID: 322591751}
+  - component: {fileID: 322591752}
   m_Layer: 5
   m_Name: Scrapton
   m_TagString: Untagged
@@ -1066,6 +1222,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 5
+--- !u!114 &322591752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322591746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000020000000300000004000000
+  medium: 06000000070000000800000009000000
+  hard: 0c0000000d0000000e0000000a000000
+  <SidequestName>k__BackingField: Scrapton
+  <SidequestItemName>k__BackingField: scrap metal
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: d1149cc5eee451f46adf3133c43a6fae, type: 2}
 --- !u!1 &362730879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1375,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362730879}
+  m_CullTransparentMesh: 1
+--- !u!1 &366584158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366584159}
+  - component: {fileID: 366584161}
+  - component: {fileID: 366584160}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &366584159
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366584158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1478720422}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &366584160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366584158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Iris 2
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &366584161
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366584158}
   m_CullTransparentMesh: 1
 --- !u!1 &432969964
 GameObject:
@@ -1348,7 +1658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 14
+  planet: 16
 --- !u!1 &439426120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,6 +2345,9 @@ GameObject:
   m_Component:
   - component: {fileID: 598643467}
   - component: {fileID: 598643465}
+  - component: {fileID: 598643468}
+  - component: {fileID: 598643469}
+  - component: {fileID: 598643470}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -2064,6 +2377,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a5b08c1fc1a099e438eb4459a0694277, type: 2}
   - {fileID: 11400000, guid: f999211714b256a4793cf16bfc2e2c4b, type: 2}
   - {fileID: 11400000, guid: 1f7b0794d20c7004ca734fa4b0029a8b, type: 2}
+  - {fileID: 11400000, guid: bc0fec6ca6c8d4049af1fcb526051971, type: 2}
+  - {fileID: 11400000, guid: f7436dba524d1b544bb2b33c6eac94e0, type: 2}
   - {fileID: 11400000, guid: 904a46711191ece44a28c118dd22b783, type: 2}
   - {fileID: 11400000, guid: a11d4f79b4951f643b978f736ab83410, type: 2}
   - {fileID: 11400000, guid: 90a2567ceedeaf04a9b02ce6f051f625, type: 2}
@@ -2080,6 +2395,12 @@ MonoBehaviour:
   textLabel: {fileID: 2068481035}
   choiceList: {fileID: 55137971}
   choicePrefab: {fileID: 742293504904925583, guid: 82b4b17dcea2c8d4384b7e75ae0fb029, type: 3}
+  acquiredItem: {fileID: -2373607221273400919, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+  jobBoard: {fileID: -3410151554461950381, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+  alreadyHasJob: {fileID: 7934914419066182361, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+  easyJob: {fileID: -8882468678984776102, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+  mediumJob: {fileID: 9171445805501957287, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+  hardJob: {fileID: 6250415625355162646, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
 --- !u!4 &598643467
 Transform:
   m_ObjectHideFlags: 0
@@ -2095,6 +2416,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598643468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598643464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffaa49d2b6592843882ce42a774139c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCapacity: 0
+  items:
+  - {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
+  - {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
+  - {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
+  - {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
+  - {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+  - {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
+  - {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
+  - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
+  - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
+  - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+  - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+--- !u!114 &598643469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598643464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52da871e102ce3b4ba129784d12fe794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 11400000, guid: 9487152045100ea42bf6eaf15df969fa, type: 2}
+--- !u!114 &598643470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598643464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ad3e1ba791c0c4aa6831761c649c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrus: {fileID: 653008217}
+  donatus: {fileID: 991597356}
+  kantora: {fileID: 58736785}
+  alban: {fileID: 1343180756}
+  scrapton: {fileID: 322591752}
+  haldor: {fileID: 1993835626}
+  erabus: {fileID: 788122088}
+  iris1: {fileID: 1852245123}
+  iris2: {fileID: 1478720427}
+  iris3: {fileID: 1366698995}
+  lunas: {fileID: 739768528}
+  miram: {fileID: 1714404099}
+  taldoris: {fileID: 1929736559}
+  easyReward: 5
+  mediumReward: 10
+  hardReward: 15
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,7 +2740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 16
+  planet: 18
 --- !u!1 &640726229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +2889,7 @@ GameObject:
   - component: {fileID: 653008214}
   - component: {fileID: 653008213}
   - component: {fileID: 653008216}
+  - component: {fileID: 653008217}
   m_Layer: 5
   m_Name: Terrus
   m_TagString: Untagged
@@ -2637,6 +3025,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 1
+--- !u!114 &653008217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653008211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 05000000040000000c000000
+  medium: 03000000020000000600000007000000
+  hard: 08000000090000000a0000000e0000000d000000
+  <SidequestName>k__BackingField: Terrus
+  <SidequestItemName>k__BackingField: crate of lumber
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
 --- !u!1 &661230893
 GameObject:
   m_ObjectHideFlags: 0
@@ -3025,6 +3432,7 @@ GameObject:
   - component: {fileID: 739768525}
   - component: {fileID: 739768524}
   - component: {fileID: 739768527}
+  - component: {fileID: 739768528}
   m_Layer: 5
   m_Name: Lunas
   m_TagString: Untagged
@@ -3159,7 +3567,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 10
+  planet: 12
+--- !u!114 &739768528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739768522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000020000000300000004000000
+  medium: 05000000060000000700000008000000
+  hard: 090000000a0000000d0000000e000000
+  <SidequestName>k__BackingField: Lunas
+  <SidequestItemName>k__BackingField: moon rock sample
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: f2c69540ef2a1b64bb887be6cde165b9, type: 2}
 --- !u!1 &773356625
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,7 +3734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 17
+  planet: 19
 --- !u!1 &788122082
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,6 +3748,7 @@ GameObject:
   - component: {fileID: 788122085}
   - component: {fileID: 788122084}
   - component: {fileID: 788122087}
+  - component: {fileID: 788122088}
   m_Layer: 5
   m_Name: Erabus
   m_TagString: Untagged
@@ -3456,6 +3884,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 7
+--- !u!114 &788122088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788122082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000020000000300000004000000
+  medium: 05000000060000000800000009000000
+  hard: 0a0000000c0000000d0000000e000000
+  <SidequestName>k__BackingField: Erabus 3
+  <SidequestItemName>k__BackingField: bus full of air
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: e7ea80dcb469f98489d0c8611dd64698, type: 2}
 --- !u!1 &836270465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,7 +4289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 18
+  planet: 20
 --- !u!1 &965142166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,7 +4348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Guildell
+  m_text: Iris 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4126,6 +4573,7 @@ GameObject:
   - component: {fileID: 991597353}
   - component: {fileID: 991597352}
   - component: {fileID: 991597355}
+  - component: {fileID: 991597356}
   m_Layer: 5
   m_Name: Donatus
   m_TagString: Untagged
@@ -4261,6 +4709,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 2
+--- !u!114 &991597356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991597350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000030000000400000007000000
+  medium: 0c000000060000000d00000005000000
+  hard: 08000000090000000a0000000e000000
+  <SidequestName>k__BackingField: Don'atus
+  <SidequestItemName>k__BackingField: box of doughnuts
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: 30d15fa47c6840e4c9d87c014d9e5c68, type: 2}
 --- !u!1 &1032454254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4301,6 +4768,8 @@ RectTransform:
   - {fileID: 1993835621}
   - {fileID: 788122083}
   - {fileID: 1852245118}
+  - {fileID: 1478720422}
+  - {fileID: 1366698990}
   - {fileID: 1606388374}
   - {fileID: 739768523}
   - {fileID: 1714404094}
@@ -4819,7 +5288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 13
+  planet: 15
 --- !u!1 &1295760650
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,6 +5570,7 @@ GameObject:
   - component: {fileID: 1343180753}
   - component: {fileID: 1343180752}
   - component: {fileID: 1343180755}
+  - component: {fileID: 1343180756}
   m_Layer: 5
   m_Name: Alban
   m_TagString: Untagged
@@ -5236,6 +5706,193 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 4
+--- !u!114 &1343180756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343180750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 010000000c0000000200000003000000
+  medium: 0500000006000000070000000d000000
+  hard: 08000000090000000a0000000e000000
+  <SidequestName>k__BackingField: Alban
+  <SidequestItemName>k__BackingField: crate of alban ore
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
+--- !u!1 &1366698989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1366698990}
+  - component: {fileID: 1366698994}
+  - component: {fileID: 1366698993}
+  - component: {fileID: 1366698992}
+  - component: {fileID: 1366698991}
+  - component: {fileID: 1366698995}
+  m_Layer: 5
+  m_Name: Iris3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1366698990
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366698989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 258123865}
+  m_Father: {fileID: 1032454255}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1366698991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366698989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: 10
+--- !u!114 &1366698992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366698989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1366698993}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1366698991}
+        m_TargetAssemblyTypeName: DebugTriggerPlanet, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1366698993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366698989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1366698994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366698989}
+  m_CullTransparentMesh: 1
+--- !u!114 &1366698995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366698989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 08000000090000000100000002000000
+  medium: 0500000004000000030000000d000000
+  hard: 0e0000000c0000000700000006000000
+  <SidequestName>k__BackingField: Iris 3
+  <SidequestItemName>k__BackingField: eye of newt
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
 --- !u!1 &1393277844
 GameObject:
   m_ObjectHideFlags: 0
@@ -5738,6 +6395,174 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 0
+--- !u!1 &1478720421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1478720422}
+  - component: {fileID: 1478720426}
+  - component: {fileID: 1478720425}
+  - component: {fileID: 1478720424}
+  - component: {fileID: 1478720423}
+  - component: {fileID: 1478720427}
+  m_Layer: 5
+  m_Name: Iris2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1478720422
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478720421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 366584159}
+  m_Father: {fileID: 1032454255}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1478720423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478720421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: 9
+--- !u!114 &1478720424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478720421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1478720425}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1478720423}
+        m_TargetAssemblyTypeName: DebugTriggerPlanet, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1478720425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478720421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1478720426
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478720421}
+  m_CullTransparentMesh: 1
+--- !u!114 &1478720427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478720421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 080000000a0000000100000002000000
+  medium: 03000000040000000500000007000000
+  hard: 060000000c0000000d0000000e000000
+  <SidequestName>k__BackingField: Iris 2
+  <SidequestItemName>k__BackingField: eye of newt
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
 --- !u!1 &1581734812
 GameObject:
   m_ObjectHideFlags: 0
@@ -6020,7 +6845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 9
+  planet: 11
 --- !u!1 &1707982250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6169,6 +6994,7 @@ GameObject:
   - component: {fileID: 1714404096}
   - component: {fileID: 1714404095}
   - component: {fileID: 1714404098}
+  - component: {fileID: 1714404099}
   m_Layer: 5
   m_Name: Miram
   m_TagString: Untagged
@@ -6303,7 +7129,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 11
+  planet: 13
+--- !u!114 &1714404099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714404093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000020000000300000004000000
+  medium: 08000000090000000a0000000c000000
+  hard: 0e000000050000000600000007000000
+  <SidequestName>k__BackingField: Miram 5
+  <SidequestItemName>k__BackingField: box of memories
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: f6201060d8aa0224aa4589b31aa9a1b1, type: 2}
 --- !u!224 &1740012132 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2612491968534299266, guid: 82b4b17dcea2c8d4384b7e75ae0fb029, type: 3}
@@ -6456,8 +7301,9 @@ GameObject:
   - component: {fileID: 1852245120}
   - component: {fileID: 1852245119}
   - component: {fileID: 1852245122}
+  - component: {fileID: 1852245123}
   m_Layer: 5
-  m_Name: Guildell
+  m_Name: Iris1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6591,6 +7437,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 8
+--- !u!114 &1852245123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852245117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 090000000a0000000d0000000e000000
+  medium: 07000000060000000500000004000000
+  hard: 0300000002000000010000000c000000
+  <SidequestName>k__BackingField: Iris 1
+  <SidequestItemName>k__BackingField: eye of newt
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
 --- !u!1 &1859506590
 GameObject:
   m_ObjectHideFlags: 0
@@ -6682,6 +7547,7 @@ GameObject:
   - component: {fileID: 1929736556}
   - component: {fileID: 1929736555}
   - component: {fileID: 1929736558}
+  - component: {fileID: 1929736559}
   m_Layer: 5
   m_Name: Taldoris
   m_TagString: Untagged
@@ -6816,7 +7682,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 12
+  planet: 14
+--- !u!114 &1929736559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929736553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000020000000300000004000000
+  medium: 05000000060000000700000008000000
+  hard: 090000000a0000000c0000000d000000
+  <SidequestName>k__BackingField: Taldoris
+  <SidequestItemName>k__BackingField: crate of tandoori chicken
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: 2457b70f554b0554d8fea640fd18f7ea, type: 2}
 --- !u!1 &1937259358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7235,6 +8120,7 @@ GameObject:
   - component: {fileID: 1993835623}
   - component: {fileID: 1993835622}
   - component: {fileID: 1993835625}
+  - component: {fileID: 1993835626}
   m_Layer: 5
   m_Name: Haldor
   m_TagString: Untagged
@@ -7370,6 +8256,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: 6
+--- !u!114 &1993835626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993835620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easy: 01000000020000000300000004000000
+  medium: 080000000a000000090000000c000000
+  hard: 0d0000000e0000000500000007000000
+  <SidequestName>k__BackingField: Haldor
+  <SidequestItemName>k__BackingField: shipment of doors
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: fda8cbe283602bc4d8a2b9ba1a38eb78, type: 2}
 --- !u!1 &2010464818
 GameObject:
   m_ObjectHideFlags: 0
@@ -7517,7 +8422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6ea7185043504887881f0f27c06a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: 15
+  planet: 17
 --- !u!1 &2068481033
 GameObject:
   m_ObjectHideFlags: 0

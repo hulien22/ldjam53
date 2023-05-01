@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20133dd9a8004ec68e82b7a342deb715, type: 3}
-  m_Name: VariableImage
+  m_Name: KeyValueGameObject
   m_EditorClassIdentifier: 
-  key: Initial Background
-  defaultValue: {fileID: 820227171884735572, guid: 02c600463c179d043896eebc7ffeb3ef, type: 3}
+  key: Cargo
+  defaultValue: {fileID: 8963427576752223022, guid: c852efefa68b94fccb5a2f140a3d458e, type: 3}

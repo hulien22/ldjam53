@@ -1,0 +1,985 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9199485515842864458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 22283ad5-c4af-4c0f-97fe-ee14cb4995cc
+  rect:
+    serializedVersion: 2
+    x: 52084
+    y: 50523
+    width: 100
+    height: 57
+  nodeTitle: End purchase
+  children:
+  - {fileID: -1209156263514723140}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &-9155677810494919406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: No.
+  children:
+  - {fileID: 8418757637556274928}
+  _uniqueId: 94edff60-80ca-4c3b-a303-4f4509fe9a43
+--- !u!114 &-8884468899227628628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 33f926da-43c3-4295-a603-3eb31c0fe700
+  rect:
+    serializedVersion: 2
+    x: 51373
+    y: 50553
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -3093848634900564745}
+  conditions:
+  - {fileID: 3874817586414305138}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yes!
+--- !u!114 &-8730950121600200913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 02a604cc-7bc7-4715-a16e-8e90141b3166
+  rect:
+    serializedVersion: 2
+    x: 50683
+    y: 50282
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5208644154231694008}
+  - {fileID: 1820384001538215940}
+  - {fileID: -7462094443589067038}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: What have you got for sale?
+--- !u!114 &-8694783067799892180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 00747fe7-48d8-461a-b53c-43a82b5cb6b9
+  rect:
+    serializedVersion: 2
+    x: 51429
+    y: 50423
+    width: 100
+    height: 57
+  nodeTitle: 2
+  children:
+  - {fileID: -1312876928974138160}
+  conditions:
+  - {fileID: -6374837394918973602}
+  enterActions: []
+  exitActions: []
+--- !u!114 &-8028487631725250355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e45707c7-0627-4fff-9cb7-dfd6193e34b9
+  rect:
+    serializedVersion: 2
+    x: 51406
+    y: 50257
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 5709921895656636213}
+  conditions:
+  - {fileID: -3204288315032808757}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yes!
+--- !u!114 &-7674841503383047891
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92e080dd085e77449af39c5a9d1a02b, type: 3}
+  m_Name: AnyCargoCondition
+  m_EditorClassIdentifier: 
+  _title: AnyCargoCondition
+  _uniqueId: 7351c3c5-dfba-47f9-9dc5-83938403ab83
+  variables:
+  - {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
+  - {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
+  - {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
+  - {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
+  - {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+  - {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
+  - {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
+  - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
+  - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
+  - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+--- !u!114 &-7462094443589067038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a2d9f0ed-8a6b-4d3b-b9ee-103ce01b8256
+  rect:
+    serializedVersion: 2
+    x: 51019
+    y: 50496
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 3930919689551687614}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 8345168913405063656}
+  - {fileID: 2050328715890287834}
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: How about another cargo upgrade? I'll sell it for 30 credits.
+--- !u!114 &-7458965502878415575
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Any deliveries for me to run?
+  children:
+  - {fileID: 6039330284374325198}
+  _uniqueId: 3da466da-e4bd-4d9f-8ac7-b5e80b4105b7
+--- !u!114 &-6720472198292762198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
+  m_Name: SetGlobalInt
+  m_EditorClassIdentifier: 
+  _title: SetGlobalInt
+  _uniqueId: c94b94df-8fdf-47d7-935c-d4da3ce7df96
+  _value: 1
+  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+--- !u!114 &-6644829669780951481
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: eee9e346-49f3-4063-a934-beee57d1672e
+  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &-6473471903986057102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
+  m_Name: SetGlobalInt
+  m_EditorClassIdentifier: 
+  _title: SetGlobalInt
+  _uniqueId: 9637f04e-2b98-468b-9e07-8c38d5f29655
+  _value: 2
+  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+--- !u!114 &-6374837394918973602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: fee0304e-e955-40ba-9ed5-c83d27cbb454
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 2
+  _value: 20
+--- !u!114 &-5208644154231694008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 2420c5d8-b163-4ada-8416-ebb25ca43260
+  rect:
+    serializedVersion: 2
+    x: 51037
+    y: 50113
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -2064685515177498745}
+  conditions:
+  - {fileID: -6644829669780951481}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: I can upgrade your cargo space. First one is on the house.
+--- !u!114 &-5066453688892747840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9835e5a31a3d9224d8de3ab1165bb3e6, type: 3}
+  m_Name: SpendCreditsAction
+  m_EditorClassIdentifier: 
+  _title: SpendCreditsAction
+  _uniqueId: 7b7085c0-453e-4c40-8504-46f3b7ef7363
+  credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  cost: 20
+--- !u!114 &-4338831190844963495
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b9f240234aa2f469502e600539584e, type: 3}
+  m_Name: ArriveAction
+  m_EditorClassIdentifier: 
+  _title: ArriveAction
+  _uniqueId: 4372ef88-8c2d-40cb-8df1-617c9b651fc2
+  location: 1
+--- !u!114 &-3918764111295074422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
+  m_Name: SetGlobalInt
+  m_EditorClassIdentifier: 
+  _title: SetGlobalInt
+  _uniqueId: a9446a13-e029-41a1-8f78-961abd81cae7
+  _value: 3
+  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+--- !u!114 &-3896468937793021525
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Nevermind...
+  children: []
+  _uniqueId: 51121055-cc3d-40d3-b393-af5201c3032c
+--- !u!114 &-3629175577117546562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Yes.
+  children:
+  - {fileID: -8028487631725250355}
+  - {fileID: -8694783067799892180}
+  _uniqueId: e6a85522-6579-45d4-9624-c599873865cc
+--- !u!114 &-3204288315032808757
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 0a9b5ed1-5377-44cd-b9ab-3d4e7c276899
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 5
+  _value: 20
+--- !u!114 &-3093848634900564745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: b13d6a6d-a1b1-4ae6-a407-d3e16eb4dd23
+  rect:
+    serializedVersion: 2
+    x: 51711
+    y: 50516
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9199485515842864458}
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -3918764111295074422}
+  - {fileID: -2748645599412160118}
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'New upgrade acquired: extra cargo bay.'
+--- !u!114 &-2748645599412160118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9835e5a31a3d9224d8de3ab1165bb3e6, type: 3}
+  m_Name: SpendCreditsAction
+  m_EditorClassIdentifier: 
+  _title: SpendCreditsAction
+  _uniqueId: 7f10fe5d-4d5e-4324-88cb-9df7855bb9a8
+  credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  cost: 30
+--- !u!114 &-2473293539905385700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: What have you got for sale?
+  children:
+  - {fileID: -8730950121600200913}
+  _uniqueId: 88449a69-d204-4c4c-968f-8bac0c5ceed2
+--- !u!114 &-2064685515177498745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 1579e598-0b22-4809-afa5-e1dd26afe798
+  rect:
+    serializedVersion: 2
+    x: 51431
+    y: 50082
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 1726325750219350460}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Thanks!
+--- !u!114 &-1312876928974138160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7a817976-9718-4978-8e94-009c41a478b5
+  rect:
+    serializedVersion: 2
+    x: 51747
+    y: 50794
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9199485515842864458}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I would, but I don't have enough credits.
+--- !u!114 &-1209156263514723140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ee140ecb-5ffc-4be9-af81-8fc54aee7658
+  rect:
+    serializedVersion: 2
+    x: 50297
+    y: 50209
+    width: 200
+    height: 226
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -7458965502878415575}
+  - {fileID: -2473293539905385700}
+  - {fileID: 2827086916112318543}
+  - {fileID: -3896468937793021525}
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 8300000, guid: 2ae9ec07ccad5d34faf70d0a2a335889, type: 3}
+  dialogue: Hey, you're back! What can I do for you?
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Terrus
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: 1961000476301625562}
+  - {fileID: -1209156263514723140}
+  - {fileID: -8730950121600200913}
+  - {fileID: 4821668009485562612}
+  - {fileID: 4886712979791175262}
+  - {fileID: 6039330284374325198}
+  - {fileID: -5208644154231694008}
+  - {fileID: -2064685515177498745}
+  - {fileID: 1726325750219350460}
+  - {fileID: -9199485515842864458}
+  - {fileID: 1820384001538215940}
+  - {fileID: -7462094443589067038}
+  - {fileID: -8028487631725250355}
+  - {fileID: 8418757637556274928}
+  - {fileID: 5709921895656636213}
+  - {fileID: -3093848634900564745}
+  - {fileID: -8884468899227628628}
+  - {fileID: -1312876928974138160}
+  - {fileID: 3397570177712051538}
+  - {fileID: -8694783067799892180}
+  root: {fileID: 1961000476301625562}
+  scrollPosition: {x: 49735, y: 50044.5}
+--- !u!114 &1726325750219350460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 1d845005-3dbc-43ab-9727-3fbe09aaac8e
+  rect:
+    serializedVersion: 2
+    x: 51719
+    y: 50100
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9199485515842864458}
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -6720472198292762198}
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'New upgrade acquired: extra cargo bay.'
+--- !u!114 &1820384001538215940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7a3af996-70c7-4752-9c82-5feb27c7a16a
+  rect:
+    serializedVersion: 2
+    x: 51033
+    y: 50274
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 8702155800337064428}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -3629175577117546562}
+  - {fileID: -9155677810494919406}
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: How about another cargo upgrade? I'll sell it for 20 credits.
+--- !u!114 &1961000476301625562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 30a9033b-9a60-4051-a333-9aa4b4ba8bbf
+  rect:
+    serializedVersion: 2
+    x: 49777
+    y: 50262
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 4821668009485562612}
+  conditions: []
+  enterActions:
+  - {fileID: -4338831190844963495}
+  exitActions: []
+--- !u!114 &2050328715890287834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: No.
+  children:
+  - {fileID: 8418757637556274928}
+  _uniqueId: b11dc31f-e20e-4810-b3de-0cf529fea4da
+--- !u!114 &2827086916112318543
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I have something for you.
+  children:
+  - {fileID: 4886712979791175262}
+  _uniqueId: 96b46a6a-8846-48e4-ad7d-6447b4f8ac57
+--- !u!114 &3397570177712051538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 4454dc88-a1a3-4e45-875d-cf083fe102a5
+  rect:
+    serializedVersion: 2
+    x: 51428
+    y: 50729
+    width: 100
+    height: 57
+  nodeTitle: 3
+  children:
+  - {fileID: -1312876928974138160}
+  conditions:
+  - {fileID: 5724858458331070577}
+  enterActions: []
+  exitActions: []
+--- !u!114 &3874817586414305138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 027b5bdd-c4f1-4fba-9491-8405f21c002a
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 5
+  _value: 30
+--- !u!114 &3930919689551687614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 4ec93fcb-8220-4ff8-ab26-67836d522ad9
+  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  _comparison: 0
+  _value: 1
+--- !u!114 &4821668009485562612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 07207017-d169-44c4-a208-d5a1870a5098
+  rect:
+    serializedVersion: 2
+    x: 49984
+    y: 50214
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -1209156263514723140}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Arrived at Terrus. You have asked me to label this as ''Home''. Estimated
+    temperature: 289 K. Affiliation: neutral.'
+--- !u!114 &4886712979791175262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
+  m_Name: Play Graph
+  m_EditorClassIdentifier: 
+  _uniqueId: 9fd80eb5-2974-42a1-9d9a-448030da6aea
+  rect:
+    serializedVersion: 2
+    x: 50320
+    y: 50514
+    width: 200
+    height: 58
+  nodeTitle: 
+  children:
+  - {fileID: -1209156263514723140}
+  conditions:
+  - {fileID: -7674841503383047891}
+  enterActions: []
+  exitActions: []
+  dialogueGraph: {fileID: 11400000, guid: 9432695ee525d524fb31a0ac26b72b4e, type: 2}
+--- !u!114 &5709921895656636213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 03bdd8c4-f92d-44a2-bb42-16a18b3332da
+  rect:
+    serializedVersion: 2
+    x: 51712
+    y: 50300
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9199485515842864458}
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -6473471903986057102}
+  - {fileID: -5066453688892747840}
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'New upgrade acquired: extra cargo bay.'
+--- !u!114 &5724858458331070577
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 9deca23d-b093-4f54-a921-fc83ad87c408
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 2
+  _value: 30
+--- !u!114 &6039330284374325198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
+  m_Name: Play Graph
+  m_EditorClassIdentifier: 
+  _uniqueId: cd05968a-226b-4e83-bc65-8016d22400ff
+  rect:
+    serializedVersion: 2
+    x: 50504
+    y: 49960
+    width: 200
+    height: 58
+  nodeTitle: 
+  children:
+  - {fileID: -1209156263514723140}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+--- !u!114 &8345168913405063656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Yes.
+  children:
+  - {fileID: -8884468899227628628}
+  - {fileID: 3397570177712051538}
+  _uniqueId: 75ee2778-d80f-45ad-8353-384d27608ea9
+--- !u!114 &8418757637556274928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 618a15e4-65a2-43be-9ff3-424e62e1de92
+  rect:
+    serializedVersion: 2
+    x: 51352
+    y: 50817
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9199485515842864458}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: No, thanks.
+--- !u!114 &8702155800337064428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: bba08b59-a49e-4296-941c-90495da29cb2
+  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  _comparison: 0
+  _value: 1

@@ -1,0 +1,23 @@
+﻿public enum Location {
+    None,
+    Terrus,
+    Donatus,
+    Kantora,
+    Alban,
+    Scrapton,
+    Haldor,
+    Erabus,
+    Iris1,
+    Iris2,
+    Iris3,
+    Sunus,
+    Lunas,
+    Miram,
+    Taldoris,
+    ShipwreckA,
+    ShipwreckB,
+    AsteroidOutpost,
+    BrokenPlanet,
+    MoonRuins,
+    MistShipwreck
+}

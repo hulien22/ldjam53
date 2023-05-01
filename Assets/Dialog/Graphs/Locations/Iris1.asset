@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9011362521297221745
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Any deliveries for me to run?
+  children:
+  - {fileID: -6973509176814718394}
+  _uniqueId: ec76b090-abad-4557-8324-00aa04969829
+--- !u!114 &-8967838353838013112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Nevermind...
+  children: []
+  _uniqueId: 2ba2ffbd-90e8-4af3-a862-e562c4ffd195
+--- !u!114 &-6973509176814718394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
+  m_Name: Play Graph
+  m_EditorClassIdentifier: 
+  _uniqueId: 47d0897e-b2b5-49e7-ad0c-459f62f40c43
+  rect:
+    serializedVersion: 2
+    x: 51023
+    y: 50115
+    width: 200
+    height: 58
+  nodeTitle: Side Job
+  children:
+  - {fileID: 3140533166944999405}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+--- !u!114 &-6448989209649522545
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I have something for you.
+  children:
+  - {fileID: 2512759162244330052}
+  _uniqueId: 7c13f089-9ff0-42f2-b6c4-73d78711a09b
+--- !u!114 &-2942315296552322276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
+  m_Name: Play Graph
+  m_EditorClassIdentifier: 
+  _uniqueId: a36b31e7-7ef3-4406-a19e-dce20e6e83a4
+  rect:
+    serializedVersion: 2
+    x: 51018
+    y: 50337
+    width: 200
+    height: 58
+  nodeTitle: 
+  children:
+  - {fileID: 3140533166944999405}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  dialogueGraph: {fileID: 11400000, guid: fd611129532d2324ca58e14aee72fb95, type: 2}
+--- !u!114 &-2363408940880289181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 64776ddb-c9ab-4ec4-9245-93f8ee741fb9
+  rect:
+    serializedVersion: 2
+    x: 50335
+    y: 50170
+    width: 200
+    height: 146
+  nodeTitle: Landing
+  children:
+  - {fileID: 3140533166944999405}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Arrived at Iris 1. You have asked me to label this as ''Home''. Estimated
+    temperature: 289 K. Affiliation: neutral.'
+--- !u!114 &-722337570447219260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: What have you got for sale?
+  children:
+  - {fileID: -2942315296552322276}
+  _uniqueId: 2d33f224-1fa9-48b2-9d31-4f1a18674a4e
+--- !u!114 &-287014969254721996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 9037590f-8e60-4fb6-b617-4fa914c680ea
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -2363408940880289181}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Iris1
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -287014969254721996}
+  - {fileID: -2363408940880289181}
+  - {fileID: 3140533166944999405}
+  - {fileID: -6973509176814718394}
+  - {fileID: 2512759162244330052}
+  - {fileID: -2942315296552322276}
+  root: {fileID: -287014969254721996}
+  scrollPosition: {x: 51574.5, y: 49963.5}
+--- !u!114 &2512759162244330052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
+  m_Name: Play Graph
+  m_EditorClassIdentifier: 
+  _uniqueId: 19c63912-2a3a-4d60-b0e0-b38e84bd8f9d
+  rect:
+    serializedVersion: 2
+    x: 50845
+    y: 50510
+    width: 200
+    height: 58
+  nodeTitle: Side Delivery
+  children:
+  - {fileID: 3140533166944999405}
+  conditions:
+  - {fileID: 4024617393623991037}
+  enterActions: []
+  exitActions: []
+  dialogueGraph: {fileID: 11400000, guid: 9432695ee525d524fb31a0ac26b72b4e, type: 2}
+--- !u!114 &3140533166944999405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 27813256-688b-4ea6-950e-134714579f71
+  rect:
+    serializedVersion: 2
+    x: 50649
+    y: 50167
+    width: 200
+    height: 226
+  nodeTitle: Hub
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -9011362521297221745}
+  - {fileID: -722337570447219260}
+  - {fileID: -6448989209649522545}
+  - {fileID: -8967838353838013112}
+  actor: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
+  audio: {fileID: 0}
+  dialogue: Welcome to Iris 1.
+--- !u!114 &4024617393623991037
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92e080dd085e77449af39c5a9d1a02b, type: 3}
+  m_Name: AnyCargoCondition
+  m_EditorClassIdentifier: 
+  _title: AnyCargoCondition
+  _uniqueId: 58ea1015-ce28-490f-bb81-8274a9501b08
+  variables:
+  - {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
+  - {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
+  - {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
+  - {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
+  - {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
+  - {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
+  - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
+  - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
+  - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+  - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
