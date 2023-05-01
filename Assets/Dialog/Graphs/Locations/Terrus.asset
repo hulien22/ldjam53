@@ -41,6 +41,23 @@ MonoBehaviour:
   children:
   - {fileID: 8418757637556274928}
   _uniqueId: 94edff60-80ca-4c3b-a303-4f4509fe9a43
+--- !u!114 &-9104215662721013140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 50531230-6c75-4c58-b6ec-6408487c0631
+  _variable: {fileID: 11400000, guid: fabc4aa3e0a3d92448f8505139c3f2da, type: 2}
+  _comparison: 0
+  _value: 0
 --- !u!114 &-8884468899227628628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +201,35 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+--- !u!114 &-7580935996352580516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 2029d99d-6d04-4a45-9b8b-c524b6976117
+  rect:
+    serializedVersion: 2
+    x: 49884
+    y: 49894
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 4727675321738810728}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Okay!
 --- !u!114 &-7462094443589067038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +343,38 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 2
   _value: 20
+--- !u!114 &-5996386957683994021
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843a669fdb38bf54c8ca5fcbb68523ec, type: 3}
+  m_Name: AcquireCargoAction
+  m_EditorClassIdentifier: 
+  _title: AcquireCargoAction
+  _uniqueId: 2651fed2-f6d0-479f-b640-eab9ab14bca9
+  <Target>k__BackingField: 13
+--- !u!114 &-5911121316575826173
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 72900272-da49-4c49-9efd-a65962445246
+  _variable: {fileID: 11400000, guid: fa8a08b891431614489676c996d4498a, type: 2}
+  _comparison: 4
+  _value: 3
 --- !u!114 &-5208644154231694008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,6 +610,38 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Thanks!
+--- !u!114 &-1775373245830098983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 811dcc2c-9c9d-4ef0-ab79-54bb79950ee5
+  rect:
+    serializedVersion: 2
+    x: 49641
+    y: 49908
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -7580935996352580516}
+  conditions:
+  - {fileID: -9104215662721013140}
+  - {fileID: -5911121316575826173}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: You proved your worth! Head to outpost Miram 5. I need to you take a
+    special delivery.
 --- !u!114 &-1312876928974138160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,8 +737,11 @@ MonoBehaviour:
   - {fileID: 3397570177712051538}
   - {fileID: -8694783067799892180}
   - {fileID: 7229243436559053096}
+  - {fileID: -1775373245830098983}
+  - {fileID: -7580935996352580516}
+  - {fileID: 4727675321738810728}
   root: {fileID: 1961000476301625562}
-  scrollPosition: {x: 50610, y: 50181.5}
+  scrollPosition: {x: 49260, y: 49866.5}
 --- !u!114 &1726325750219350460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,8 +818,8 @@ MonoBehaviour:
   _uniqueId: 30a9033b-9a60-4051-a333-9aa4b4ba8bbf
   rect:
     serializedVersion: 2
-    x: 49777
-    y: 50262
+    x: 49215
+    y: 50206
     width: 100
     height: 57
   nodeTitle: 
@@ -808,6 +921,36 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
   _comparison: 0
   _value: 2
+--- !u!114 &4727675321738810728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 78ec08cc-9cdf-494d-9639-5c62c288b5ff
+  rect:
+    serializedVersion: 2
+    x: 50127
+    y: 49914
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -1209156263514723140}
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -5996386957683994021}
+  choices: []
+  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  audio: {fileID: 0}
+  dialogue: It's the moon station orbiting Haldor. I'll add it to your tracker.
 --- !u!114 &4821668009485562612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,12 +966,13 @@ MonoBehaviour:
   _uniqueId: 07207017-d169-44c4-a208-d5a1870a5098
   rect:
     serializedVersion: 2
-    x: 49984
-    y: 50214
+    x: 49378
+    y: 50161
     width: 200
     height: 146
   nodeTitle: 
   children:
+  - {fileID: -1775373245830098983}
   - {fileID: -1209156263514723140}
   conditions: []
   enterActions: []

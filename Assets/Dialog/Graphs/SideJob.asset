@@ -213,8 +213,8 @@ MonoBehaviour:
   _uniqueId: ca2c005b-e83e-4804-b9b0-b0e520d14914
   rect:
     serializedVersion: 2
-    x: 49556
-    y: 50133
+    x: 49527
+    y: 50086
     width: 100
     height: 57
   nodeTitle: 
@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: -2373607221273400919}
   - {fileID: -2393947445396022785}
   root: {fileID: -1082567340561665149}
-  scrollPosition: {x: 49653.5, y: 49708}
+  scrollPosition: {x: 49707.5, y: 49710}
 --- !u!114 &2805725690834194877
 MonoBehaviour:
   m_ObjectHideFlags: 1

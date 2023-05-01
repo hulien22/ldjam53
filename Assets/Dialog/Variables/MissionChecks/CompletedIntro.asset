@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eac2c05eace174dfbbc0454793ac4e1b, type: 3}
-  m_Name: completedIntro
+  m_Name: CompletedIntro
   m_EditorClassIdentifier: 
   key: completedIntro
   defaultValue: 0

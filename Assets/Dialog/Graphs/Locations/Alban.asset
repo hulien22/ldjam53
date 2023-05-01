@@ -30,22 +30,6 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Yes!
---- !u!114 &-8803016832518303908
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: a6950473-0452-4d73-8190-3e033c4707ee
-  _value: 2
-  _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
 --- !u!114 &-8691319013784175155
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +170,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: 7630850800304485333}
-  - {fileID: 3106914630288758914}
+  - {fileID: -5293299133069028193}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -258,6 +242,22 @@ MonoBehaviour:
   children:
   - {fileID: 7747064532120763470}
   _uniqueId: 39c4e3b2-0337-4931-bf29-e9df2e21bc0a
+--- !u!114 &-5940172896722073525
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8027ebc2261e62842abfa255daa13d19, type: 3}
+  m_Name: UpgradeHullAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeHullAction
+  _uniqueId: ab7b4bbf-b215-4b2a-bdec-6f4c09c5c720
+  variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
+  value: 2
 --- !u!114 &-5437037518463163916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,6 +303,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I would, but I don't have enough credits.
+--- !u!114 &-5293299133069028193
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8027ebc2261e62842abfa255daa13d19, type: 3}
+  m_Name: UpgradeHullAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeHullAction
+  _uniqueId: 03480779-83bb-4b7b-b3a5-a222d95d3e02
+  variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
+  value: 1
 --- !u!114 &-4357607113958865446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -577,7 +593,7 @@ MonoBehaviour:
   - {fileID: 7765635037762421845}
   - {fileID: 6142588543851319823}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 50098.5, y: 49907.5}
+  scrollPosition: {x: 51274.5, y: 49787.5}
 --- !u!114 &615145485743312568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,38 +750,6 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 2
   _value: 20
---- !u!114 &2905649461373769176
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 4e04a4f2-42c2-47d8-babd-df0081aed369
-  _value: 3
-  _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
---- !u!114 &3106914630288758914
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: bc32bc71-1622-4f62-97a3-df9a7a6b7c2f
-  _value: 1
-  _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
 --- !u!114 &3411845646424366973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,7 +867,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: 3426334675711443817}
-  - {fileID: 2905649461373769176}
+  - {fileID: 7431036884664873547}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -1008,6 +992,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
   - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+--- !u!114 &7431036884664873547
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8027ebc2261e62842abfa255daa13d19, type: 3}
+  m_Name: UpgradeHullAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeHullAction
+  _uniqueId: 04cf9c7a-5041-4e0f-a2e4-fc53f6f9444c
+  variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
+  value: 3
 --- !u!114 &7630850800304485333
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -1602375635631981968}
-  - {fileID: -8803016832518303908}
+  - {fileID: -5940172896722073525}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}

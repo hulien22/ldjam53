@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9165098481987235583
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5804e1a1b510241bbb6bfb616eed0c, type: 3}
+  m_Name: UpgradeThrustAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeThrustAction
+  _uniqueId: 1581bcc6-2d6d-4c99-a527-d5907d2c056b
+  variable: {fileID: 11400000, guid: 7f2bc350e17205b4d8f8838e25fa67fb, type: 2}
+  value: 3
 --- !u!114 &-8969162991295120278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,27 +85,11 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: 8350094172515145207}
-  - {fileID: -7992159267763668633}
+  - {fileID: -9165098481987235583}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
   dialogue: 'New upgrade acquired: Speeder RT 300 thruster.'
---- !u!114 &-7992159267763668633
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: b6aad5f7-82e8-4ffc-8297-45406bf02220
-  _value: 3
-  _variable: {fileID: 11400000, guid: 7f2bc350e17205b4d8f8838e25fa67fb, type: 2}
 --- !u!114 &-7923055005344740717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,8 +184,8 @@ MonoBehaviour:
   _uniqueId: 08417496-f8fe-4734-84cf-97ae7e60850d
   rect:
     serializedVersion: 2
-    x: 51303
-    y: 50615
+    x: 51297
+    y: 50584
     width: 200
     height: 186
   nodeTitle: 
@@ -234,22 +234,6 @@ MonoBehaviour:
   _uniqueId: 57dae335-f575-4d45-9149-78185b389927
   credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   cost: 30
---- !u!114 &-2501470091503791534
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: a421e554-f407-44c3-ae83-62536fb9770c
-  _value: 1
-  _variable: {fileID: 11400000, guid: 7f2bc350e17205b4d8f8838e25fa67fb, type: 2}
 --- !u!114 &-2475432116886025918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,8 +249,8 @@ MonoBehaviour:
   _uniqueId: 54cdf4d4-ea4c-4319-a932-8969f2a08d46
   rect:
     serializedVersion: 2
-    x: 50020
-    y: 50245
+    x: 49909
+    y: 50241
     width: 100
     height: 57
   nodeTitle: 
@@ -338,7 +322,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 50536
-    y: 50193
+    y: 50195
     width: 200
     height: 226
   nodeTitle: Hub
@@ -354,6 +338,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: d1149cc5eee451f46adf3133c43a6fae, type: 2}
   audio: {fileID: 0}
   dialogue: Welcome to Scrapton.
+--- !u!114 &-1749373741648140743
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5804e1a1b510241bbb6bfb616eed0c, type: 3}
+  m_Name: UpgradeThrustAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeThrustAction
+  _uniqueId: 45cb0d1a-1bae-45e2-9140-a0b8343fc9de
+  variable: {fileID: 11400000, guid: 7f2bc350e17205b4d8f8838e25fa67fb, type: 2}
+  value: 1
 --- !u!114 &-1668898487703998614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,7 +544,7 @@ MonoBehaviour:
   - {fileID: 8466861129665293031}
   - {fileID: -8969162991295120278}
   root: {fileID: -2475432116886025918}
-  scrollPosition: {x: 51349.5, y: 50486.5}
+  scrollPosition: {x: 50266.5, y: 50098.5}
 --- !u!114 &540140427283351727
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -664,7 +664,7 @@ MonoBehaviour:
   _uniqueId: ea41b39d-2c87-41cf-9203-6e434686b3db
   rect:
     serializedVersion: 2
-    x: 52061
+    x: 52060
     y: 50110
     width: 200
     height: 146
@@ -675,7 +675,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -6628797174668558085}
-  - {fileID: -2501470091503791534}
+  - {fileID: -1749373741648140743}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -785,6 +785,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
   - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+--- !u!114 &3369725407056064510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5804e1a1b510241bbb6bfb616eed0c, type: 3}
+  m_Name: UpgradeThrustAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeThrustAction
+  _uniqueId: 8f165bb1-e9d1-483c-afa8-f7dacceb4d5e
+  variable: {fileID: 11400000, guid: 7f2bc350e17205b4d8f8838e25fa67fb, type: 2}
+  value: 2
 --- !u!114 &3426452001663209786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -874,7 +890,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -2969525787818392880}
-  - {fileID: 7996490414381457348}
+  - {fileID: 3369725407056064510}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -894,7 +910,7 @@ MonoBehaviour:
   _uniqueId: 65fbcd52-f671-4aa8-80e4-31a45cf8a337
   rect:
     serializedVersion: 2
-    x: 51632
+    x: 51633
     y: 50342
     width: 200
     height: 146
@@ -924,8 +940,8 @@ MonoBehaviour:
   _uniqueId: 2ce49a6f-19b9-4605-b457-ad568388d862
   rect:
     serializedVersion: 2
-    x: 50852
-    y: 50304
+    x: 50894
+    y: 50274
     width: 200
     height: 146
   nodeTitle: 
@@ -1075,7 +1091,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 50690
-    y: 50500
+    y: 50499
     width: 200
     height: 58
   nodeTitle: Side Delivery
@@ -1102,22 +1118,6 @@ MonoBehaviour:
   children:
   - {fileID: -924608972124065172}
   _uniqueId: 0f79964d-c392-4913-895d-04f144c9098c
---- !u!114 &7996490414381457348
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: a0fa232a-59e3-454b-bb81-e65c2efa22ba
-  _value: 2
-  _variable: {fileID: 11400000, guid: 7f2bc350e17205b4d8f8838e25fa67fb, type: 2}
 --- !u!114 &8350094172515145207
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1149,8 +1149,8 @@ MonoBehaviour:
   _uniqueId: 14ebd50c-5c66-4a50-b651-ecb7e19ed4cf
   rect:
     serializedVersion: 2
-    x: 50190
-    y: 50196
+    x: 50066
+    y: 50202
     width: 200
     height: 146
   nodeTitle: Landing

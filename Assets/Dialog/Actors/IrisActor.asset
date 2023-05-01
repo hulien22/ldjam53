@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: IrisActor
   m_EditorClassIdentifier: 
   _displayName: Eye
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: 6b5eba5f6e2d8a34d9581656d9e4f7c1, type: 3}

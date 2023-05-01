@@ -14,7 +14,6 @@ public class PlanetDropdown : MonoBehaviour
     private void Start()
     {
         // Set global state and add Terrus, this will also UpdateItems.
-        GlobalState.planetDropdown = this;
         GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
         GlobalState.AddKnownLocation(GameObject.Find("Lunas"));
 
@@ -33,7 +32,7 @@ public class PlanetDropdown : MonoBehaviour
         if (dest != defaultOption.text)
         {
             // find destination
-            foreach (var loc in GlobalState.knownLocations)
+            foreach (var loc in GlobalState.instance.knownLocations)
             {
                 if (loc.gameObject.name == dest)
                 {
@@ -51,9 +50,9 @@ public class PlanetDropdown : MonoBehaviour
     public void UpdateItems()
     {
         string selectedOption = dropdown.options[dropdown.value].text;
-        List<TMP_Dropdown.OptionData> items = new List<TMP_Dropdown.OptionData>(GlobalState.knownLocations.Count);
+        List<TMP_Dropdown.OptionData> items = new List<TMP_Dropdown.OptionData>(GlobalState.instance.knownLocations.Count);
         items.Add(defaultOption);
-        foreach (var loc in GlobalState.knownLocations)
+        foreach (var loc in GlobalState.instance.knownLocations)
         {
             items.Add(new TMP_Dropdown.OptionData(loc.gameObject.name));
         }

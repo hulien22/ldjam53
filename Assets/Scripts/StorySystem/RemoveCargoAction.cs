@@ -30,19 +30,8 @@ public class RemoveCargoAction : SetLocalVariableBase<int> {
         CargoState.RemovePackage();
         int currentCredits = GlobalDatabaseManager.Instance.Database.Ints.Get(creditVar.Key, creditVar.defaultValue);
         JobsGenerator.Difficulty difficulty = JobsGenerator.GetDifficultyOfJob(startLocation, LocationManager.GetLocation());
-        int gain;
-        switch (difficulty) {
-            case JobsGenerator.Difficulty.Hard:
-                gain = 20;
-                break;
-            case JobsGenerator.Difficulty.Medium:
-                gain = 15;
-                break;
-            default:
-                gain = 10;
-                break;
-        }
-        GlobalDatabaseManager.Instance.Database.Ints.Set(creditVar.Key, currentCredits + gain);
+        GlobalDatabaseManager.Instance.Database.Ints.Set(creditVar.Key, currentCredits + JobsGenerator.GetReward(difficulty));
+        GlobalDatabaseManager.Instance.Database.Ints.Set("jobsCompleted", GlobalDatabaseManager.Instance.Database.Ints.Get("jobsCompleted", 0) + 1);
         //CargoState.AddMoney(credits);
         return base.OnUpdate();
     }

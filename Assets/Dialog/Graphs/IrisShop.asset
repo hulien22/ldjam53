@@ -148,6 +148,22 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 1d013de09c28b0040a283eb1a69f13ef, type: 2}
   _comparison: 0
   _value: 1
+--- !u!114 &-3520917830252698200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c82a824e8cd0c4ea223fc74e87cf2a, type: 3}
+  m_Name: UpgradeSensorAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeSensorAction
+  _uniqueId: 37963ed1-160c-4800-b7dc-3f452a1961b6
+  variable: {fileID: 11400000, guid: 1d013de09c28b0040a283eb1a69f13ef, type: 2}
+  value: 1
 --- !u!114 &-2595700063466182085
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,7 +220,7 @@ MonoBehaviour:
   _uniqueId: dd2bbd89-79d0-4d91-9847-6f5c38c60d70
   rect:
     serializedVersion: 2
-    x: 50891
+    x: 50892
     y: 50268
     width: 200
     height: 146
@@ -216,7 +232,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -2595700063466182085}
-  - {fileID: 5241902019721814712}
+  - {fileID: -3520917830252698200}
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
@@ -293,7 +309,7 @@ MonoBehaviour:
   - {fileID: 5401072674227251256}
   - {fileID: -4346443084057293696}
   root: {fileID: -2584830195969521745}
-  scrollPosition: {x: 50038.5, y: 50160.5}
+  scrollPosition: {x: 50335.5, y: 50113.5}
 --- !u!114 &1175878568415068266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -328,22 +344,6 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 2
   _value: 100
---- !u!114 &5241902019721814712
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
-  m_Name: SetGlobalBool
-  m_EditorClassIdentifier: 
-  _title: SetGlobalBool
-  _uniqueId: 403e5397-4f2d-4ee7-a38d-0edabf2eea40
-  _value: 1
-  _variable: {fileID: 11400000, guid: 1d013de09c28b0040a283eb1a69f13ef, type: 2}
 --- !u!114 &5401072674227251256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,8 +359,8 @@ MonoBehaviour:
   _uniqueId: d2ee5b27-21e8-4a42-ad94-dbbed32dea43
   rect:
     serializedVersion: 2
-    x: 50870
-    y: 50678
+    x: 50893
+    y: 50649
     width: 200
     height: 146
   nodeTitle: 

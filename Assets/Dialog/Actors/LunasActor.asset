@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: LunasActor
   m_EditorClassIdentifier: 
   _displayName: Lunatic
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: 407244944658603478672e2db16ba991, type: 3}
