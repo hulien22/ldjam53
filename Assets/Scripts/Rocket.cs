@@ -38,6 +38,8 @@ public class Rocket : MonoBehaviour
     private bool landed;
 
     private int rayCastLayerMask;
+    public Collider2D sunCollision;
+    public float sunDamagePerTick;
 
     public float minimumDamageThreshold;
     public float minimumDamageThresholdLandingGear;
@@ -80,6 +82,18 @@ public class Rocket : MonoBehaviour
         worldVelocity = (GetRocketPosition() - previousPosition) / Time.deltaTime;
         // Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
         previousPosition = GetRocketPosition();
+
+        if (!immuneToSun)
+        {
+            List<Collider2D> colliders = new List<Collider2D>();
+            if (sunCollision.GetContacts(colliders) > 0)
+            {
+                health -= sunDamagePerTick;
+                GlobalState.instance.healthBar.SetVal(maxHealth - health);
+            }
+
+        }
+        // TODO check if dead.
 
         float thrustInput = thrust.action.ReadValue<float>();
 
@@ -152,7 +166,7 @@ public class Rocket : MonoBehaviour
                     fuel -= 0.1f;
                     GlobalState.instance.fuelBar.SetVal(maxFuel - fuel);
                 }
-                Debug.Log("Fuel: " + fuel);
+                // Debug.Log("Fuel: " + fuel);
             }
         }
         // If landed kill all speed.
@@ -261,7 +275,6 @@ public class Rocket : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-
         Vector2 impactVelocity = other.relativeVelocity;
         float magnitude = 0f;
 
