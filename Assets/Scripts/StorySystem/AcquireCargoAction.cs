@@ -21,7 +21,7 @@ public class AcquireCargoAction : ActionDataBase {
         KeyValueDefinitionInt locationItem = JobsGenerator.GetPlanet(LocationManager.GetLocation()).SidequestItem;
         Debug.Log($"Aquired {Target}");
         GlobalDatabaseManager.Instance.Database.Ints.Set(locationItem.Key, (int)Target);
-        CargoState.AddPackage(Target);
+        CargoState.AddPackage(LocationManager.GetLocation(), Target);
         return base.OnUpdate();
     }
 }

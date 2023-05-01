@@ -116,6 +116,16 @@ namespace Assets.Scripts.StorySystem {
             return $"New cargo acquired: {itemName} from {planetName}.";
         }
 
+        public static string GetTextForCargoUI(Location from, Location target)
+        {
+            SidequestPlanet planet = GetPlanet(from);
+            string planetName = planet.SidequestName;
+            string itemName = planet.SidequestItemName;
+            SidequestPlanet planetTarget = GetPlanet(target);
+            string planetTargetName = planetTarget.SidequestName;
+            return $"{itemName} from {planetName} for {planetTargetName}";
+        }
+
         public static Difficulty GetDifficultyOfJob(Location start, Location end) {
             SidequestPlanet planet = GetPlanet(start);
             return planet.GetDifficultyOfJob(end);

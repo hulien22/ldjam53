@@ -27,7 +27,7 @@ public class RemoveCargoAction : SetLocalVariableBase<int> {
     }
 
     public override ActionStatus OnUpdate() {
-        CargoState.RemovePackage();
+        CargoState.RemovePackage(startLocation);
         int currentCredits = GlobalDatabaseManager.Instance.Database.Ints.Get(creditVar.Key, creditVar.defaultValue);
         JobsGenerator.Difficulty difficulty = JobsGenerator.GetDifficultyOfJob(startLocation, LocationManager.GetLocation());
         GlobalDatabaseManager.Instance.Database.Ints.Set(creditVar.Key, currentCredits + JobsGenerator.GetReward(difficulty));

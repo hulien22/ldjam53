@@ -23,6 +23,7 @@ public class GlobalState : MonoBehaviour
     public Planet lastPlanetVisited;
     public StatusBar healthBar;
     public StatusBar fuelBar;
+    public CargoUIController cargoUIController;
 
     [SerializeField] private GameObject terrus;
     [SerializeField] private GameObject donatus;
