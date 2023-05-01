@@ -22,9 +22,127 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""Inputs"",
-    ""maps"": [],
+    ""maps"": [
+        {
+            ""name"": ""gameplay"",
+            ""id"": ""581dade3-4622-42a4-8b43-eed0d1677ec0"",
+            ""actions"": [
+                {
+                    ""name"": ""thrust"",
+                    ""type"": ""Value"",
+                    ""id"": ""f4065071-88c1-4006-bbc9-54f4dafd8f05"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""turn"",
+                    ""type"": ""Value"",
+                    ""id"": ""ca736abb-4345-4f80-a5e6-3066b13ac939"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""New action"",
+                    ""type"": ""Value"",
+                    ""id"": ""2e3ad417-86f0-49eb-a2de-e37736a7d22c"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""2d30b628-751e-451a-9667-604cd519bcd6"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""thrust"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""d210866b-87d6-459e-87d3-3282d1fd8bdd"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""thrust"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""d7fbbb9e-5196-4f49-b254-6014e93b92ab"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""thrust"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""de41f47e-d20d-49c8-9490-893a39587cbd"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""turn"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""8626bdb1-dec8-43a2-aeef-c9fc7be17609"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""turn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""53e4acb5-f0c6-42e3-bad7-6be0ae9ca590"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""turn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4923ac41-519a-4992-a0e3-4090dbb41b77"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""New action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        }
+    ],
     ""controlSchemes"": []
 }");
+        // gameplay
+        m_gameplay = asset.FindActionMap("gameplay", throwIfNotFound: true);
+        m_gameplay_thrust = m_gameplay.FindAction("thrust", throwIfNotFound: true);
+        m_gameplay_turn = m_gameplay.FindAction("turn", throwIfNotFound: true);
+        m_gameplay_Newaction = m_gameplay.FindAction("New action", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -81,5 +199,73 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     public int FindBinding(InputBinding bindingMask, out InputAction action)
     {
         return asset.FindBinding(bindingMask, out action);
+    }
+
+    // gameplay
+    private readonly InputActionMap m_gameplay;
+    private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
+    private readonly InputAction m_gameplay_thrust;
+    private readonly InputAction m_gameplay_turn;
+    private readonly InputAction m_gameplay_Newaction;
+    public struct GameplayActions
+    {
+        private @Inputs m_Wrapper;
+        public GameplayActions(@Inputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @thrust => m_Wrapper.m_gameplay_thrust;
+        public InputAction @turn => m_Wrapper.m_gameplay_turn;
+        public InputAction @Newaction => m_Wrapper.m_gameplay_Newaction;
+        public InputActionMap Get() { return m_Wrapper.m_gameplay; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(GameplayActions set) { return set.Get(); }
+        public void AddCallbacks(IGameplayActions instance)
+        {
+            if (instance == null || m_Wrapper.m_GameplayActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameplayActionsCallbackInterfaces.Add(instance);
+            @thrust.started += instance.OnThrust;
+            @thrust.performed += instance.OnThrust;
+            @thrust.canceled += instance.OnThrust;
+            @turn.started += instance.OnTurn;
+            @turn.performed += instance.OnTurn;
+            @turn.canceled += instance.OnTurn;
+            @Newaction.started += instance.OnNewaction;
+            @Newaction.performed += instance.OnNewaction;
+            @Newaction.canceled += instance.OnNewaction;
+        }
+
+        private void UnregisterCallbacks(IGameplayActions instance)
+        {
+            @thrust.started -= instance.OnThrust;
+            @thrust.performed -= instance.OnThrust;
+            @thrust.canceled -= instance.OnThrust;
+            @turn.started -= instance.OnTurn;
+            @turn.performed -= instance.OnTurn;
+            @turn.canceled -= instance.OnTurn;
+            @Newaction.started -= instance.OnNewaction;
+            @Newaction.performed -= instance.OnNewaction;
+            @Newaction.canceled -= instance.OnNewaction;
+        }
+
+        public void RemoveCallbacks(IGameplayActions instance)
+        {
+            if (m_Wrapper.m_GameplayActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IGameplayActions instance)
+        {
+            foreach (var item in m_Wrapper.m_GameplayActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_GameplayActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public GameplayActions @gameplay => new GameplayActions(this);
+    public interface IGameplayActions
+    {
+        void OnThrust(InputAction.CallbackContext context);
+        void OnTurn(InputAction.CallbackContext context);
+        void OnNewaction(InputAction.CallbackContext context);
     }
 }
