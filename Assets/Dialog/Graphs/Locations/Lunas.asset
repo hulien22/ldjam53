@@ -1,5 +1,70 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8758470638964689003
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I have a special package for you
+  children:
+  - {fileID: -8312303718275679208}
+  _uniqueId: be69dde5-8a3d-4b11-bb93-84ef7f46c6c3
+--- !u!114 &-8552002702717960852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674c2fde10b1e8a49ac3d9f9cf04f8f8, type: 3}
+  m_Name: RemoveSpecialCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveSpecialCargoAction
+  _uniqueId: 938be1a6-0cf9-493b-a82f-c69e44e6e83c
+--- !u!114 &-8312303718275679208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 15a31cd1-42ef-4da3-92ad-b6dee69c98c3
+  rect:
+    serializedVersion: 2
+    x: 50758.668
+    y: 50237.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 6397017900046546650}
+  conditions:
+  - {fileID: -3791934101133908785}
+  enterActions:
+  - {fileID: -8552002702717960852}
+  exitActions:
+  - {fileID: -6692943603549616792}
+  choices: []
+  actor: {fileID: 11400000, guid: f2c69540ef2a1b64bb887be6cde165b9, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Oh cool, thanks! ...
+
+
+    (what am I supposed to do with this...?)'
 --- !u!114 &-6984090430105254012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +92,22 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   dialogueGraph: {fileID: 11400000, guid: 9432695ee525d524fb31a0ac26b72b4e, type: 2}
+--- !u!114 &-6692943603549616792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: df53e923-ff28-4c9b-bbd4-29b4b063bc41
+  _value: 1
+  _variable: {fileID: 11400000, guid: 393f06afb2c500347af7a1de88aa072f, type: 2}
 --- !u!114 &-5984283157185690632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,6 +149,23 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+--- !u!114 &-3791934101133908785
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 97f495da-6422-484d-b740-79d0d59138fe
+  _variable: {fileID: 11400000, guid: 393f06afb2c500347af7a1de88aa072f, type: 2}
+  _comparison: 0
+  _value: 0
 --- !u!114 &-204974317620971989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +184,7 @@ MonoBehaviour:
     x: 49912
     y: 50183
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: 5787783111135970244}
@@ -112,8 +210,9 @@ MonoBehaviour:
   - {fileID: 6397017900046546650}
   - {fileID: -6984090430105254012}
   - {fileID: -4095313124604332838}
+  - {fileID: -8312303718275679208}
   root: {fileID: -204974317620971989}
-  scrollPosition: {x: 50222, y: 49902.5}
+  scrollPosition: {x: 50181, y: 50008.5}
 --- !u!114 &2576038869666612532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,7 +302,7 @@ MonoBehaviour:
     x: 50361
     y: 50107
     width: 200
-    height: 206
+    height: 226
   nodeTitle: Hub
   children: []
   conditions: []
@@ -211,6 +310,7 @@ MonoBehaviour:
   exitActions: []
   choices:
   - {fileID: 2576038869666612532}
+  - {fileID: -8758470638964689003}
   - {fileID: 8875886861709524890}
   - {fileID: 6771870879167284725}
   actor: {fileID: 11400000, guid: f2c69540ef2a1b64bb887be6cde165b9, type: 2}

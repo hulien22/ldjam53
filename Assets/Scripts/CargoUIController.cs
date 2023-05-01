@@ -25,14 +25,22 @@ public class CargoUIController : MonoBehaviour
         maxCargo = num;
     }
 
-    public void UpdateFilledCargo(List<CargoState.CargoItem> packages)
+    public void UpdateFilledCargo(CargoState.CargoItem specialPackage, List<CargoState.CargoItem> packages)
     {
         Debug.Log("UPDATEFILLED");
-        for (int i = 0; i < maxCargo; i++)
+        if (specialPackage != null)
         {
-            if (i < packages.Count)
+            cargoBoxes[0].FillBox(specialPackage.text);
+        }
+        else
+        {
+            cargoBoxes[0].EmptyBox();
+        }
+        for (int i = 1; i < maxCargo; i++)
+        {
+            if ((i - 1) < packages.Count)
             {
-                cargoBoxes[i].FillBox(packages[i].text);
+                cargoBoxes[i].FillBox(packages[(i - 1)].text);
             }
             else
             {
