@@ -1,4 +1,5 @@
 using Assets.Scripts.StorySystem;
+using CleverCrow.Fluid.Databases;
 using CleverCrow.Fluid.Dialogues;
 using CleverCrow.Fluid.Dialogues.Choices;
 using CleverCrow.Fluid.Dialogues.Graphs;
@@ -34,6 +35,10 @@ public class DialogManager : MonoBehaviour {
         //controller.Play(dialogues[0]);//, gameObjectOverrides.ToArray<IGameObjectOverride>()
     }
 
+    private void Start() {
+        StartTutorial();
+    }
+
 
     private DialogueController controller;
 
@@ -46,6 +51,7 @@ public class DialogManager : MonoBehaviour {
 
     public RectTransform choiceList;
     public ChoiceButton choicePrefab;
+    public DialogueGraph tutorial;
 
     [Header("Job Injection")]
     [SerializeField] private NodeDialogueData acquiredItem;
@@ -71,7 +77,14 @@ public class DialogManager : MonoBehaviour {
         controller.Next();
     }
 
+    private void StartTutorial() {
+        LocationManager.SetLocation(Location.Terrus);
+        speakerContainer.SetActive(true);
+        controller.Play(tutorial);
+    }
+
     public void StartDialog(Location planet) {
+        if (!GlobalDatabaseManager.Instance.Database.Bools.Get("completedIntro", false)) return;
         LocationManager.SetLocation(planet);
         SetupJobDialog(planet);
         speakerContainer.SetActive(true);
