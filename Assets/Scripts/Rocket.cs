@@ -128,9 +128,9 @@ public class Rocket : MonoBehaviour
         }
         if (turn == 0)
             turnInput = 0;
-        else if (turn > 0) 
+        else if (turn > 0)
             turnInput = 1;
-        else 
+        else
             turnInput = -1;
     }
 
@@ -163,7 +163,11 @@ public class Rocket : MonoBehaviour
                 health -= sunDamagePerTick;
                 GlobalState.instance.healthBar.SetVal(maxHealth - health);
             }
-
+        }
+        if (health <= 0)
+        {
+            ResetToLastPlanet();
+            return;
         }
         // TODO check if dead.
 

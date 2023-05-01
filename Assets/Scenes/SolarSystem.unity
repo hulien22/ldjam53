@@ -7814,7 +7814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b5517443eb6b142b3e30cc8dfe8c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: {fileID: 8300000, guid: 29fdfdb43f913d04ca3b9688ffd61cb6, type: 3}
+  thrust: {fileID: 0}
 --- !u!114 &1175727111
 MonoBehaviour:
   m_ObjectHideFlags: 0
