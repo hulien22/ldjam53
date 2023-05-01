@@ -1,0 +1,759 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8899733628062292791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
+  m_Name: Play Graph
+  m_EditorClassIdentifier: 
+  _uniqueId: 29ed310e-f7b8-4dbf-9051-fac0b926496f
+  rect:
+    serializedVersion: 2
+    x: 50710
+    y: 49998
+    width: 200
+    height: 58
+  nodeTitle: Side Job
+  children:
+  - {fileID: -7807669969062005728}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
+--- !u!114 &-7807669969062005728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 58380837-f9db-406c-978b-4b60b95d1bbd
+  rect:
+    serializedVersion: 2
+    x: 50397
+    y: 50134
+    width: 200
+    height: 226
+  nodeTitle: Hub
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 7999644914685833662}
+  - {fileID: 5950198385311421151}
+  - {fileID: 5513924936856619227}
+  - {fileID: 7398505733455296534}
+  actor: {fileID: 11400000, guid: 30d15fa47c6840e4c9d87c014d9e5c68, type: 2}
+  audio: {fileID: 0}
+  dialogue: Welcome to Don'atus. May I take your order?
+--- !u!114 &-6816140392990423348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: fa4493a9-47a6-4a75-9a72-a07d7ed3e35f
+  rect:
+    serializedVersion: 2
+    x: 50978
+    y: 50193
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 8477149284876800041}
+  - {fileID: 5879886587375046643}
+  actor: {fileID: 11400000, guid: 30d15fa47c6840e4c9d87c014d9e5c68, type: 2}
+  audio: {fileID: 0}
+  dialogue: Why of course of famous chooca dip doughnut! Best in the galaxy, and
+    they're only 1 credit!
+--- !u!114 &-6777090037576819438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: No, thanks.
+  children:
+  - {fileID: -4899590902825815234}
+  _uniqueId: 7c285e97-f16b-4bf1-842d-dc5c434a374e
+--- !u!114 &-6326199901802648631
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Sure?
+  children:
+  - {fileID: 8235443983605771164}
+  _uniqueId: 847d863a-e42e-4d75-9087-c7af1d46c52c
+--- !u!114 &-5895148014075382424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
+  m_Name: Play Graph
+  m_EditorClassIdentifier: 
+  _uniqueId: 526e23f3-fb73-4d2a-9884-87f7a5f1597c
+  rect:
+    serializedVersion: 2
+    x: 50617
+    y: 50469
+    width: 200
+    height: 58
+  nodeTitle: Side Delivery
+  children:
+  - {fileID: -7807669969062005728}
+  conditions:
+  - {fileID: -650389095958688211}
+  enterActions: []
+  exitActions: []
+  dialogueGraph: {fileID: 11400000, guid: 9432695ee525d524fb31a0ac26b72b4e, type: 2}
+--- !u!114 &-5734405934910728469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ef7768bf-cbbc-4040-8976-0dbb4be3c103
+  rect:
+    serializedVersion: 2
+    x: 51309
+    y: 50456
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8138873019878461993}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Ew, no thanks.
+--- !u!114 &-5622432185741508548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 24b3d0d9-090d-4e7b-98ea-87843ed05191
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 2
+  _value: 1
+--- !u!114 &-5567244411688250049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7d7c7ba5-da35-42a9-81cd-5b2e2b37388b
+  rect:
+    serializedVersion: 2
+    x: 51889
+    y: 50007
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8742708964800477091}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I feel a little bit better now.
+--- !u!114 &-4899590902825815234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4f4448ef-0a6e-44c9-8bf4-ff8d02094757
+  rect:
+    serializedVersion: 2
+    x: 51852
+    y: 50188
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8742708964800477091}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: No, I should really get back to my deliveries.
+--- !u!114 &-1831933184871992754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c4ec534b-f1fe-4c61-94d4-84cae67d1fcb
+  rect:
+    serializedVersion: 2
+    x: 51317
+    y: 50043
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 4846516914788092437}
+  conditions:
+  - {fileID: -1780276847425220549}
+  enterActions: []
+  exitActions:
+  - {fileID: 5078423641543889781}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Sure, I'll take it!
+--- !u!114 &-1780276847425220549
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 74b479fb-0feb-4d86-afaf-b95edd12e735
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 5
+  _value: 1
+--- !u!114 &-659160326496311519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 6fa0e73b-5a0d-4a95-892a-b48016aae2ed
+  rect:
+    serializedVersion: 2
+    x: 51603
+    y: 50261
+    width: 200
+    height: 186
+  nodeTitle: 
+  children:
+  - {fileID: -4899590902825815234}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -6326199901802648631}
+  - {fileID: -6777090037576819438}
+  actor: {fileID: 11400000, guid: 30d15fa47c6840e4c9d87c014d9e5c68, type: 2}
+  audio: {fileID: 0}
+  dialogue: We have positions available here, if you need.
+--- !u!114 &-650389095958688211
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c92e080dd085e77449af39c5a9d1a02b, type: 3}
+  m_Name: AnyCargoCondition
+  m_EditorClassIdentifier: 
+  _title: AnyCargoCondition
+  _uniqueId: c3164758-d74a-4c47-a888-e5b97e6d930b
+  variables:
+  - {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
+  - {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
+  - {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
+  - {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+  - {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
+  - {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
+  - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
+  - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
+  - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+  - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Donatus
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: 6056214949916363489}
+  - {fileID: 8087937557140283746}
+  - {fileID: -7807669969062005728}
+  - {fileID: -8899733628062292791}
+  - {fileID: -5895148014075382424}
+  - {fileID: 2627807349156152644}
+  - {fileID: -6816140392990423348}
+  - {fileID: -1831933184871992754}
+  - {fileID: 3510180537875850983}
+  - {fileID: -5734405934910728469}
+  - {fileID: 4846516914788092437}
+  - {fileID: -5567244411688250049}
+  - {fileID: 8742708964800477091}
+  - {fileID: -659160326496311519}
+  - {fileID: -4899590902825815234}
+  - {fileID: 8235443983605771164}
+  - {fileID: 4702179042056258455}
+  - {fileID: 8138873019878461993}
+  root: {fileID: 6056214949916363489}
+  scrollPosition: {x: 50173.5, y: 50038.5}
+--- !u!114 &2627807349156152644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: acabd3e0-a754-4ae9-a9f3-8158a4ebd675
+  rect:
+    serializedVersion: 2
+    x: 50698
+    y: 50214
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -6816140392990423348}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: What would you recommend?
+--- !u!114 &3510180537875850983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 6490c4cb-c457-47f4-ae6a-c069e18544d7
+  rect:
+    serializedVersion: 2
+    x: 51312
+    y: 50265
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -659160326496311519}
+  conditions:
+  - {fileID: -5622432185741508548}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I would, but I'm completely broke.
+--- !u!114 &4702179042056258455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 5a4af4a3-b955-4471-b3f1-be229676fc1c
+  rect:
+    serializedVersion: 2
+    x: 52099
+    y: 50382
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8742708964800477091}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: On second thought, maybe not.
+--- !u!114 &4846516914788092437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 873aa6da-de11-4d41-b4b8-6a2766ef8684
+  rect:
+    serializedVersion: 2
+    x: 51622
+    y: 50028
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5567244411688250049}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 30d15fa47c6840e4c9d87c014d9e5c68, type: 2}
+  audio: {fileID: 0}
+  dialogue: Here you go. Come back anytime!
+--- !u!114 &5078423641543889781
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9835e5a31a3d9224d8de3ab1165bb3e6, type: 3}
+  m_Name: SpendCreditsAction
+  m_EditorClassIdentifier: 
+  _title: SpendCreditsAction
+  _uniqueId: 3ceb389d-f1d1-49f9-9a6e-236e1ee88f47
+  credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  cost: 1
+--- !u!114 &5513924936856619227
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I have something for you.
+  children:
+  - {fileID: -5895148014075382424}
+  _uniqueId: ffb4cc6c-7bbc-40d2-8366-fa6e82062770
+--- !u!114 &5879886587375046643
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Ew, no thanks.
+  children:
+  - {fileID: -5734405934910728469}
+  _uniqueId: 4eec56ce-27ad-4006-b254-b501dfebd86f
+--- !u!114 &5950198385311421151
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: What have you got for sale?
+  children:
+  - {fileID: 2627807349156152644}
+  _uniqueId: 14b31b6a-7fef-4fed-9f05-a12ed7ac3c0d
+--- !u!114 &6056214949916363489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 8619570c-7a4e-4092-bbd0-f51c5e49f62c
+  rect:
+    serializedVersion: 2
+    x: 49943
+    y: 50197
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 8087937557140283746}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &7398505733455296534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Nevermind...
+  children: []
+  _uniqueId: dcc69217-3929-424f-9695-7fce98edc100
+--- !u!114 &7999644914685833662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Any deliveries for me to run?
+  children:
+  - {fileID: -8899733628062292791}
+  _uniqueId: 28fbd428-2040-4e1e-afdf-1d65b6d8b52b
+--- !u!114 &8087937557140283746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 6db8b909-02ba-4477-96fe-f331138a6177
+  rect:
+    serializedVersion: 2
+    x: 50084
+    y: 50142
+    width: 200
+    height: 146
+  nodeTitle: Landing
+  children:
+  - {fileID: -7807669969062005728}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Arrived at Don''atus. You have asked me to label this as ''Home''. Estimated
+    temperature: 289 K. Affiliation: neutral.'
+--- !u!114 &8138873019878461993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 8bf94ebe-080d-4b3e-b050-e9d095f61a56
+  rect:
+    serializedVersion: 2
+    x: 51585
+    y: 50502
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8742708964800477091}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 30d15fa47c6840e4c9d87c014d9e5c68, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yeah, I don't eat them either. This job just pays my bills.
+--- !u!114 &8235443983605771164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: d105836b-efc0-464e-991c-a6099f109981
+  rect:
+    serializedVersion: 2
+    x: 51847
+    y: 50379
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 4702179042056258455}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 30d15fa47c6840e4c9d87c014d9e5c68, type: 2}
+  audio: {fileID: 0}
+  dialogue: Do you have your resume on you? You need an intergalatic fryer's license,
+    and at least 46 years experience.
+--- !u!114 &8477149284876800041
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Sure!
+  children:
+  - {fileID: -1831933184871992754}
+  - {fileID: 3510180537875850983}
+  _uniqueId: b9134903-435b-483e-8779-179bd256bd5b
+--- !u!114 &8742708964800477091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: b893cf0e-0383-49f1-97b2-8546ee559176
+  rect:
+    serializedVersion: 2
+    x: 52276
+    y: 50212
+    width: 100
+    height: 57
+  nodeTitle: End Purchase
+  children:
+  - {fileID: -7807669969062005728}
+  conditions: []
+  enterActions: []
+  exitActions: []

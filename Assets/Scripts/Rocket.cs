@@ -156,8 +156,8 @@ public class Rocket : MonoBehaviour
         List<Collider2D> colliders = new List<Collider2D>();
         if (planetDetector.GetContacts(colliders) > 0)
         {
-            float minDistance = -1;
             Planet closestPlanet = null;
+            float minAtmosphereDistance = -1;
             foreach (var collider in colliders)
             {
                 // collider.gameObject
@@ -172,18 +172,15 @@ public class Rocket : MonoBehaviour
                 Vector2 rb = GetRocketPosition();
                 Debug.DrawLine(rb, 100 * velocity + rb, Color.red, 2.5f, false);
 
-                // bug here with closest and atmosphere distance... test on IRIS
-                // if (direction.magnitude < planet.atmosphereDistance)
-                // {
-                if (minDistance < 0 || direction.magnitude < minDistance)
+                if (!closestPlanet || direction.magnitude - planet.atmosphereDistance < minAtmosphereDistance)
                 {
                     closestPlanet = planet;
-                    minDistance = direction.magnitude;
+                    minAtmosphereDistance = direction.magnitude - planet.atmosphereDistance;
                 }
-                // }
             }
-            if (minDistance > 0 && minDistance < closestPlanet.atmosphereDistance)
+            if (closestPlanet && minAtmosphereDistance <= 0)
             {
+                // Entered atmosphere.
                 if (transform.parent != closestPlanet.transform)
                 {
                     // Debug.Log("setting parent to " + closestPlanet.gameObject);
@@ -192,7 +189,6 @@ public class Rocket : MonoBehaviour
                     if (previousRelativePosition.magnitude > 0)
                     {
                         Vector3 relativePosn = GetRocketPosition() - closestPlanet.transform.position;
-
                         Vector2 relativeVelocity = (relativePosn - previousRelativePosition) / Time.deltaTime;
                         rocketBody.velocity = relativeVelocity * atmosMod;
                     }
@@ -201,17 +197,17 @@ public class Rocket : MonoBehaviour
             }
             else
             {
-                // bug with one frame escape?
-                if (minDistance > 0)
-                {
-                    // Close to a planet, calculate relative posn.
-                    previousRelativePosition = GetRocketPosition() - closestPlanet.transform.position;
-                }
                 if (transform.parent != null)
                 {
                     transform.SetParent(null);
                     rocketBody.velocity = worldVelocity * atmosMod;
                     // lastWorldVelocity = Vector2.zero;
+                }
+                // bug with one frame escape?
+                if (closestPlanet)
+                {
+                    // Close to a planet, calculate relative posn.
+                    previousRelativePosition = GetRocketPosition() - closestPlanet.transform.position;
                 }
             }
             // Debug.Log(rocketBody.velocity);
