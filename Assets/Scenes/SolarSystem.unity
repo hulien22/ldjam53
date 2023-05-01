@@ -9227,6 +9227,7 @@ GameObject:
   - component: {fileID: 1328343087}
   - component: {fileID: 1328343086}
   - component: {fileID: 1328343085}
+  - component: {fileID: 1328343089}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -9367,6 +9368,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ffaa49d2b6592843882ce42a774139c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1328343089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328343082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c159e2afbf89f44bd69704611b7bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rocket: {fileID: 632892449}
 --- !u!1 &1329103835
 GameObject:
   m_ObjectHideFlags: 0

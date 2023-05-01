@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ScraptonActor
   m_EditorClassIdentifier: 
   _displayName: Scrappy
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: a264ea0c716f79246a69760c98eb588a, type: 3}

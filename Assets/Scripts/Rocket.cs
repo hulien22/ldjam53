@@ -14,6 +14,8 @@ public class Rocket : MonoBehaviour
     public ParticleSystem rightParticles;
 
     public int health;
+    public bool immuneToSun;
+    public bool sensor;
 
     public float thrustModifier;
     public float downThrustModifier;
@@ -54,6 +56,7 @@ public class Rocket : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        immuneToSun = false;
         rayCastLayerMask = LayerMask.GetMask("Planets");
         // GlobalState.AddKnownLocation(GameObject.Find("Terrus"));
     }

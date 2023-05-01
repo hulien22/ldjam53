@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AlbanActor
   m_EditorClassIdentifier: 
   _displayName: Alban
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: 5ba1220ffea76ab408b06e408c6b7299, type: 3}

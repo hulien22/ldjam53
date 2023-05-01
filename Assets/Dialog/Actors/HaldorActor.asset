@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: HaldorActor
   m_EditorClassIdentifier: 
   _displayName: Hodor
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: 639f1ca8b60bea44b96f024b2123105a, type: 3}
