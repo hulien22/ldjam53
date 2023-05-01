@@ -94,6 +94,22 @@ MonoBehaviour:
   children:
   - {fileID: 4275997499499947531}
   _uniqueId: 6d4d7bcb-5fd6-4f5b-80bd-3c788818c66e
+--- !u!114 &-7872792897570102498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98265fd89507f145b7de20fa6716bb6, type: 3}
+  m_Name: UpgradeKantoraCargoAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeKantoraCargoAction
+  _uniqueId: 99fbb70f-f39d-4377-b54e-dd27224e7295
+  variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
+  value: 2
 --- !u!114 &-6742753454515115735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +128,7 @@ MonoBehaviour:
     x: 51710
     y: 50076
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 1
   children:
   - {fileID: 9009377467252202774}
@@ -138,7 +154,7 @@ MonoBehaviour:
     x: 52299
     y: 50587
     width: 100
-    height: 57
+    height: 56
   nodeTitle: End Purchase
   children: []
   conditions: []
@@ -170,8 +186,8 @@ MonoBehaviour:
   - {fileID: -5982822846189527007}
   enterActions: []
   exitActions:
-  - {fileID: 6216286094529189168}
   - {fileID: 7174448815327695247}
+  - {fileID: -2292144546641636984}
   choices: []
   actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
   audio: {fileID: 0}
@@ -256,29 +272,13 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: -2742551879822186015}
   conditions: []
   enterActions: []
   exitActions: []
---- !u!114 &-3213242609590108778
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 8a4c747e-8cb2-4100-b5a9-f792c7656cfb
-  _value: 1
-  _variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
 --- !u!114 &-2742551879822186015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,12 +368,44 @@ MonoBehaviour:
   - {fileID: 5607792520143616899}
   enterActions: []
   exitActions:
-  - {fileID: -3213242609590108778}
   - {fileID: 5055952678935684359}
+  - {fileID: -1595647397170524210}
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Yes!
+--- !u!114 &-2292144546641636984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98265fd89507f145b7de20fa6716bb6, type: 3}
+  m_Name: UpgradeKantoraCargoAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeKantoraCargoAction
+  _uniqueId: d4698c8d-5611-46ad-a910-7e20dbb6a8ad
+  variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
+  value: 3
+--- !u!114 &-1595647397170524210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98265fd89507f145b7de20fa6716bb6, type: 3}
+  m_Name: UpgradeKantoraCargoAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeKantoraCargoAction
+  _uniqueId: cfba1021-4710-4cbd-b366-b43cec553009
+  variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
+  value: 1
 --- !u!114 &-1460572117726077013
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -426,7 +458,7 @@ MonoBehaviour:
     x: 51699
     y: 50305
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 2
   children:
   - {fileID: 9009377467252202774}
@@ -532,7 +564,7 @@ MonoBehaviour:
   - {fileID: -907706243173770595}
   - {fileID: 2799684460356175917}
   root: {fileID: -3255383222156174597}
-  scrollPosition: {x: 50461.5, y: 49885.5}
+  scrollPosition: {x: 51352.5, y: 50322.5}
 --- !u!114 &169492490367455992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -606,8 +638,8 @@ MonoBehaviour:
   - {fileID: 4280597900379768954}
   enterActions: []
   exitActions:
-  - {fileID: 2238602235549017097}
   - {fileID: -5163774526810565238}
+  - {fileID: -7872792897570102498}
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
@@ -629,22 +661,6 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 2
   _value: 30
---- !u!114 &2238602235549017097
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: eaded7a7-781a-45a5-a2f0-4d21d6e7fcf0
-  _value: 2
-  _variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
 --- !u!114 &2587297997848702634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -679,7 +695,7 @@ MonoBehaviour:
     x: 51715
     y: 50547
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 3
   children:
   - {fileID: 9009377467252202774}
@@ -842,22 +858,6 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
   _comparison: 0
   _value: 0
---- !u!114 &6216286094529189168
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: ea587ade-946c-4738-b006-f86c1dc70741
-  _value: 3
-  _variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
 --- !u!114 &6987001910154792001
 MonoBehaviour:
   m_ObjectHideFlags: 0

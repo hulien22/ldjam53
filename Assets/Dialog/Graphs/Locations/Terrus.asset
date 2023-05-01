@@ -18,7 +18,7 @@ MonoBehaviour:
     x: 52084
     y: 50523
     width: 100
-    height: 57
+    height: 56
   nodeTitle: End purchase
   children:
   - {fileID: -1209156263514723140}
@@ -138,7 +138,7 @@ MonoBehaviour:
     x: 51429
     y: 50423
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 2
   children:
   - {fileID: -1312876928974138160}
@@ -277,22 +277,6 @@ MonoBehaviour:
   children:
   - {fileID: 6039330284374325198}
   _uniqueId: 3da466da-e4bd-4d9f-8ac7-b5e80b4105b7
---- !u!114 &-6720472198292762198
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: c94b94df-8fdf-47d7-935c-d4da3ce7df96
-  _value: 1
-  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
 --- !u!114 &-6644829669780951481
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,22 +294,6 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
   _comparison: 0
   _value: 0
---- !u!114 &-6473471903986057102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: 9637f04e-2b98-468b-9e07-8c38d5f29655
-  _value: 2
-  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
 --- !u!114 &-6374837394918973602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -436,22 +404,6 @@ MonoBehaviour:
   _title: ArriveAction
   _uniqueId: 4372ef88-8c2d-40cb-8df1-617c9b651fc2
   location: 1
---- !u!114 &-3918764111295074422
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc85cb2034d4fbb87ac9531677c4ce4, type: 3}
-  m_Name: SetGlobalInt
-  m_EditorClassIdentifier: 
-  _title: SetGlobalInt
-  _uniqueId: a9446a13-e029-41a1-8f78-961abd81cae7
-  _value: 3
-  _variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
 --- !u!114 &-3896468937793021525
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -501,6 +453,22 @@ MonoBehaviour:
   - {fileID: -8028487631725250355}
   - {fileID: -8694783067799892180}
   _uniqueId: e6a85522-6579-45d4-9624-c599873865cc
+--- !u!114 &-3430355622122312403
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbc81c869f4a674e80f7e12a67bdfb9, type: 3}
+  m_Name: UpgradeTerrusCargoAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeTerrusCargoAction
+  _uniqueId: 32d622a7-31c1-4161-af43-383385ba8638
+  variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  value: 1
 --- !u!114 &-3204288315032808757
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -543,8 +511,8 @@ MonoBehaviour:
   conditions: []
   enterActions: []
   exitActions:
-  - {fileID: -3918764111295074422}
   - {fileID: -2748645599412160118}
+  - {fileID: 2525386913864794529}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -642,6 +610,22 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: You proved your worth! Head to outpost Miram 5. I need to you take a
     special delivery.
+--- !u!114 &-1666909592011793542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbc81c869f4a674e80f7e12a67bdfb9, type: 3}
+  m_Name: UpgradeTerrusCargoAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeTerrusCargoAction
+  _uniqueId: 287cabba-7a88-4e96-865e-8590e95e624e
+  variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  value: 2
 --- !u!114 &-1312876928974138160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,7 +725,7 @@ MonoBehaviour:
   - {fileID: -7580935996352580516}
   - {fileID: 4727675321738810728}
   root: {fileID: 1961000476301625562}
-  scrollPosition: {x: 49260, y: 49866.5}
+  scrollPosition: {x: 51306.668, y: 49953.832}
 --- !u!114 &1726325750219350460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +751,7 @@ MonoBehaviour:
   conditions: []
   enterActions: []
   exitActions:
-  - {fileID: -6720472198292762198}
+  - {fileID: -3430355622122312403}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
@@ -821,7 +805,7 @@ MonoBehaviour:
     x: 49215
     y: 50206
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: 4821668009485562612}
@@ -845,6 +829,22 @@ MonoBehaviour:
   children:
   - {fileID: 8418757637556274928}
   _uniqueId: b11dc31f-e20e-4810-b3de-0cf529fea4da
+--- !u!114 &2525386913864794529
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbc81c869f4a674e80f7e12a67bdfb9, type: 3}
+  m_Name: UpgradeTerrusCargoAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeTerrusCargoAction
+  _uniqueId: de7ed3f5-45cf-4c93-9192-d77336db5fbf
+  variable: {fileID: 11400000, guid: 859d3a119a71b2d4fae5b0f1f26628ee, type: 2}
+  value: 3
 --- !u!114 &2827086916112318543
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -879,7 +879,7 @@ MonoBehaviour:
     x: 51428
     y: 50729
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 3
   children:
   - {fileID: -1312876928974138160}
@@ -1034,8 +1034,8 @@ MonoBehaviour:
   conditions: []
   enterActions: []
   exitActions:
-  - {fileID: -6473471903986057102}
   - {fileID: -5066453688892747840}
+  - {fileID: -1666909592011793542}
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}

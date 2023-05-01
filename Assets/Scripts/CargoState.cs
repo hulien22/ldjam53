@@ -7,7 +7,7 @@ using UnityEngine;
 using static Assets.Scripts.StorySystem.JobsGenerator;
 
 public class CargoState : MonoBehaviour {
-    private static CargoState instance;
+    public static CargoState instance;
     // private int packages = 0;
 
     public class CargoItem
@@ -21,6 +21,8 @@ public class CargoState : MonoBehaviour {
         }
     }
     private List<CargoItem> packages;
+    public int terrusUpgrades;
+    public int kantoraUpgrades;
 
     private void Awake() {
         if (instance != null) {
@@ -46,5 +48,18 @@ public class CargoState : MonoBehaviour {
 
     public static int GetPackageCount() {
         return instance.packages.Count;
+    }
+
+    public static void AddCargoUpgrade(int val, Location loc)
+    {
+        if (loc == Location.Terrus)
+        {
+            instance.terrusUpgrades = val;
+        }
+        else
+        {
+            instance.kantoraUpgrades = val;
+        }
+        GlobalState.instance.cargoUIController.UpdateNumTotalCargo(instance.terrusUpgrades + instance.kantoraUpgrades + 3);
     }
 }

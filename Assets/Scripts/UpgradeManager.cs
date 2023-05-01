@@ -46,10 +46,10 @@ public class UpgradeManager : MonoBehaviour {
 
     public static void SetTerrusCargo(int val)
     {
-
+        CargoState.AddCargoUpgrade(val, Location.Terrus);
     }
     public static void SetKantoraCargo(int val)
     {
-
+        CargoState.AddCargoUpgrade(val, Location.Kantora);
     }
 }
