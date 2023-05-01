@@ -1,0 +1,793 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8309752474672585804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a244161e-d5b9-40cc-97c6-e2c81e4d5b0f
+  rect:
+    serializedVersion: 2
+    x: 50826
+    y: 49855
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -6489225238177300194}
+  enterActions: []
+  exitActions:
+  - {fileID: -5489020090902380411}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Miram 5.
+--- !u!114 &-8174027859540989307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 57f07e03-6221-4772-997d-b4d780a07246
+  rect:
+    serializedVersion: 2
+    x: 50567
+    y: 49870
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: 5731078675118138817}
+  enterActions: []
+  exitActions:
+  - {fileID: -5230758617137809799}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Don'atus. I promise I didn't eat any.
+--- !u!114 &-7906395699867950406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 7b280152-363e-42bd-af2c-fa9d59d76619
+  _value: 0
+  variable: {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 4
+--- !u!114 &-7254083114700185612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 3957a1a3-ad7f-43e2-87db-2b57907ad2c8
+  _value: 0
+  variable: {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 6
+--- !u!114 &-6723666792786543768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 11c5b91f-d3c3-4d2f-9bde-3baa87c2b813
+  rect:
+    serializedVersion: 2
+    x: 50816
+    y: 50431
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 9160114225810819550}
+  enterActions: []
+  exitActions:
+  - {fileID: -5729147070141537317}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Terrus.
+--- !u!114 &-6489225238177300194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: bb9fdede-a7d4-44c8-b27a-aaf450dc73d7
+  variable: {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
+--- !u!114 &-5742849234609628710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 2343be1b-d0a8-45d2-b54e-4806be135b1e
+  variable: {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
+--- !u!114 &-5729147070141537317
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 064f4dbe-ee1b-4314-9f30-8afec714705f
+  _value: 0
+  variable: {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 1
+--- !u!114 &-5489020090902380411
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: c44c8c2e-715e-4817-a358-d23bb626e2ef
+  _value: 0
+  variable: {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 13
+--- !u!114 &-5230758617137809799
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 1d59903e-77c8-483f-a6c0-5b94efc51028
+  _value: 0
+  variable: {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 2
+--- !u!114 &-4323489114499720679
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 92a38977-2277-42b6-8208-1f06fc89090c
+  _value: 0
+  variable: {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 7
+--- !u!114 &-3942618027195108414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 5cabf4bd-778f-4e3f-bff9-8692fd368388
+  variable: {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
+--- !u!114 &-3755586881675641860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 55feb391-43f3-46bd-a74e-dfbdb8f48884
+  _value: 0
+  variable: {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 14
+--- !u!114 &-2669776581796012005
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 840a14f6-50f7-4308-af10-79f5c27e5cf5
+  variable: {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
+--- !u!114 &-1957716548033858010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: efad84f0-9bb6-4612-937f-eb0430268731
+  variable: {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
+--- !u!114 &-1617215376243769198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 26aaad7c-de3e-4f90-a8d8-0db49c4b9ae7
+  rect:
+    serializedVersion: 2
+    x: 50569
+    y: 50549
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -1056890884278694292}
+  enterActions: []
+  exitActions:
+  - {fileID: 586367598911360415}
+  choices: []
+  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Iris. Well one of them anyway.
+--- !u!114 &-1056890884278694292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 5a23fb7c-a3fb-48ac-a29b-5ac2e6f1092b
+  variable: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+--- !u!114 &-709222191912866203
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 5f416ca4-c34a-4acc-b30b-09565bed6b25
+  variable: {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Delivery
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: 1046622458957242873}
+  - {fileID: 5687687368545709985}
+  - {fileID: 2024389630113845460}
+  - {fileID: -8174027859540989307}
+  - {fileID: 8751578943032723260}
+  - {fileID: 6083775891660732309}
+  - {fileID: 1221525214705737537}
+  - {fileID: -8309752474672585804}
+  - {fileID: -6723666792786543768}
+  - {fileID: 594369612237473794}
+  - {fileID: 401288770881764148}
+  - {fileID: 5242636712137999134}
+  - {fileID: -1617215376243769198}
+  root: {fileID: 1046622458957242873}
+  scrollPosition: {x: 50001.5, y: 50037.5}
+--- !u!114 &331523295005627315
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 52eb87e9-4a4b-47b2-ae13-6443b71e24f4
+  variable: {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+--- !u!114 &401288770881764148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c4e4a0df-12c1-4557-83b2-b8ec1feb2563
+  rect:
+    serializedVersion: 2
+    x: 50824
+    y: 50067
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: 2229126537340872345}
+  enterActions: []
+  exitActions:
+  - {fileID: 807305378289977217}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Scrapton.
+--- !u!114 &586367598911360415
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: f7b4c9d2-eb69-4b91-99f9-315176eb00e7
+  _value: 0
+  variable: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 8
+--- !u!114 &594369612237473794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 5ae633e1-8a25-4894-bd46-c03ced7e07c5
+  rect:
+    serializedVersion: 2
+    x: 50820
+    y: 49686
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -1957716548033858010}
+  enterActions: []
+  exitActions:
+  - {fileID: 1971025314940273635}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Lunas.
+--- !u!114 &807305378289977217
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 835afd71-3d06-482a-b64a-6fb3224c81bf
+  _value: 0
+  variable: {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 5
+--- !u!114 &1046622458957242873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: aae4e851-132e-46aa-88c4-398ad55ee5c1
+  rect:
+    serializedVersion: 2
+    x: 50150
+    y: 50187
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &1221525214705737537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a0d7725b-6a64-45c3-8955-d9ccba176011
+  rect:
+    serializedVersion: 2
+    x: 50563
+    y: 50379
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -3942618027195108414}
+  enterActions: []
+  exitActions:
+  - {fileID: 2268852820809003126}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Kantora.
+--- !u!114 &1971025314940273635
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 52f0b412-5c7c-4676-a7c2-01eed4ca5047
+  _value: 0
+  variable: {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 12
+--- !u!114 &2024389630113845460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: b3bd7aed-3581-478b-8e24-40eee359d945
+  rect:
+    serializedVersion: 2
+    x: 50311
+    y: 50188
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 594369612237473794}
+  - {fileID: 5687687368545709985}
+  - {fileID: -8309752474672585804}
+  - {fileID: -8174027859540989307}
+  - {fileID: 8751578943032723260}
+  - {fileID: 401288770881764148}
+  - {fileID: 6083775891660732309}
+  - {fileID: 5242636712137999134}
+  - {fileID: 1221525214705737537}
+  - {fileID: -6723666792786543768}
+  - {fileID: -1617215376243769198}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &2229126537340872345
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 563cf0fc-e5a0-4a79-b3e4-fa94a4e2a661
+  variable: {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
+--- !u!114 &2268852820809003126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: db6047a9-bfdc-4b43-b9d2-0c2427fd12eb
+  _value: 0
+  variable: {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 3
+--- !u!114 &5242636712137999134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 1ac75720-79fa-4d4f-b7f2-5cf03116a80f
+  rect:
+    serializedVersion: 2
+    x: 50815
+    y: 50252
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: 331523295005627315}
+  enterActions: []
+  exitActions:
+  - {fileID: -3755586881675641860}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Taldoris.
+--- !u!114 &5687687368545709985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c98fc199-2686-4b08-819d-0b373a149129
+  rect:
+    serializedVersion: 2
+    x: 50572
+    y: 49698
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -709222191912866203}
+  enterActions: []
+  exitActions:
+  - {fileID: -7906395699867950406}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Alban.
+--- !u!114 &5731078675118138817
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 751fad7f-4335-4c7d-82c1-5bd2776793f9
+  variable: {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
+--- !u!114 &6083775891660732309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ec83f7b4-e6fa-404e-b07a-e025ea96b6c7
+  rect:
+    serializedVersion: 2
+    x: 50565
+    y: 50209
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -2669776581796012005}
+  enterActions: []
+  exitActions:
+  - {fileID: -7254083114700185612}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Haldor.
+--- !u!114 &8751578943032723260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 900d699c-604f-4d80-8522-c0c8785ba30f
+  rect:
+    serializedVersion: 2
+    x: 50567
+    y: 50041
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -5742849234609628710}
+  enterActions: []
+  exitActions:
+  - {fileID: -4323489114499720679}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Erabus 3.
+--- !u!114 &9160114225810819550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 9cae7ef9-fcf3-4714-b6a6-f76570dc7e68
+  variable: {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
