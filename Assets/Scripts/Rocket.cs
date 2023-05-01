@@ -9,10 +9,14 @@ public class Rocket : MonoBehaviour
 
     public CircleCollider2D planetDetector;
     public ParticleSystem particles;
+    public ParticleSystem downParticles;
+    public ParticleSystem leftParticles;
+    public ParticleSystem rightParticles;
 
     public int health;
 
     public float thrustModifier;
+    public float downThrustModifier;
     public float turnModifier;
 
     public float turnDamping;
@@ -123,11 +127,16 @@ public class Rocket : MonoBehaviour
             // When landed, only allow thrust
             if (!landed || thrustInput > 0)
             {
-                rocketBody.AddForce(velocity * thrustModifier);
-            }
-            if (thrustInput > 0)
-            {
-                particles.Emit(1);
+                if (thrustInput > 0)
+                {
+                    rocketBody.AddForce(velocity * thrustModifier);
+                    particles.Emit(1);
+                }
+                else
+                {
+                    rocketBody.AddForce(velocity * downThrustModifier);
+                    downParticles.Emit(1);
+                }
             }
         }
         // If landed kill all speed.
@@ -154,6 +163,14 @@ public class Rocket : MonoBehaviour
         {
             rocketBody.angularDrag = 0;
             rocketBody.AddTorque(turnInput * turnModifier);
+            if (turnInput < 0)
+            {
+                leftParticles.Emit(1);
+            }
+            else
+            {
+                rightParticles.Emit(1);
+            }
         }
         else
         {
