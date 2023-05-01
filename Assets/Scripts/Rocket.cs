@@ -63,6 +63,8 @@ public class Rocket : MonoBehaviour
     private float volumeTarget;
     private AudioSource audioThrust;
 
+    private bool canReset = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,8 +106,10 @@ public class Rocket : MonoBehaviour
 
     public void SetControls(bool enabled) {
         if (enabled) {
+            canReset = true;
             inputs.Enable();
         } else {
+            canReset = false;
             inputs.Disable();
         }
     }
@@ -373,6 +377,7 @@ public class Rocket : MonoBehaviour
 
     public void ResetToLastPlanet()
     {
+        if (!canReset) return;
         Debug.Log("RESET SHIP");
         var lastPlanet = GlobalState.instance.lastPlanetVisited;
 
