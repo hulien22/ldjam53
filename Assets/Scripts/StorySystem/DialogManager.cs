@@ -39,6 +39,8 @@ public class DialogManager : MonoBehaviour {
         StartTutorial();
     }
 
+    public Rocket rocket;
+
 
     private DialogueController controller;
 
@@ -84,6 +86,7 @@ public class DialogManager : MonoBehaviour {
     }
 
     public void StartDialog(Location planet) {
+        rocket.SetControls(false);
         if (!GlobalDatabaseManager.Instance.Database.Bools.Get("completedIntro", false)) return;
         LocationManager.SetLocation(planet);
         SetupJobDialog(planet);
@@ -126,6 +129,7 @@ public class DialogManager : MonoBehaviour {
 
     public void EndDialog() {
         speakerContainer.SetActive(false);
+        rocket.SetControls(true);
     }
 
     public void OnSetDialog(IActor actor, string text, AudioClip audioClip) {

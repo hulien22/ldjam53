@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Computer
   m_EditorClassIdentifier: 
   _displayName: Ship Navi 6000
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: 2c1e15007c5c76d4091e97065c04a74b, type: 3}
