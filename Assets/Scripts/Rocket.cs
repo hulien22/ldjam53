@@ -38,6 +38,8 @@ public class Rocket : MonoBehaviour
 
     public float atmosMod = 1;
 
+    private bool reset = false;
+
 
     public Vector3 previousPosition;
     private Vector2 worldVelocity;
@@ -55,6 +57,16 @@ public class Rocket : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (reset)
+        {
+            rocketBody.velocity = Vector2.zero;
+            rocketBody.angularVelocity = 0;
+            previousPosition = GetRocketPosition();
+            previousRelativePosition = Vector3.zero;
+            landed = false;
+            reset = false;
+            return;
+        }
         worldVelocity = (GetRocketPosition() - previousPosition) / Time.deltaTime;
         // Debug.Log(worldVelocity + " | " + rocketBody.velocity + " | " + transform.parent);
         previousPosition = GetRocketPosition();
@@ -259,6 +271,9 @@ public class Rocket : MonoBehaviour
         previousPosition = GetRocketPosition();
         previousRelativePosition = Vector3.zero;
         landed = false;
+
+        // set flag for first physics tick
+        reset = true;
     }
 
 }
