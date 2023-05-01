@@ -25,6 +25,7 @@ public class CargoBoxUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void EmptyBox()
     {
         image.sprite = empty;
+        text = "";
         textUi.text = "";
     }
 
