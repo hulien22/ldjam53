@@ -27,7 +27,7 @@ public class CargoUIController : MonoBehaviour
 
     public void UpdateFilledCargo(CargoState.CargoItem specialPackage, List<CargoState.CargoItem> packages)
     {
-        Debug.Log("UPDATEFILLED");
+        Debug.Log("UPDATEFILLED " + specialPackage);
         if (specialPackage != null)
         {
             cargoBoxes[0].FillBox(specialPackage.text);

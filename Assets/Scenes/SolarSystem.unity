@@ -19253,23 +19253,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1975821294458554909, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
       propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1975821294458554909, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
-      propertyPath: m_fontColor.g
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1975821294458554909, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.68217087
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975821294458554909, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.12005794
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1975821294458554909, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278255391
+      value: 4294946304
       objectReference: {fileID: 0}
     - target: {fileID: 4870437179909203205, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
       propertyPath: m_Color.b
-      value: 0.04220295
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4870437179909203205, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
       propertyPath: m_Color.g
@@ -19277,8 +19277,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4870437179909203205, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5335223907178141000, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
+      propertyPath: full
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d6e77c59e23bb4418b9cf6e25c52743, type: 3}
+    - target: {fileID: 5335223907178141000, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
+      propertyPath: empty
+      value: 
+      objectReference: {fileID: 21300000, guid: db64d159aa2126942b10cc46819bc3f7, type: 3}
     - target: {fileID: 7659438292396427735, guid: 5b244fecffcb8f04e94d75fa93281fae, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
