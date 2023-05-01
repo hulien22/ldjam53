@@ -17,6 +17,8 @@ public class AcquireSpecialCargoAction : ActionDataBase
 {
     [field: SerializeField]
     public Location Target { get; set; }
+
+    [field: SerializeField]
     public string Name { get; set; }
 
     public override ActionStatus OnUpdate()

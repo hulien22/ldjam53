@@ -41,13 +41,13 @@ public class CargoState : MonoBehaviour {
         // instance.packages++;
         instance.packages.Add(new CargoItem(start, target, Assets.Scripts.StorySystem.JobsGenerator.GetTextForCargoUI(start, target)));
         GlobalState.AddKnownLocation(target);
-        GlobalState.instance.cargoUIController.UpdateFilledCargo(instance.packages);
+        GlobalState.instance.cargoUIController.UpdateFilledCargo(instance.specialCargo, instance.packages);
     }
 
     public static void RemovePackage(Location start)
     {
         instance.packages.RemoveAll(p => p.start == start);
-        GlobalState.instance.cargoUIController.UpdateFilledCargo(instance.packages);
+        GlobalState.instance.cargoUIController.UpdateFilledCargo(instance.specialCargo, instance.packages);
     }
 
     public static int GetPackageCount() {
@@ -71,10 +71,12 @@ public class CargoState : MonoBehaviour {
     public static void AddSpecialCargo(Location start, Location target, string name)
     {
         string desc = Assets.Scripts.StorySystem.JobsGenerator.GetTextForSpecialCargo(start, target, name);
-        instance.specialCargo = new CargoItem(start, target, name);
+        instance.specialCargo = new CargoItem(start, target, desc);
+        GlobalState.instance.cargoUIController.UpdateFilledCargo(instance.specialCargo, instance.packages);
     }
     public static void RemoveSpecialCargo()
     {
         instance.specialCargo = null;
+        GlobalState.instance.cargoUIController.UpdateFilledCargo(instance.specialCargo, instance.packages);
     }
 }

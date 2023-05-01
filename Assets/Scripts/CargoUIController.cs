@@ -32,6 +32,10 @@ public class CargoUIController : MonoBehaviour
         {
             cargoBoxes[0].FillBox(specialPackage.text);
         }
+        else
+        {
+            cargoBoxes[0].EmptyBox();
+        }
         for (int i = 1; i < maxCargo; i++)
         {
             if ((i - 1) < packages.Count)
