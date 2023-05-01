@@ -19,4 +19,8 @@ public class AudioManager : MonoBehaviour {
         Instance.source.loop = true;
         Instance.source.Play();
     }
+
+    public static void PlayVoice(AudioClip clip) {
+        Instance.source.PlayOneShot(clip);
+    }
 }

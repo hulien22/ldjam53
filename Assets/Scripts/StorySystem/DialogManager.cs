@@ -26,8 +26,8 @@ public class DialogManager : MonoBehaviour {
         controller.Events.SpeakWithAudio.AddListener(OnSetDialog);
         controller.Events.Choice.AddListener(OnSetChoices);
         controller.Events.End.AddListener(EndDialog);
-
         controller.Events.NodeEnter.AddListener((node) => {
+            //node.
             //Debug.Log($"Node Enter: {node.GetType()} - {node.UniqueId}");
         });
 
@@ -131,7 +131,7 @@ public class DialogManager : MonoBehaviour {
     public void OnSetDialog(IActor actor, string text, AudioClip audioClip) {
         Debug.Log("here");
         if (audioClip) Debug.Log($"Audio Clip Detected ${audioClip.name}");
-        AudioManager.PlaySound(audioClip);
+        AudioManager.PlayVoice(VoiceManager.GetVoice(actor));
         ClearChoices();
         SetDialog(actor, text);
 
@@ -153,6 +153,7 @@ public class DialogManager : MonoBehaviour {
         portrait.sprite = actor.Portrait;
         portaitLabel.text = actor.DisplayName;
         textLabel.text = text;
+        AudioManager.PlayVoice(VoiceManager.GetVoice(actor));
     }
 
     private void Update() {
