@@ -102,8 +102,8 @@ public class Rocket : MonoBehaviour
                     lastLandTime = 0;
                     Debug.Log("landed on : " + hit.collider.gameObject);
                     GlobalState.AddKnownLocation(hit.collider.gameObject);
-                    GlobalState.lastPlanetVisited = hit.collider.gameObject.GetComponent<Planet>();
-                    DialogManager.Instance.StartDialog(GlobalState.lastPlanetVisited.location);
+                    GlobalState.instance.lastPlanetVisited = hit.collider.gameObject.GetComponent<Planet>();
+                    DialogManager.Instance.StartDialog(GlobalState.instance.lastPlanetVisited.location);
                     // stick to parent.
                     // TODO still need this?
                     // transform.SetParent(hit.collider.gameObject.transform);
@@ -278,7 +278,7 @@ public class Rocket : MonoBehaviour
     public void ResetToLastPlanet()
     {
         Debug.Log("RESET SHIP");
-        var lastPlanet = GlobalState.lastPlanetVisited;
+        var lastPlanet = GlobalState.instance.lastPlanetVisited;
 
         // move to the planet and set relative position/rotation
         transform.SetParent(lastPlanet.transform);
