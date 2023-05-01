@@ -13,14 +13,17 @@ public class CargoState : MonoBehaviour {
     public class CargoItem
     {
         public Location start;
+        public Location target;
         public string text;
-        public CargoItem(Location s, string t)
+        public CargoItem(Location s, Location t, string name)
         {
             start = s;
-            text = t;
+            target = t;
+            text = name;
         }
     }
     private List<CargoItem> packages;
+    public CargoItem specialCargo;
     public int terrusUpgrades;
     public int kantoraUpgrades;
 
@@ -30,12 +33,13 @@ public class CargoState : MonoBehaviour {
         }
         instance = this;
         instance.packages = new List<CargoItem>();
+        instance.specialCargo = null;
     }
 
     public static void AddPackage(Location start, Location target)
     {
         // instance.packages++;
-        instance.packages.Add(new CargoItem(start, Assets.Scripts.StorySystem.JobsGenerator.GetTextForCargoUI(start, target)));
+        instance.packages.Add(new CargoItem(start, target, Assets.Scripts.StorySystem.JobsGenerator.GetTextForCargoUI(start, target)));
         GlobalState.AddKnownLocation(target);
         GlobalState.instance.cargoUIController.UpdateFilledCargo(instance.packages);
     }
@@ -47,7 +51,8 @@ public class CargoState : MonoBehaviour {
     }
 
     public static int GetPackageCount() {
-        return instance.packages.Count;
+        int i = (instance.specialCargo == null ? 0 : 1);
+        return instance.packages.Count + i;
     }
 
     public static void AddCargoUpgrade(int val, Location loc)
@@ -61,5 +66,15 @@ public class CargoState : MonoBehaviour {
             instance.kantoraUpgrades = val;
         }
         GlobalState.instance.cargoUIController.UpdateNumTotalCargo(instance.terrusUpgrades + instance.kantoraUpgrades + 3);
+    }
+
+    public static void AddSpecialCargo(Location start, Location target, string name)
+    {
+        string desc = Assets.Scripts.StorySystem.JobsGenerator.GetTextForSpecialCargo(start, target, name);
+        instance.specialCargo = new CargoItem(start, target, name);
+    }
+    public static void RemoveSpecialCargo()
+    {
+        instance.specialCargo = null;
     }
 }
