@@ -8,6 +8,8 @@ public static class GlobalState
     public static HashSet<Planet> knownLocations { get; }
     public static PlanetDropdown planetDropdown { get; set; }
 
+    public static Planet lastPlanetVisited { get; set; }
+
     public static void AddKnownLocation(GameObject obj)
     {
         Planet planet = obj.GetComponent<Planet>();
