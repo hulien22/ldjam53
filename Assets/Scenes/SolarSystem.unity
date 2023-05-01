@@ -20605,6 +20605,76 @@ MonoBehaviour:
   <SidequestItemName>k__BackingField: crate of lumber
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
   <Actor>k__BackingField: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+--- !u!114 &1842279525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8126941880587442377, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
+  m_PrefabInstance: {fileID: 8235960706158281816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842279516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf7f203fc8687849a9c3c255932259c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1843200314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843200316}
+  - component: {fileID: 1843200315}
+  m_Layer: 0
+  m_Name: GlobalState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1843200315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843200314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c664b66a291202940b4df1db1218321a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetDropdown: {fileID: 448216261}
+  lastPlanetVisited: {fileID: 1842279525}
+  terrus: {fileID: 1842279516}
+  donatus: {fileID: 100007654}
+  kantora: {fileID: 1677538668}
+  alban: {fileID: 1750024178}
+  scrapton: {fileID: 817489876}
+  haldor: {fileID: 291620796}
+  erabus: {fileID: 1944020936}
+  iris1: {fileID: 308297447}
+  iris2: {fileID: 942650934}
+  iris3: {fileID: 1548944809}
+  lunas: {fileID: 351245727}
+  miram: {fileID: 692882107}
+  taldoris: {fileID: 0}
+--- !u!4 &1843200316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843200314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 241.66539, y: -183.69023, z: -0.28299436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1904959211
 GameObject:
   m_ObjectHideFlags: 0

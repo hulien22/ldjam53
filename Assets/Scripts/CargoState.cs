@@ -7,8 +7,6 @@ using UnityEngine;
 public class CargoState : MonoBehaviour {
     private static CargoState instance;
     private int packages = 0;
-    
-    
     private void Awake() {
         if (instance != null) {
             Debug.LogError("Duplicate cargo manager detected.");
@@ -16,8 +14,10 @@ public class CargoState : MonoBehaviour {
         instance = this;
     }
 
-    public static void AddPackage() {
+    public static void AddPackage(Location loc)
+    {
         instance.packages++;
+        GlobalState.AddKnownLocation(loc);
     }
 
     public static void RemovePackage() {
