@@ -310,7 +310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &44141942
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3111032948162052428, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: m_Name
-      value: SunPlanet
+      value: Sunus
       objectReference: {fileID: 0}
     - target: {fileID: 3900930123031172986, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: m_IsActive
@@ -3978,6 +3978,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8555340fe81fb0e44b5cce5a1021abcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &521386472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3111032948162052428, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
+  m_PrefabInstance: {fileID: 194662606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &529237556
 GameObject:
   m_ObjectHideFlags: 0
@@ -7955,7 +7960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3111032948162052428, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: m_Name
-      value: RebelShipwreck
+      value: Rebel Shipwreck
       objectReference: {fileID: 0}
     - target: {fileID: 5476502126862091074, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: orbitSpeed
@@ -29055,12 +29060,15 @@ MonoBehaviour:
   scrapton: {fileID: 817489876}
   haldor: {fileID: 291620796}
   erabus: {fileID: 1944020936}
-  iris1: {fileID: 308297447}
-  iris2: {fileID: 942650934}
+  iris1: {fileID: 1438155614}
+  iris2: {fileID: 480565905}
   iris3: {fileID: 1548944809}
   lunas: {fileID: 351245727}
   miram: {fileID: 692882107}
-  taldoris: {fileID: 0}
+  taldoris: {fileID: 871537401}
+  sunus: {fileID: 521386472}
+  rebelShipwreck: {fileID: 1098330736}
+  impShipwreck: {fileID: 2024769791}
 --- !u!4 &1843200316
 Transform:
   m_ObjectHideFlags: 0
@@ -30322,7 +30330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3111032948162052428, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: m_Name
-      value: ImperialShipwreck
+      value: Imperial Shipwreck
       objectReference: {fileID: 0}
     - target: {fileID: 5476502126862091074, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: orbitSpeed

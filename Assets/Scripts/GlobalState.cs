@@ -39,6 +39,9 @@ public class GlobalState : MonoBehaviour
     [SerializeField] private GameObject lunas;
     [SerializeField] private GameObject miram;
     [SerializeField] private GameObject taldoris;
+    [SerializeField] private GameObject sunus;
+    [SerializeField] private GameObject rebelShipwreck;
+    [SerializeField] private GameObject impShipwreck;
 
     public static GameObject GetPlanet(Location location)
     {
@@ -70,6 +73,12 @@ public class GlobalState : MonoBehaviour
                 return instance.miram;
             case Location.Taldoris:
                 return instance.taldoris;
+            case Location.Sunus:
+                return instance.sunus;
+            case Location.RebelShipwreck:
+                return instance.rebelShipwreck;
+            case Location.ImperialShipwreck:
+                return instance.impShipwreck;
             default:
                 Debug.LogError($"Got side quest from {location} which does not have side quests.");
                 return instance.terrus;

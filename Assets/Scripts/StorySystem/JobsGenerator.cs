@@ -127,9 +127,9 @@ namespace Assets.Scripts.StorySystem {
 
         public static string GetTextForSpecialCargo(Location from, Location target, string name)
         {
-            SidequestPlanet planet = GetPlanet(from);
-            SidequestPlanet planetTarget = GetPlanet(target);
-            return $"Special Delivery: {name} from {planet.SidequestName} for {planetTarget.SidequestName}";
+            var planet = GlobalState.GetPlanet(from);
+            var planetTarget = GlobalState.GetPlanet(target);
+            return $"Special Delivery: {name} from {planet.name} for {planetTarget.name}";
         }
 
         public static Difficulty GetDifficultyOfJob(Location start, Location end) {
