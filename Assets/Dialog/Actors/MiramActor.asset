@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604a6ace6b46473fa9efde504ee00623, type: 3}
   m_Name: MiramActor
   m_EditorClassIdentifier: 
-  _displayName: Miram
+  _displayName: Miriam
   _portrait: {fileID: 0}
