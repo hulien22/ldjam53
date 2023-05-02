@@ -367,7 +367,7 @@ MonoBehaviour:
     x: 49897
     y: 50236
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: 615145485743312568}
@@ -721,7 +721,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -7083600021910376603}
-  - {fileID: 2824782727676746003}
+  - {fileID: 0}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
@@ -910,7 +910,7 @@ MonoBehaviour:
     x: 51503
     y: 50216
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 2
   children:
   - {fileID: -5424950678954783492}
@@ -980,7 +980,7 @@ MonoBehaviour:
     x: 52107
     y: 50328
     width: 100
-    height: 56
+    height: 57
   nodeTitle: End Purchase
   children:
   - {fileID: 824329671792326126}
@@ -1005,7 +1005,7 @@ MonoBehaviour:
     x: 51486
     y: 50500
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 3
   children:
   - {fileID: -5424950678954783492}
@@ -1065,7 +1065,7 @@ MonoBehaviour:
   - {fileID: -8447088828875511330}
   - {fileID: 8494638182491511221}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 50297.5, y: 50314.5}
+  scrollPosition: {x: 50862.5, y: 50204.5}
 --- !u!114 &78123810148889883
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1124,7 +1124,7 @@ MonoBehaviour:
   conditions: []
   enterActions: []
   exitActions:
-  - {fileID: -393943576419183919}
+  - {fileID: 0}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
@@ -1258,6 +1258,23 @@ MonoBehaviour:
   _uniqueId: ca3aa174-4f76-4c8e-bc8b-e13d4d886050
   _value: 1
   _variable: {fileID: 11400000, guid: daa31a1be1358f74584899374f074597, type: 2}
+--- !u!114 &1393489327183120764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: af71768e-491a-4993-a5f2-952b865fbff1
+  _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
+  _comparison: 5
+  _value: 3
 --- !u!114 &1702174128184573615
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1385,7 +1402,7 @@ MonoBehaviour:
     x: 51485
     y: 49981
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 1
   children:
   - {fileID: -5424950678954783492}
@@ -1802,7 +1819,7 @@ MonoBehaviour:
   _uniqueId: e2c4f792-40c3-48a4-a03d-610d79a9e52e
   _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
   _comparison: 0
-  _value: 1
+  _value: 2
 --- !u!114 &7228271413354256439
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1940,14 +1957,15 @@ MonoBehaviour:
   nodeTitle: 
   children:
   - {fileID: -274007591262190775}
-  conditions: []
+  conditions:
+  - {fileID: 1393489327183120764}
   enterActions: []
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
   audio: {fileID: 0}
   dialogue: You have the flame resistant hull. I'd be suprised if anything could
-    your ship that much now.
+    damage your ship that much now.
 --- !u!114 &7985120361520794459
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2000,7 +2018,7 @@ MonoBehaviour:
     x: 50661.668
     y: 50426.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: 824329671792326126}
