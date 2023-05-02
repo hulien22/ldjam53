@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac2c05eace174dfbbc0454793ac4e1b, type: 3}
   m_Name: bombedRebels
   m_EditorClassIdentifier: 
-  key: 
+  key: bombedRebels
   defaultValue: 0
