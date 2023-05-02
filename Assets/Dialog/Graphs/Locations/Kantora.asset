@@ -128,7 +128,7 @@ MonoBehaviour:
     x: 51710
     y: 50076
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 1
   children:
   - {fileID: 9009377467252202774}
@@ -154,7 +154,7 @@ MonoBehaviour:
     x: 52299
     y: 50587
     width: 100
-    height: 56
+    height: 57
   nodeTitle: End Purchase
   children: []
   conditions: []
@@ -272,7 +272,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -2742551879822186015}
@@ -457,7 +457,7 @@ MonoBehaviour:
     x: 51699
     y: 50305
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 2
   children:
   - {fileID: 9009377467252202774}
@@ -563,7 +563,7 @@ MonoBehaviour:
   - {fileID: -907706243173770595}
   - {fileID: 2799684460356175917}
   root: {fileID: -3255383222156174597}
-  scrollPosition: {x: 50001.5, y: 50112.5}
+  scrollPosition: {x: 50367.5, y: 50039.5}
 --- !u!114 &169492490367455992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -694,7 +694,7 @@ MonoBehaviour:
     x: 51715
     y: 50547
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 3
   children:
   - {fileID: 9009377467252202774}
@@ -746,8 +746,8 @@ MonoBehaviour:
   _uniqueId: fba93321-a87c-40c4-8fdd-32ac9610f809
   rect:
     serializedVersion: 2
-    x: 50572
-    y: 50524
+    x: 50650
+    y: 50534
     width: 200
     height: 58
   nodeTitle: Side Delivery
@@ -820,7 +820,7 @@ MonoBehaviour:
   - {fileID: 169492490367455992}
   - {fileID: -8238319316583643774}
   - {fileID: -759325611440276045}
-  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  actor: {fileID: 11400000, guid: 7bf4dea2b0ace304f929e7ee49e7297b, type: 2}
   audio: {fileID: 0}
   dialogue: Welcome to Kantora.
 --- !u!114 &5607792520143616899
