@@ -28,8 +28,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Iris 2. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
+  dialogue: 'Arrived at Iris 2.  Estimated temperature: 145 K. Affiliation: Imperius.'
 --- !u!114 &-4032248499356848259
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,7 +65,7 @@ MonoBehaviour:
   - {fileID: 118417301241400165}
   - {fileID: 1864972759564004271}
   root: {fileID: 1402298430824466318}
-  scrollPosition: {x: 50369.5, y: 49983.5}
+  scrollPosition: {x: 50208.5, y: 50002.5}
 --- !u!114 &118417301241400165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,9 +163,9 @@ MonoBehaviour:
   - {fileID: -4032248499356848259}
   - {fileID: 1648231275347651865}
   - {fileID: 6645860225016883627}
-  actor: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
+  actor: {fileID: 11400000, guid: a332c5c6ed34985479c8033e31da709d, type: 2}
   audio: {fileID: 0}
-  dialogue: Welcome to Iris 2.
+  dialogue: I saw you in a vision. Tell me what you seek.
 --- !u!114 &1864972759564004271
 MonoBehaviour:
   m_ObjectHideFlags: 0
