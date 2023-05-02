@@ -7,6 +7,8 @@ using TMPro;
 
 public class OnHoverEnableObjects : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    // https://forum.unity.com/threads/some-textmeshpro-fonts-dissapear-on-window-resize-target-wasm-chrome-on-windows.901190/
+    // wtf is this bug??
 
     public GameObject obj;
 

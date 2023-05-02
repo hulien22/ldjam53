@@ -133,8 +133,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Donuts from Don'atus to Terrus
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2488eb8cc1373f44f96266ed7ff2259f, type: 2}
-  m_sharedMaterial: {fileID: -7077456608780903266, guid: 2488eb8cc1373f44f96266ed7ff2259f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b21a2ba4aa4f9841aedddeb2c7bfb47, type: 2}
+  m_sharedMaterial: {fileID: 5772476103794316290, guid: 9b21a2ba4aa4f9841aedddeb2c7bfb47, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
