@@ -721,6 +721,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -7083600021910376603}
+  - {fileID: 2824782727676746003}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
@@ -946,6 +947,21 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I'm honored to deliver this key but I feel like the sun is a bit dangerous
+--- !u!114 &-393943576419183919
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3672291a17ae5bf4c8461cab8979b154, type: 3}
+  m_Name: AddKnownLocationAction
+  m_EditorClassIdentifier: 
+  _title: AddKnownLocationAction
+  _uniqueId: 2a1ec755-fd5a-4d0e-b95d-556bc5ca6d58
+  <Target>k__BackingField: 14
 --- !u!114 &-274007591262190775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,7 +1065,7 @@ MonoBehaviour:
   - {fileID: -8447088828875511330}
   - {fileID: 8494638182491511221}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 50648.5, y: 49789.5}
+  scrollPosition: {x: 50357.5, y: 50437.5}
 --- !u!114 &78123810148889883
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1107,7 +1123,8 @@ MonoBehaviour:
   - {fileID: -632195968628233161}
   conditions: []
   enterActions: []
-  exitActions: []
+  exitActions:
+  - {fileID: -393943576419183919}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
@@ -1335,6 +1352,21 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 2
   _value: 20
+--- !u!114 &2824782727676746003
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3672291a17ae5bf4c8461cab8979b154, type: 3}
+  m_Name: AddKnownLocationAction
+  m_EditorClassIdentifier: 
+  _title: AddKnownLocationAction
+  _uniqueId: 41567987-e100-4405-bcde-2a92ae040e2d
+  <Target>k__BackingField: 16
 --- !u!114 &3411845646424366973
 MonoBehaviour:
   m_ObjectHideFlags: 0

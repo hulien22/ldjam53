@@ -710,7 +710,7 @@ MonoBehaviour:
   - {fileID: -7580935996352580516}
   - {fileID: 4727675321738810728}
   root: {fileID: 1961000476301625562}
-  scrollPosition: {x: 49347.668, y: 49667.832}
+  scrollPosition: {x: 51082.668, y: 50133.832}
 --- !u!114 &1561451196376095908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -950,6 +950,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: 6128548639874884793}
   - {fileID: 7673937541710457871}
+  - {fileID: 8450142921853031614}
   choices: []
   actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
   audio: {fileID: 0}
@@ -1194,6 +1195,21 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: No, thanks.
+--- !u!114 &8450142921853031614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3672291a17ae5bf4c8461cab8979b154, type: 3}
+  m_Name: AddKnownLocationAction
+  m_EditorClassIdentifier: 
+  _title: AddKnownLocationAction
+  _uniqueId: 525bf869-6f86-4c30-b4ef-c66f88fe6fb8
+  <Target>k__BackingField: 13
 --- !u!114 &8702155800337064428
 MonoBehaviour:
   m_ObjectHideFlags: 1

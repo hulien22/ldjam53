@@ -249,6 +249,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: 3225129564536203202}
+  - {fileID: 6959448195381112376}
   choices: []
   actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
   audio: {fileID: 0}
@@ -814,6 +815,21 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 60c73b90a2f53fc4888ab42e175fd3c2, type: 2}
   _comparison: 0
   _value: 1
+--- !u!114 &-2785025772336602666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3672291a17ae5bf4c8461cab8979b154, type: 3}
+  m_Name: AddKnownLocationAction
+  m_EditorClassIdentifier: 
+  _title: AddKnownLocationAction
+  _uniqueId: 0fea9c69-c7aa-414b-943c-a768901a8555
+  <Target>k__BackingField: 15
 --- !u!114 &-2576579757685207430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,7 +848,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: -5534665457925398196}
@@ -950,7 +966,7 @@ MonoBehaviour:
     x: 51270.668
     y: 50014.668
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -1027,7 +1043,7 @@ MonoBehaviour:
     x: 51957.668
     y: 49642.668
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -1095,7 +1111,7 @@ MonoBehaviour:
     x: 51752
     y: 50233
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 1
   children:
   - {fileID: 6862801887806424303}
@@ -1211,7 +1227,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50240.68, y: 50308.168}
+  scrollPosition: {x: 50750.68, y: 50456.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,7 +1516,7 @@ MonoBehaviour:
     x: 52410
     y: 50381
     width: 100
-    height: 57
+    height: 56
   nodeTitle: End Purchase
   children:
   - {fileID: -2490743573585313265}
@@ -1937,7 +1953,8 @@ MonoBehaviour:
   - {fileID: 8448038842732472137}
   - {fileID: -8008112106756129931}
   enterActions: []
-  exitActions: []
+  exitActions:
+  - {fileID: -2785025772336602666}
   choices: []
   actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
   audio: {fileID: 0}
@@ -2197,6 +2214,21 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
   dialogue: 'New upgrade acquired: 20 ML fuel tank.'
+--- !u!114 &6959448195381112376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3672291a17ae5bf4c8461cab8979b154, type: 3}
+  m_Name: AddKnownLocationAction
+  m_EditorClassIdentifier: 
+  _title: AddKnownLocationAction
+  _uniqueId: 30da9774-9f7a-45b9-904c-d414c9b5969a
+  <Target>k__BackingField: 14
 --- !u!114 &7224042238495289659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2307,7 +2339,7 @@ MonoBehaviour:
     x: 51755
     y: 50313
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 2
   children:
   - {fileID: 6862801887806424303}
@@ -2509,7 +2541,7 @@ MonoBehaviour:
     x: 51769
     y: 50538
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 3
   children:
   - {fileID: 6862801887806424303}
