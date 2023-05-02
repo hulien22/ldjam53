@@ -388,7 +388,7 @@ MonoBehaviour:
   - {fileID: 4702179042056258455}
   - {fileID: 8138873019878461993}
   root: {fileID: 6056214949916363489}
-  scrollPosition: {x: 50173.5, y: 50038.5}
+  scrollPosition: {x: 49910.5, y: 50029.5}
 --- !u!114 &2627807349156152644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
     x: 49943
     y: 50197
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: 8087937557140283746}
@@ -654,8 +654,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Don''atus. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
+  dialogue: 'Arrived at Don''atus. Estimated temperature: 315 K. Affiliation: neutral.'
 --- !u!114 &8138873019878461993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,7 +749,7 @@ MonoBehaviour:
     x: 52276
     y: 50212
     width: 100
-    height: 57
+    height: 56
   nodeTitle: End Purchase
   children:
   - {fileID: -7807669969062005728}

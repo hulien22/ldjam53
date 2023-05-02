@@ -307,8 +307,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Kantora. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
+  dialogue: 'Arrived at Kantora. Estimated temperature: 100 K. Affiliation: neutral.'
 --- !u!114 &-2621723906933210167
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -564,7 +563,7 @@ MonoBehaviour:
   - {fileID: -907706243173770595}
   - {fileID: 2799684460356175917}
   root: {fileID: -3255383222156174597}
-  scrollPosition: {x: 51352.5, y: 50322.5}
+  scrollPosition: {x: 50001.5, y: 50112.5}
 --- !u!114 &169492490367455992
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -34,7 +34,7 @@ MonoBehaviour:
     x: 51870
     y: 50277
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 1
   children:
   - {fileID: 3849772089594145010}
@@ -252,7 +252,7 @@ MonoBehaviour:
     x: 49909
     y: 50241
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: 8413674322907444842}
@@ -498,7 +498,7 @@ MonoBehaviour:
     x: 52597
     y: 50658
     width: 100
-    height: 57
+    height: 56
   nodeTitle: End Purchase
   children:
   - {fileID: -1895212323732732721}
@@ -544,7 +544,7 @@ MonoBehaviour:
   - {fileID: 8466861129665293031}
   - {fileID: -8969162991295120278}
   root: {fileID: -2475432116886025918}
-  scrollPosition: {x: 50266.5, y: 50098.5}
+  scrollPosition: {x: 49757.5, y: 50110.5}
 --- !u!114 &540140427283351727
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -641,7 +641,7 @@ MonoBehaviour:
     x: 51740
     y: 50699
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 3
   children:
   - {fileID: 3849772089594145010}
@@ -1162,8 +1162,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Scrapton. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
+  dialogue: 'Arrived at Scrapton. A large lump of metal. Estimated temperature: 419
+    K. Affiliation: neutral.'
 --- !u!114 &8466861129665293031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,7 +1182,7 @@ MonoBehaviour:
     x: 51879
     y: 50417
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 2
   children:
   - {fileID: 3849772089594145010}
