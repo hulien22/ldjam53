@@ -1,5 +1,37 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9005192974029994482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Give the doctor the key
+  children:
+  - {fileID: -2139635574064855546}
+  _uniqueId: a0c3fadb-cc9e-420a-8899-4b489a6b0eb5
+--- !u!114 &-8766078745138122950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: You'll really help us?
+  children:
+  - {fileID: 2034489284467561000}
+  _uniqueId: b5b1ba38-5a61-4662-a191-6b292e6235d2
 --- !u!114 &-8672566424325143644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29,6 +61,38 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
   dialogue: Arrived on Sunus. Temperature is 1,000,000 Kelvin.
+--- !u!114 &-8158547712541818240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I'll open it
+  children:
+  - {fileID: 8568222307295229903}
+  _uniqueId: 2057ec9a-2bf1-40eb-bf49-4e9d8c3c7b16
+--- !u!114 &-8054797396038844541
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: You don't look so strong
+  children:
+  - {fileID: 2034489284467561000}
+  _uniqueId: 707e3761-da9b-4f4c-949b-d6e9b46ae744
 --- !u!114 &-6978459986320724673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,18 +108,18 @@ MonoBehaviour:
   _uniqueId: 9e37d3ac-f2f7-4d4a-8ee6-3080045624b9
   rect:
     serializedVersion: 2
-    x: 51262.668
-    y: 50107.668
+    x: 51325.668
+    y: 50110.668
     width: 200
     height: 146
-  nodeTitle: 
+  nodeTitle: DIALOG 20
   children:
   - {fileID: 4605203423909192155}
   conditions: []
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: Salvation of the universe is at hand, the great purpose is close to realization.
     Open the gate
@@ -76,6 +140,53 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: eeaba7849f3fc2d4b94f6955c85ea570, type: 2}
   _comparison: 0
   _value: 0
+--- !u!114 &-5579690180295311044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 50568637-ba18-4fba-b4f6-6dba4519c106
+  _variable: {fileID: 11400000, guid: 214af75233383c84fbbb804bb0662bd7, type: 2}
+  _comparison: 0
+  _value: 1
+--- !u!114 &-5534607586437478085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 10009209-8ed6-44e6-a274-c797ecb13ade
+  rect:
+    serializedVersion: 2
+    x: 52595.668
+    y: 50103.668
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 2740680872953722043}
+  - {fileID: -2725329537888757649}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Don't listen to him, KILL HIM!
 --- !u!114 &-5359388342670696100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: IsGlobalBool
   _uniqueId: 8feabbc9-27c3-496f-b9b7-8145b05c73b0
-  _variable: {fileID: 0}
+  _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
   _comparison: 0
   _value: 1
 --- !u!114 &-4911136500821614976
@@ -108,8 +219,8 @@ MonoBehaviour:
   _uniqueId: 38c061b8-8d1e-4541-84c0-b7ea4b81dd3a
   rect:
     serializedVersion: 2
-    x: 50517.668
-    y: 50143.668
+    x: 50459.668
+    y: 50136.668
     width: 200
     height: 186
   nodeTitle: 
@@ -123,6 +234,100 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d301d844e9fe1a498538434677799f7, type: 2}
   audio: {fileID: 0}
   dialogue: You find a large slumbering form locked away.
+--- !u!114 &-4902154682870179635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a4cd140f-c4da-4b8a-b2a6-4d9f9ad926c1
+  rect:
+    serializedVersion: 2
+    x: 52147.668
+    y: 50451.668
+    width: 200
+    height: 186
+  nodeTitle: DIALOG 12
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -8054797396038844541}
+  - {fileID: -8766078745138122950}
+  actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
+  audio: {fileID: 0}
+  dialogue: I am the weapon you seek, the greatest weapon you can have, a true leader.
+--- !u!114 &-4659649056656207667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 3543d0fa-926d-40ea-9a2a-ed2dbc8355a2
+  rect:
+    serializedVersion: 2
+    x: 52155.668
+    y: 50108.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8359404788971701932}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Many eons ago The Imperious and the Sun God waged a war for the fate
+    of the galaxy and The Imperious barely won. The Sun God was forced into hiding
+    and ever since then The Imperious' Great Purpose has been to find and destroy
+    him completely. If you release him he will destroy us all, not just The Imperius!!
+--- !u!114 &-4328140252745658673
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6408ba8906c0c734585f4b01c92a5374, type: 3}
+  m_Name: ChangeScenesAction
+  m_EditorClassIdentifier: 
+  _title: ChangeScenesAction
+  _uniqueId: 1c345823-ac3c-4c34-bc1f-afe52915186b
+  <SceneName>k__BackingField: Scenes/Ending5
+--- !u!114 &-4185945446108661715
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 043ab4ed-262c-4a8b-88d1-08deb59bacbe
+  _variable: {fileID: 11400000, guid: 214af75233383c84fbbb804bb0662bd7, type: 2}
+  _comparison: 0
+  _value: 0
 --- !u!114 &-3908544819588188265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +359,169 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: You try to open the locked gate, but to no avail. Seems like you need
     a key of some sort...
+--- !u!114 &-3807590335984432766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Release the Sun God
+  children:
+  - {fileID: 3588643079061399547}
+  _uniqueId: 76eaaadd-570f-41be-83b3-52597ce6b433
+--- !u!114 &-3588399759635146069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 413ab172-1fa7-4ff8-9487-eae532bdef8c
+  rect:
+    serializedVersion: 2
+    x: 52387.668
+    y: 50720.668
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -9005192974029994482}
+  - {fileID: 8347495291903973888}
+  actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
+  audio: {fileID: 0}
+  dialogue: Shal'sar has started a war, we need to protect our selves. Its too late
+    now, its either us or The Imperius. We must use this powerful being at all costs!
+--- !u!114 &-3487440014138874878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: feb568c9-d477-4183-b730-b3511ab699e5
+  rect:
+    serializedVersion: 2
+    x: 52655.668
+    y: 50554.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 358213513800498935}
+  choices: []
+  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  audio: {fileID: 0}
+  dialogue: I think I'd rather you go to rest for another eternity..
+--- !u!114 &-2941032053344913438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Pull the plug
+  children:
+  - {fileID: -3487440014138874878}
+  _uniqueId: 9ec097e4-c18a-4b53-b420-9bdab6e048a3
+--- !u!114 &-2739931172412747141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4499cbaa-4b5d-4c39-9037-314f94bedf9e
+  rect:
+    serializedVersion: 2
+    x: 51180.668
+    y: 50452.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8956645811441285919}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
+  audio: {fileID: 0}
+  dialogue: Dr. Mog'rin opens the gate
+--- !u!114 &-2725329537888757649
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Kill the Sun God
+  children:
+  - {fileID: 1877002662292158304}
+  _uniqueId: 63228e3e-ddc1-4c0e-bc38-7d4c79efbe6a
+--- !u!114 &-2542456241034128281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: ebcbe5c0-6127-44ca-a123-f4ec5f2b6a6d
+  rect:
+    serializedVersion: 2
+    x: 50867.668
+    y: 50263.668
+    width: 100
+    height: 56
+  nodeTitle: dialog 15
+  children:
+  - {fileID: 4131440986166554189}
+  - {fileID: 5163795518910329088}
+  conditions: []
+  enterActions: []
+  exitActions: []
 --- !u!114 &-2222684034667982913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,15 +537,226 @@ MonoBehaviour:
   _uniqueId: 18b85d30-15f0-493f-9930-3bde865714b5
   rect:
     serializedVersion: 2
-    x: 50809.668
-    y: 50237.668
+    x: 50505.668
+    y: 50441.668
     width: 100
     height: 56
   nodeTitle: Has solaris key
   children:
+  - {fileID: 2956124566302943919}
   - {fileID: 3751657397848155087}
   conditions:
   - {fileID: 694868081471904653}
+  enterActions: []
+  exitActions: []
+--- !u!114 &-2139635574064855546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 00987513-dcf6-43a6-b4da-0ff89cc7e79b
+  rect:
+    serializedVersion: 2
+    x: 52665.668
+    y: 50748.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -1585700977430370099}
+  choices: []
+  actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
+  audio: {fileID: 0}
+  dialogue: '*BANG*'
+--- !u!114 &-1906036793081197057
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 5441cf0b-6dca-4617-808c-50be4d311dba
+  _variable: {fileID: 11400000, guid: db342d5be9e731f419398d5e3db3c77b, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &-1801767093075114078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Let Mog'rin open it
+  children:
+  - {fileID: -2739931172412747141}
+  _uniqueId: 83314dcb-61e6-4bce-8c20-df96c19134ae
+--- !u!114 &-1671600869830218252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: f483fc5a-b7dd-43e9-9de0-5c0a7900dc9f
+  _variable: {fileID: 11400000, guid: 763d58f8020933f4b8885d409e498da8, type: 2}
+  _comparison: 0
+  _value: 1
+--- !u!114 &-1640322815064576968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7cec1c25-c805-44b1-bf7e-38eeafea3a45
+  rect:
+    serializedVersion: 2
+    x: 51961.668
+    y: 50272.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 5141264582858228044}
+  choices: []
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Silence you will do no such thing. The universe had lead me, Az'kor the
+    Brilliant, here and I will ascend to God hood! Once I dissect and wrench free
+    the power of the Sun God, nothing will prevent the holy cleansing of this wretched
+    galaxy!
+--- !u!114 &-1621263913497809392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 19f25b1a-93bc-4b68-b1a5-2e87657a7f36
+  rect:
+    serializedVersion: 2
+    x: 51939.668
+    y: 50499.668
+    width: 100
+    height: 56
+  nodeTitle: snitchedOnShalsar
+  children:
+  - {fileID: -4902154682870179635}
+  conditions:
+  - {fileID: -1671600869830218252}
+  enterActions: []
+  exitActions: []
+--- !u!114 &-1585700977430370099
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6408ba8906c0c734585f4b01c92a5374, type: 3}
+  m_Name: ChangeScenesAction
+  m_EditorClassIdentifier: 
+  _title: ChangeScenesAction
+  _uniqueId: cd5fcca3-fae3-4904-ab7c-01888616fc7f
+  <SceneName>k__BackingField: Scenes/Ending3
+--- !u!114 &-1258654180151313097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: bba49b6f-3c44-4f44-a50e-d0e7030c0856
+  rect:
+    serializedVersion: 2
+    x: 51532.668
+    y: 50265.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 556896084594359511}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'I''m starting to think this is a bad idea..
+
+
+    You open the gate.'
+--- !u!114 &-906961734878118316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 0beb3e02-2fa5-4c9d-91a0-5be942c79797
+  rect:
+    serializedVersion: 2
+    x: 50761.668
+    y: 50451.668
+    width: 100
+    height: 56
+  nodeTitle: snitchedOnDr
+  children:
+  - {fileID: -2542456241034128281}
+  conditions:
+  - {fileID: -5579690180295311044}
   enterActions: []
   exitActions: []
 --- !u!114 &-619797246911419489
@@ -227,8 +806,84 @@ MonoBehaviour:
   - {fileID: -6978459986320724673}
   - {fileID: 4605203423909192155}
   - {fileID: 691902304290200379}
+  - {fileID: 4131559294567946928}
+  - {fileID: -4659649056656207667}
+  - {fileID: 8359404788971701932}
+  - {fileID: -5534607586437478085}
+  - {fileID: 959466137163607366}
+  - {fileID: 1877002662292158304}
+  - {fileID: 6192490273872900732}
+  - {fileID: -1258654180151313097}
+  - {fileID: 556896084594359511}
+  - {fileID: -1640322815064576968}
+  - {fileID: 2956124566302943919}
+  - {fileID: -906961734878118316}
+  - {fileID: -2542456241034128281}
+  - {fileID: 5163795518910329088}
+  - {fileID: 4131440986166554189}
+  - {fileID: 8236920995116032635}
+  - {fileID: -1621263913497809392}
+  - {fileID: 1153908847687058773}
+  - {fileID: 7293640035838823199}
+  - {fileID: -2739931172412747141}
+  - {fileID: 8568222307295229903}
+  - {fileID: 8956645811441285919}
+  - {fileID: 3075923742740198575}
+  - {fileID: -4902154682870179635}
+  - {fileID: 2034489284467561000}
+  - {fileID: -3487440014138874878}
+  - {fileID: 3588643079061399547}
+  - {fileID: 1326119684189571387}
+  - {fileID: -3588399759635146069}
+  - {fileID: -2139635574064855546}
   root: {fileID: -619797246911419489}
-  scrollPosition: {x: 51045.53, y: 50009.832}
+  scrollPosition: {x: 52094.984, y: 50428.832}
+--- !u!114 &358213513800498935
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6408ba8906c0c734585f4b01c92a5374, type: 3}
+  m_Name: ChangeScenesAction
+  m_EditorClassIdentifier: 
+  _title: ChangeScenesAction
+  _uniqueId: 83b71ba4-8478-42ca-9219-718e1320408b
+  <SceneName>k__BackingField: Scenes/Ending5
+--- !u!114 &556896084594359511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 51ef03f5-07bb-4aab-899a-c7f5801bbb3b
+  rect:
+    serializedVersion: 2
+    x: 51743.668
+    y: 50265.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -1640322815064576968}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
+  audio: {fileID: 0}
+  dialogue: The key bearer has arrived, please release me. Many eons ago me and my
+    people where destroyed by The Imperius and forced into hiding. Let me finally
+    be free to reunite with what's left of my people.
 --- !u!114 &691902304290200379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,19 +899,23 @@ MonoBehaviour:
   _uniqueId: 4d633917-cfd4-4088-8d9a-1ab9a69f48f4
   rect:
     serializedVersion: 2
-    x: 51689.668
-    y: 50107.668
+    x: 51743.668
+    y: 50110.668
     width: 200
     height: 146
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: 4131559294567946928}
   conditions: []
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
   audio: {fileID: 0}
-  dialogue: 
+  dialogue: Finally my revival is at hand. I have the power of the ancients beyond
+    your imagination. No one will be able to stand in my way, as I have had millennia
+    to recover. Anything you wish I can do, I see this solar system is in turmoil
+    and I can fix it. Release me.
 --- !u!114 &694868081471904653
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -274,6 +933,334 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: eeaba7849f3fc2d4b94f6955c85ea570, type: 2}
   _comparison: 0
   _value: 1
+--- !u!114 &898392902237435963
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6408ba8906c0c734585f4b01c92a5374, type: 3}
+  m_Name: ChangeScenesAction
+  m_EditorClassIdentifier: 
+  _title: ChangeScenesAction
+  _uniqueId: c9678e98-39df-4b99-a526-9ef9edad2c91
+  <SceneName>k__BackingField: Scenes/Ending4
+--- !u!114 &959466137163607366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 0645d707-e018-4974-8989-fb9a2f58b8c8
+  rect:
+    serializedVersion: 2
+    x: 52871.668
+    y: 50055.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 8857388385971733078}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: The Imperius have too much power, its time to take back what is ours
+--- !u!114 &1044133641616634494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: a1b51588-c242-451c-b922-7e594c683b60
+  _variable: {fileID: 11400000, guid: 763d58f8020933f4b8885d409e498da8, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &1153908847687058773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: e5d70977-eb32-498c-8b37-f900df5d9fd9
+  rect:
+    serializedVersion: 2
+    x: 51939.668
+    y: 50626.668
+    width: 100
+    height: 56
+  nodeTitle: '!snitchedOnShalsar'
+  children:
+  - {fileID: 1326119684189571387}
+  conditions:
+  - {fileID: 1044133641616634494}
+  enterActions: []
+  exitActions: []
+--- !u!114 &1326119684189571387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: b6c9c6dd-8d20-4136-993a-558cc7cd9ffd
+  rect:
+    serializedVersion: 2
+    x: 52105.668
+    y: 50664.668
+    width: 200
+    height: 166
+  nodeTitle: DIALOG 13
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 2768715704395098320}
+  actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
+  audio: {fileID: 0}
+  dialogue: ' I am the weapon you seek, the greatest weapon you can have, a true
+    leader. I have seen how you massacred Alban, I know The Imperius is angry and
+    will strike back lethally. Revive me now and I will strike them all down before
+    they can harm your loved ones'
+--- !u!114 &1877002662292158304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: d0be3146-5106-4e78-a8ea-58424421a942
+  rect:
+    serializedVersion: 2
+    x: 52872.668
+    y: 50232.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -4328140252745658673}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: He is too dangerous, he must be stopped.
+--- !u!114 &2034489284467561000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: fccc3c3e-34d1-4af5-8d04-41f84742a81b
+  rect:
+    serializedVersion: 2
+    x: 52401.668
+    y: 50463.668
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -3807590335984432766}
+  - {fileID: -2941032053344913438}
+  actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have the power of the ancients that's beyond your imagination. The
+    Imperius will not be able to with stand me this time. I have had millennia to
+    recover. use the key in your hand to revive me completely, save your solar system.
+    Crush your enemies!
+--- !u!114 &2740680872953722043
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Release the Sun God
+  children:
+  - {fileID: 959466137163607366}
+  _uniqueId: 884c2bdc-d058-4f14-8692-1a5115e02de1
+--- !u!114 &2768715704395098320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I don't think war is the answer..
+  children:
+  - {fileID: -3588399759635146069}
+  _uniqueId: 2f9be155-2113-49a1-bc97-a56aa5c6176c
+--- !u!114 &2938521609280861990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: bbe3b42d-d3da-4565-92e2-bc664f903386
+  _variable: {fileID: 11400000, guid: db342d5be9e731f419398d5e3db3c77b, type: 2}
+  _comparison: 0
+  _value: 1
+--- !u!114 &2956124566302943919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 14682288-76a0-4d96-90ea-8364320b147c
+  rect:
+    serializedVersion: 2
+    x: 50635.668
+    y: 50392.668
+    width: 100
+    height: 56
+  nodeTitle: '!deliveredToRebel'
+  children:
+  - {fileID: -2542456241034128281}
+  conditions:
+  - {fileID: 5179968877372776161}
+  enterActions: []
+  exitActions: []
+--- !u!114 &3075923742740198575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ea31421a-23c6-47eb-94e7-a92ac57d3fbe
+  rect:
+    serializedVersion: 2
+    x: 51643.668
+    y: 50520.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -1621263913497809392}
+  - {fileID: 1153908847687058773}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
+  audio: {fileID: 0}
+  dialogue: We are no sun warriors, we are looking for a weapon to help our fight
+    with the Imperious
+--- !u!114 &3098355523167981444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Why do we have to destroy him?
+  children:
+  - {fileID: -4659649056656207667}
+  _uniqueId: d829b215-4b16-4411-ace3-0d84be28d060
+--- !u!114 &3588643079061399547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 8b417322-e740-4f27-a85e-fc44cf876ace
+  rect:
+    serializedVersion: 2
+    x: 52702.668
+    y: 50456.668
+    width: 100
+    height: 56
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 898392902237435963}
 --- !u!114 &3751657397848155087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,16 +1276,74 @@ MonoBehaviour:
   _uniqueId: 6691b778-54cd-4d89-8868-a2afb205b4ec
   rect:
     serializedVersion: 2
-    x: 50969.668
-    y: 50182.668
+    x: 50634.668
+    y: 50496.668
     width: 100
     height: 56
-  nodeTitle: 
-  children: []
+  nodeTitle: deliveredToRebel
+  children:
+  - {fileID: -906961734878118316}
+  - {fileID: 8236920995116032635}
   conditions:
   - {fileID: -5359388342670696100}
   enterActions: []
   exitActions: []
+--- !u!114 &4131440986166554189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 3d312f2c-9788-4d27-836c-c0cc9253a4ca
+  rect:
+    serializedVersion: 2
+    x: 50980.668
+    y: 50204.668
+    width: 100
+    height: 56
+  nodeTitle: '!bombedRebels'
+  children:
+  - {fileID: -6978459986320724673}
+  conditions:
+  - {fileID: -1906036793081197057}
+  enterActions: []
+  exitActions: []
+--- !u!114 &4131559294567946928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: fabf1f25-2bf9-450f-ae80-f76b1cef1f54
+  rect:
+    serializedVersion: 2
+    x: 51949.668
+    y: 50102.668
+    width: 200
+    height: 166
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 3098355523167981444}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Heh as if we'd let you go. The Imperius' ultimate goal is to locate and
+    destroy the Sun God. Prepare to die!
 --- !u!114 &4605203423909192155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,8 +1359,8 @@ MonoBehaviour:
   _uniqueId: 40d452ce-fa01-4191-9975-95d7cf739dd1
   rect:
     serializedVersion: 2
-    x: 51476.668
-    y: 50107.668
+    x: 51530.668
+    y: 50110.668
     width: 200
     height: 146
   nodeTitle: 
@@ -327,6 +1372,95 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: You open the gate.
+--- !u!114 &5141264582858228044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6408ba8906c0c734585f4b01c92a5374, type: 3}
+  m_Name: ChangeScenesAction
+  m_EditorClassIdentifier: 
+  _title: ChangeScenesAction
+  _uniqueId: 25006a2c-0317-48c4-a63b-29de0de7ddaa
+  <SceneName>k__BackingField: Scenes/Ending1
+--- !u!114 &5163795518910329088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 0f1cd28a-b39f-485f-abfa-36ff03a6ac8a
+  rect:
+    serializedVersion: 2
+    x: 50986.668
+    y: 50313.668
+    width: 100
+    height: 56
+  nodeTitle: bombedRebels
+  children:
+  - {fileID: 6192490273872900732}
+  conditions:
+  - {fileID: 2938521609280861990}
+  enterActions: []
+  exitActions: []
+--- !u!114 &5179968877372776161
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 1ddbe800-e241-4a43-9250-d8c1a7da0d6f
+  _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &6192490273872900732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 62001225-afff-4b00-b086-d0c30d76f299
+  rect:
+    serializedVersion: 2
+    x: 51324.668
+    y: 50264.668
+    width: 200
+    height: 146
+  nodeTitle: DIALOG 21
+  children:
+  - {fileID: -1258654180151313097}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: The salvation of the universe is at hand, and the parasites shall be
+    cleansed finally as all is set right. I will bathe the galaxy in righteous fury!
+    The great purpose is close to being realized!
 --- !u!114 &6814729010321426575
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -342,6 +1476,153 @@ MonoBehaviour:
   text: Leave
   children: []
   _uniqueId: c711d5ed-7d0d-451b-a3ed-5cfe4f5370bf
+--- !u!114 &7293640035838823199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 36cfe8f4-53c2-4fae-b76b-5355b8ddeaa1
+  rect:
+    serializedVersion: 2
+    x: 50949.668
+    y: 50478.668
+    width: 200
+    height: 186
+  nodeTitle: DIALOG 12
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -1801767093075114078}
+  - {fileID: -8158547712541818240}
+  actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
+  audio: {fileID: 0}
+  dialogue: You got the key! Terry really raise the bar for Terries Truckship Deliveries
+    hires. Open the gate and lets see what great weapon awaits us.
+--- !u!114 &8236920995116032635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: ec2a9231-a461-42ae-aa2a-f2bc926d3e57
+  rect:
+    serializedVersion: 2
+    x: 50760.668
+    y: 50536.668
+    width: 100
+    height: 56
+  nodeTitle: '!snitchedOnDr'
+  children:
+  - {fileID: 7293640035838823199}
+  conditions:
+  - {fileID: -4185945446108661715}
+  enterActions: []
+  exitActions: []
+--- !u!114 &8347495291903973888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Run for the exit with the key
+  children:
+  - {fileID: -2139635574064855546}
+  _uniqueId: b45ec282-9d79-45de-a064-b060394c953a
+--- !u!114 &8359404788971701932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 3033fca4-2ed9-450f-8732-919b5408878f
+  rect:
+    serializedVersion: 2
+    x: 52363.668
+    y: 50109.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5534607586437478085}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
+  audio: {fileID: 0}
+  dialogue: He lies to you, he wants to keep the rule of the solar system to himself.
+    The Imperius invaded your solar system, but I can return it to you.
+--- !u!114 &8568222307295229903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: f87041fe-1dab-461a-96e1-edef1ece6d16
+  rect:
+    serializedVersion: 2
+    x: 51180.668
+    y: 50608.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8956645811441285919}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: You open the gate
+--- !u!114 &8857388385971733078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6408ba8906c0c734585f4b01c92a5374, type: 3}
+  m_Name: ChangeScenesAction
+  m_EditorClassIdentifier: 
+  _title: ChangeScenesAction
+  _uniqueId: 2cdf9df7-17a3-49b4-8b78-4ed63901e300
+  <SceneName>k__BackingField: Scenes/Ending2
 --- !u!114 &8894729366639442658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -359,3 +1640,32 @@ MonoBehaviour:
   - {fileID: -3908544819588188265}
   - {fileID: -2222684034667982913}
   _uniqueId: 536ef794-8bc4-458f-a468-5c78c402c664
+--- !u!114 &8956645811441285919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 1a1a151f-01de-4b0d-8c35-0abf756615c7
+  rect:
+    serializedVersion: 2
+    x: 51421.668
+    y: 50520.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 3075923742740198575}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
+  audio: {fileID: 0}
+  dialogue: Have my sun warriors finally returned to revive me?
