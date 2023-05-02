@@ -51,8 +51,9 @@ public class CargoState : MonoBehaviour {
     }
 
     public static int GetPackageCount() {
-        int i = (instance.specialCargo == null ? 0 : 1);
-        return instance.packages.Count + i;
+        // int i = (instance.specialCargo == null ? 0 : 1);
+        // always add 1 for the special cargo (can't be used by regular cargo).
+        return instance.packages.Count + 1;
     }
 
     public static void AddCargoUpgrade(int val, Location loc)
