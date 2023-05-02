@@ -1,5 +1,185 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8672566424325143644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a8f692dd-4179-44a1-a4e0-eafc59c3a226
+  rect:
+    serializedVersion: 2
+    x: 50235.668
+    y: 50154.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -4911136500821614976}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Arrived on Sunus. Temperature is 1,000,000 Kelvin.
+--- !u!114 &-6978459986320724673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 9e37d3ac-f2f7-4d4a-8ee6-3080045624b9
+  rect:
+    serializedVersion: 2
+    x: 51262.668
+    y: 50107.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 4605203423909192155}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  audio: {fileID: 0}
+  dialogue: Salvation of the universe is at hand, the great purpose is close to realization.
+    Open the gate
+--- !u!114 &-6089238108530501735
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: a44e7a3a-cb39-4f15-9d71-7c89f1c71c75
+  _variable: {fileID: 11400000, guid: eeaba7849f3fc2d4b94f6955c85ea570, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &-5359388342670696100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 8feabbc9-27c3-496f-b9b7-8145b05c73b0
+  _variable: {fileID: 0}
+  _comparison: 0
+  _value: 1
+--- !u!114 &-4911136500821614976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 38c061b8-8d1e-4541-84c0-b7ea4b81dd3a
+  rect:
+    serializedVersion: 2
+    x: 50517.668
+    y: 50143.668
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 8894729366639442658}
+  - {fileID: 6814729010321426575}
+  actor: {fileID: 11400000, guid: 6d301d844e9fe1a498538434677799f7, type: 2}
+  audio: {fileID: 0}
+  dialogue: You find a large slumbering form locked away.
+--- !u!114 &-3908544819588188265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 13bb8425-37e9-4700-a651-d69265c7769d
+  rect:
+    serializedVersion: 2
+    x: 50800.668
+    y: 49963.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -4911136500821614976}
+  conditions:
+  - {fileID: -6089238108530501735}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d301d844e9fe1a498538434677799f7, type: 2}
+  audio: {fileID: 0}
+  dialogue: You try to open the locked gate, but to no avail. Seems like you need
+    a key of some sort...
+--- !u!114 &-2222684034667982913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 18b85d30-15f0-493f-9930-3bde865714b5
+  rect:
+    serializedVersion: 2
+    x: 50809.668
+    y: 50237.668
+    width: 100
+    height: 56
+  nodeTitle: Has solaris key
+  children:
+  - {fileID: 3751657397848155087}
+  conditions:
+  - {fileID: 694868081471904653}
+  enterActions: []
+  exitActions: []
 --- !u!114 &-619797246911419489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,10 +197,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 50050
     y: 50200
-    width: 0
-    height: 0
+    width: 100
+    height: 56
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: -8672566424325143644}
   conditions: []
   enterActions: []
   exitActions: []
@@ -38,5 +219,143 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nodes:
   - {fileID: -619797246911419489}
+  - {fileID: -8672566424325143644}
+  - {fileID: -4911136500821614976}
+  - {fileID: -3908544819588188265}
+  - {fileID: -2222684034667982913}
+  - {fileID: 3751657397848155087}
+  - {fileID: -6978459986320724673}
+  - {fileID: 4605203423909192155}
+  - {fileID: 691902304290200379}
   root: {fileID: -619797246911419489}
-  scrollPosition: {x: 0, y: 0}
+  scrollPosition: {x: 51045.53, y: 50009.832}
+--- !u!114 &691902304290200379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4d633917-cfd4-4088-8d9a-1ab9a69f48f4
+  rect:
+    serializedVersion: 2
+    x: 51689.668
+    y: 50107.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  audio: {fileID: 0}
+  dialogue: 
+--- !u!114 &694868081471904653
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: c41b78c3-e9a4-4107-9ad5-07543afd80f2
+  _variable: {fileID: 11400000, guid: eeaba7849f3fc2d4b94f6955c85ea570, type: 2}
+  _comparison: 0
+  _value: 1
+--- !u!114 &3751657397848155087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 6691b778-54cd-4d89-8868-a2afb205b4ec
+  rect:
+    serializedVersion: 2
+    x: 50969.668
+    y: 50182.668
+    width: 100
+    height: 56
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: -5359388342670696100}
+  enterActions: []
+  exitActions: []
+--- !u!114 &4605203423909192155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 40d452ce-fa01-4191-9975-95d7cf739dd1
+  rect:
+    serializedVersion: 2
+    x: 51476.668
+    y: 50107.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: You open the gate.
+--- !u!114 &6814729010321426575
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Leave
+  children: []
+  _uniqueId: c711d5ed-7d0d-451b-a3ed-5cfe4f5370bf
+--- !u!114 &8894729366639442658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Open the gate
+  children:
+  - {fileID: -3908544819588188265}
+  - {fileID: -2222684034667982913}
+  _uniqueId: 536ef794-8bc4-458f-a468-5c78c402c664
