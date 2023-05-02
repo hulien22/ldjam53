@@ -257,6 +257,22 @@ MonoBehaviour:
     the Legendary Mists at Taldoris. I recommend upgrading your ship with a sensor
     to safely navigate the mist and a hull to withstand the sun. Once you get the
     key meet me in the sun!
+--- !u!114 &-7516950293013774848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 5e15cc02-9fa7-4000-bbbf-ada549433c8e
+  _value: 1
+  _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
 --- !u!114 &-6711157674708505726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,6 +336,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: Ah I see you know your rights, very well carry on.
+--- !u!114 &-6582129223623562033
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 1f25fcff-56ce-4f06-abca-8a58f95a2b88
+  _value: 0
+  _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
 --- !u!114 &-6435393856298316192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -380,7 +412,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: -1284763371633617561}
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Let it happen, the Imperius need a wake up call.
 --- !u!114 &-5922225714616683339
@@ -526,7 +558,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: -4586963711269113354}
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: '*dailing* Captian Imperius Rebels are planning to bomb Alban!'
 --- !u!114 &-4774852323735576257
@@ -800,7 +832,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -5534665457925398196}
@@ -918,7 +950,7 @@ MonoBehaviour:
     x: 51270.668
     y: 50014.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -969,6 +1001,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: 430571022553426813}
   - {fileID: -4422049468345483211}
+  - {fileID: -7516950293013774848}
   choices: []
   actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
   audio: {fileID: 0}
@@ -994,7 +1027,7 @@ MonoBehaviour:
     x: 51957.668
     y: 49642.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -1062,7 +1095,7 @@ MonoBehaviour:
     x: 51752
     y: 50233
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 1
   children:
   - {fileID: 6862801887806424303}
@@ -1178,7 +1211,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50261.68, y: 49563.168}
+  scrollPosition: {x: 50240.68, y: 50308.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,6 +1317,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -790651197228650237}
+  - {fileID: -6582129223623562033}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
@@ -1466,7 +1500,7 @@ MonoBehaviour:
     x: 52410
     y: 50381
     width: 100
-    height: 56
+    height: 57
   nodeTitle: End Purchase
   children:
   - {fileID: -2490743573585313265}
@@ -2066,6 +2100,7 @@ MonoBehaviour:
   conditions:
   - {fileID: 5373848139286273395}
   - {fileID: -7730160000375639674}
+  - {fileID: 8313527552798334587}
   enterActions: []
   exitActions: []
   choices: []
@@ -2128,7 +2163,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I would, but I don't have enough credits.
 --- !u!114 &6950615036634870608
@@ -2272,7 +2307,7 @@ MonoBehaviour:
     x: 51755
     y: 50313
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 2
   children:
   - {fileID: 6862801887806424303}
@@ -2311,6 +2346,23 @@ MonoBehaviour:
   text: Nevermind...
   children: []
   _uniqueId: a9179e00-2d3d-497e-80af-0fe2a15a7467
+--- !u!114 &8313527552798334587
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 94083833-8fed-4e47-a4e7-3985f94e9086
+  _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
+  _comparison: 0
+  _value: 1
 --- !u!114 &8448038842732472137
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2457,7 +2509,7 @@ MonoBehaviour:
     x: 51769
     y: 50538
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 3
   children:
   - {fileID: 6862801887806424303}
