@@ -14584,9 +14584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e425d921b9555a42bb4b9f04f83e2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easy: 01000000
-  medium: 0600000007000000
-  hard: 0200000005000000
+  easy: 0100000006000000
+  medium: 0500000007000000
+  hard: 0200000004000000
   <SidequestName>k__BackingField: Lunas
   <SidequestItemName>k__BackingField: moon rock sample
   <SidequestItem>k__BackingField: {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
