@@ -837,7 +837,7 @@ MonoBehaviour:
   - {fileID: -3588399759635146069}
   - {fileID: -2139635574064855546}
   root: {fileID: -619797246911419489}
-  scrollPosition: {x: 52094.984, y: 50428.832}
+  scrollPosition: {x: 51235.984, y: 49957.832}
 --- !u!114 &358213513800498935
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1359,12 +1359,13 @@ MonoBehaviour:
   _uniqueId: 40d452ce-fa01-4191-9975-95d7cf739dd1
   rect:
     serializedVersion: 2
-    x: 51530.668
-    y: 50110.668
+    x: 51532.668
+    y: 50112.668
     width: 200
     height: 146
   nodeTitle: 
-  children: []
+  children:
+  - {fileID: 691902304290200379}
   conditions: []
   enterActions: []
   exitActions: []
