@@ -710,7 +710,24 @@ MonoBehaviour:
   - {fileID: 3593941133132853916}
   - {fileID: -5116416164746911647}
   root: {fileID: -2607164416126842985}
-  scrollPosition: {x: 50136.3, y: 49693.5}
+  scrollPosition: {x: 50269.3, y: 49710.5}
+--- !u!114 &54539979496233950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 5719cb7c-dd89-4327-b99c-cbc2bcd582aa
+  _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
+  _comparison: 0
+  _value: 1
 --- !u!114 &877801376912260053
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -934,6 +951,7 @@ MonoBehaviour:
   - {fileID: 877801376912260053}
   - {fileID: -6875754928185480176}
   - {fileID: -2834799919953202085}
+  - {fileID: 54539979496233950}
   enterActions: []
   exitActions: []
   choices: []
