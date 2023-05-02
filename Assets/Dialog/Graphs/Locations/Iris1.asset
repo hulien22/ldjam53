@@ -127,8 +127,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Iris 1. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
+  dialogue: 'Arrived at Iris 1. The central Iris. Estimated temperature: 164 K. Affiliation:
+    Imperius.'
 --- !u!114 &-722337570447219260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,7 +190,7 @@ MonoBehaviour:
   - {fileID: 2512759162244330052}
   - {fileID: -2942315296552322276}
   root: {fileID: -287014969254721996}
-  scrollPosition: {x: 51574.5, y: 49963.5}
+  scrollPosition: {x: 49989.5, y: 49948.5}
 --- !u!114 &2512759162244330052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
   - {fileID: -8967838353838013112}
   actor: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
   audio: {fileID: 0}
-  dialogue: Welcome to Iris 1.
+  dialogue: I see everything. I see your choices. So speak it.
 --- !u!114 &4024617393623991037
 MonoBehaviour:
   m_ObjectHideFlags: 1

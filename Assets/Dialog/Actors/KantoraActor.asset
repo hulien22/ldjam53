@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604a6ace6b46473fa9efde504ee00623, type: 3}
   m_Name: KantoraActor
   m_EditorClassIdentifier: 
-  _displayName: Kantora
+  _displayName: Kantonno
   _portrait: {fileID: 21300000, guid: 3f78abb6890439b44bc0a163ae5a2fa8, type: 3}

@@ -54,8 +54,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Iris 3. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
+  dialogue: 'Arrived at Iris 3. Classification: Triclops.. Estimated temperature:
+    154 K. Affiliation: Imperius.'
 --- !u!114 &-7367144547839567058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,9 +137,9 @@ MonoBehaviour:
   - {fileID: 2597230352172003356}
   - {fileID: 4207102198749596272}
   - {fileID: 1734424971526619903}
-  actor: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
+  actor: {fileID: 11400000, guid: f6bb0550b3f392244bfe1e14f0d8d6b1, type: 2}
   audio: {fileID: 0}
-  dialogue: Welcome to Iris 3.
+  dialogue: I saw that you would come. I know what you will say.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   - {fileID: -7367144547839567058}
   - {fileID: -8604038747085819881}
   root: {fileID: 333594069837068497}
-  scrollPosition: {x: 50381.5, y: 50057.5}
+  scrollPosition: {x: 50125.5, y: 49862.5}
 --- !u!114 &333594069837068497
 MonoBehaviour:
   m_ObjectHideFlags: 0
