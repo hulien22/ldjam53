@@ -15,15 +15,44 @@ MonoBehaviour:
   _uniqueId: 2b1f06da-1538-431e-958d-59f484d4bec7
   rect:
     serializedVersion: 2
-    x: 50050
-    y: 50200
-    width: 0
-    height: 0
+    x: 50048
+    y: 50226
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -4587097821095084049}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &-4587097821095084049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: f8616c6f-a6b1-45f1-9fd8-b751053883b0
+  rect:
+    serializedVersion: 2
+    x: 50290
+    y: 50175
+    width: 200
+    height: 146
   nodeTitle: 
   children: []
   conditions: []
   enterActions: []
   exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Arrived at unknown location. Scanning environment.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,9 +63,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
-  m_Name: ShipwreckB
+  m_Name: RebelShipwreck
   m_EditorClassIdentifier: 
   _nodes:
   - {fileID: -6015648748115676464}
+  - {fileID: -4587097821095084049}
   root: {fileID: -6015648748115676464}
-  scrollPosition: {x: 0, y: 0}
+  scrollPosition: {x: 49594.5, y: 49883.5}
