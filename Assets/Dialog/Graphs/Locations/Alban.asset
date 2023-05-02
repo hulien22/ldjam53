@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9209589648894582835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 49e7aafa-37fd-4291-aebf-8ece106e8e5f
+  rect:
+    serializedVersion: 2
+    x: 50536.668
+    y: 50587.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -4064136128332670700}
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 1119950374416397572}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: No problem, it always good to set goals in life. Like Soccer! Soccer
+    is fun.
 --- !u!114 &-8816036695136617345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +78,23 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   _comparison: 5
   _value: 30
+--- !u!114 &-8636923388226331980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: ae939b00-8011-4ee2-8af5-f724062cd901
+  _variable: {fileID: 11400000, guid: b5954badddb0b264f97e8749efb074f7, type: 2}
+  _comparison: 0
+  _value: 1
 --- !u!114 &-8584822406064896462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,6 +142,39 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
   audio: {fileID: 0}
   dialogue: Would you like another hull upgrade for 30 credits?
+--- !u!114 &-8447088828875511330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 8b0af491-6c63-43a4-a2f3-64bc424d6fe3
+  rect:
+    serializedVersion: 2
+    x: 50944.668
+    y: 50801.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8494638182491511221}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Truly, I was blinded by my excitement. We need to keep our attention
+    on the ultimate goal, the key and the ancient  power it unlocks. Farwell, see
+    you at the Sun...
+
+'
 --- !u!114 &-8405574151233130095
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +191,37 @@ MonoBehaviour:
   children:
   - {fileID: 2224757363964450946}
   _uniqueId: ba6293e7-18b8-4338-90a6-1c9671f983ad
+--- !u!114 &-8380168819647889797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 9827f018-b707-4785-bfb0-63d4ead4454e
+  rect:
+    serializedVersion: 2
+    x: 50678.668
+    y: 50815.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -8447088828875511330}
+  conditions: []
+  enterActions:
+  - {fileID: -5180501520805623571}
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Miram 5 is an innocent bystander caught up in this mess, we should focus
+    our efforts on retrieving the key. You shouldn't make any rash decisions.
 --- !u!114 &-8009656533885788133
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,6 +272,22 @@ MonoBehaviour:
   _uniqueId: 0a959294-63a9-4746-b4dd-abd5223bb5fa
   _value: 0
   _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
+--- !u!114 &-7083600021910376603
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: f0cb9ca5-de82-43d9-81d9-44c2f590fe6c
+  _value: 1
+  _variable: {fileID: 11400000, guid: 38d80a9272fe72647948f0fbf26cad89, type: 2}
 --- !u!114 &-7069994326992750483
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -468,6 +596,38 @@ MonoBehaviour:
   _uniqueId: 03480779-83bb-4b7b-b3a5-a222d95d3e02
   variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
   value: 1
+--- !u!114 &-5180501520805623571
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: c12a8ae9-6c9c-41fc-a099-f2b74041f733
+  _value: 0
+  _variable: {fileID: 11400000, guid: db342d5be9e731f419398d5e3db3c77b, type: 2}
+--- !u!114 &-4491984340643630756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: No
+  children:
+  - {fileID: -8380168819647889797}
+  _uniqueId: 045fda81-e0eb-4c0b-8c17-17df528d147b
 --- !u!114 &-4357607113958865446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,6 +645,35 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
   _comparison: 0
   _value: 0
+--- !u!114 &-4064136128332670700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 063a9f77-9651-4fac-9bde-0649aae486bb
+  rect:
+    serializedVersion: 2
+    x: 50745.668
+    y: 50440.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 197170817452367825}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: A few moments later..
 --- !u!114 &-3962418213663283975
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -522,18 +711,59 @@ MonoBehaviour:
     width: 200
     height: 146
   nodeTitle: mission 6
-  children: []
+  children:
+  - {fileID: 824329671792326126}
   conditions:
   - {fileID: -6103781716563836560}
   - {fileID: 7985120361520794459}
   - {fileID: 8421587496962339080}
   - {fileID: 5659599899196174924}
   enterActions: []
-  exitActions: []
+  exitActions:
+  - {fileID: -7083600021910376603}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
-  dialogue: 
+  dialogue: Go recover a research Artifact from a rebel shipwreck and bring it back
+    to Alban. I'm not sure how the shipwreck happened but we can't have Imperius
+    around that area as it may incite more rebellions. Those dam pests never make
+    my job boring. Anyways this Artifact may greatly harm us if recovered by the
+    rebels. I suspect their rebel base is on Miram 5, if you find any information
+    let me know.
+--- !u!114 &-2616594846613180460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 1af39a02-755b-4ccd-accf-51bffd5ac5c2
+  rect:
+    serializedVersion: 2
+    x: 50242.668
+    y: 50569.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9209589648894582835}
+  conditions:
+  - {fileID: -8636923388226331980}
+  enterActions: []
+  exitActions:
+  - {fileID: 5059817162384174983}
+  - {fileID: 447469367961700881}
+  choices: []
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: You did well deliverer, this artifact will help our research. We are
+    closing in on fulfilling the Imperius' ultimate purpose. Return to Alban soon
+    for more work.
 --- !u!114 &-2570787605338494142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -687,6 +917,35 @@ MonoBehaviour:
   - {fileID: 1702174128184573615}
   enterActions: []
   exitActions: []
+--- !u!114 &-632195968628233161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: ab84be84-4169-4260-bcb1-5467c4fd8aaf
+  rect:
+    serializedVersion: 2
+    x: 50191.668
+    y: 50776.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8594718568583444989}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I'm honored to deliver this key but I feel like the sun is a bit dangerous
 --- !u!114 &-274007591262190775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,8 +1037,35 @@ MonoBehaviour:
   - {fileID: 6502370631686783522}
   - {fileID: -6566493925489260393}
   - {fileID: -2795812791803302549}
+  - {fileID: -2616594846613180460}
+  - {fileID: -9209589648894582835}
+  - {fileID: 197170817452367825}
+  - {fileID: -4064136128332670700}
+  - {fileID: -632195968628233161}
+  - {fileID: 8594718568583444989}
+  - {fileID: -8380168819647889797}
+  - {fileID: 4738885987314207218}
+  - {fileID: 3641343342983880313}
+  - {fileID: -8447088828875511330}
+  - {fileID: 8494638182491511221}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 50111.5, y: 49504.5}
+  scrollPosition: {x: 50135.5, y: 50309.5}
+--- !u!114 &78123810148889883
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: yes
+  children:
+  - {fileID: 4738885987314207218}
+  _uniqueId: ec067000-8a9d-4d31-a52c-5f17f6b87a4a
 --- !u!114 &98314128178684331
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -795,7 +1081,41 @@ MonoBehaviour:
   text: I have a specail delivery
   children:
   - {fileID: -5422244781791950668}
+  - {fileID: -2616594846613180460}
   _uniqueId: 145c8371-0599-43fe-8da0-740b32441521
+--- !u!114 &197170817452367825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a91d90f5-176b-4b13-bc90-335814e53a0e
+  rect:
+    serializedVersion: 2
+    x: 50811.668
+    y: 50639.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -632195968628233161}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: We have discovered a salient relic of utmost importance, the Solaris
+    key! Our research tells us its located on the legendary moon Taldoris, upgrade
+    your ship with a sensor to safely navigate it. This is the final piece to imperius'
+    final purpose. I shall bestow the honor of retrieving this key to you, from Taldoris
+    to the SUN where i will be waiting.
 --- !u!114 &319084773366288414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -810,6 +1130,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: RemoveSpecialCargoAction
   _uniqueId: 86bb2e0c-c70a-4144-ad5b-d9240917705f
+--- !u!114 &447469367961700881
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: ba0ffa5c-92fc-43d2-a0cf-d6819df226d9
+  _value: 0
+  _variable: {fileID: 11400000, guid: b5954badddb0b264f97e8749efb074f7, type: 2}
 --- !u!114 &556650718799471722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -889,6 +1225,22 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
   audio: {fileID: 0}
   dialogue: Welcome to Alban.
+--- !u!114 &1119950374416397572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: ca3aa174-4f76-4c8e-bc8b-e13d4d886050
+  _value: 1
+  _variable: {fileID: 11400000, guid: daa31a1be1358f74584899374f074597, type: 2}
 --- !u!114 &1702174128184573615
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1025,6 +1377,36 @@ MonoBehaviour:
   _uniqueId: d472b764-d2cf-4f8c-9ed1-86b67e190da9
   credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   cost: 50
+--- !u!114 &3641343342983880313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 2b4074f6-0bec-44b7-8683-3b537cce30a8
+  rect:
+    serializedVersion: 2
+    x: 50947.668
+    y: 50999.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8494638182491511221}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yes we need to get rid of any risk to our ultimate goal. Remember bring
+    the key to me at sun.
 --- !u!114 &4051982483763929290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1106,6 +1488,51 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: What have you got for sale?
+--- !u!114 &4738885987314207218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7538f532-b4f2-4ad3-8726-5946451b7a8e
+  rect:
+    serializedVersion: 2
+    x: 50692.668
+    y: 50971.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 3641343342983880313}
+  conditions: []
+  enterActions:
+  - {fileID: 5478938952680034010}
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Miram 5 is the rebel base and they've planed to attack Alban and they
+    may do it agian. You should stop them before they interrupt your research findings.
+--- !u!114 &5059817162384174983
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674c2fde10b1e8a49ac3d9f9cf04f8f8, type: 3}
+  m_Name: RemoveSpecialCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveSpecialCargoAction
+  _uniqueId: 0f60b078-ec8a-4865-b130-51eb5651279f
 --- !u!114 &5241292428445976042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1123,6 +1550,22 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 66601305bfb0ee44188087924c821a57, type: 2}
   _comparison: 0
   _value: 1
+--- !u!114 &5478938952680034010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 1e7eebc7-d481-44c6-910a-6f2e18733e6f
+  _value: 1
+  _variable: {fileID: 11400000, guid: db342d5be9e731f419398d5e3db3c77b, type: 2}
 --- !u!114 &5659599899196174924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1507,6 +1950,65 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 38d80a9272fe72647948f0fbf26cad89, type: 2}
   _comparison: 0
   _value: 0
+--- !u!114 &8494638182491511221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 7e2423f3-4763-43b0-9ea3-66a91e3400e8
+  rect:
+    serializedVersion: 2
+    x: 50661.668
+    y: 50426.668
+    width: 100
+    height: 56
+  nodeTitle: 
+  children:
+  - {fileID: 824329671792326126}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &8594718568583444989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: bf476c65-8d65-423c-8dad-4d57c948f6bd
+  rect:
+    serializedVersion: 2
+    x: 50426.668
+    y: 50780.668
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -4491984340643630756}
+  - {fileID: 78123810148889883}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Upgrade your ship to withstand the sun, and you will be fine. On another
+    note I have tactical bombardments ready to subdue the rebel headquarters. We
+    have found some evidence the headquarters maybe Miram 5, can you confirm this?
+
+'
 --- !u!114 &9178372507922183121
 MonoBehaviour:
   m_ObjectHideFlags: 0
