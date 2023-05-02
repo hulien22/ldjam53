@@ -12,7 +12,9 @@ public class SpendCreditsAction : ActionDataBase {
 
     public override ActionStatus OnUpdate() {
         int current = GlobalDatabaseManager.Instance.Database.Ints.Get(credits.Key, credits.defaultValue);
-        GlobalDatabaseManager.Instance.Database.Ints.Set(credits.Key, current - cost);
+        int next = current - cost;
+        GlobalDatabaseManager.Instance.Database.Ints.Set(credits.Key, next);
+        CreditsText.SetText(next);
         return base.OnUpdate();
     }
 }
