@@ -317,7 +317,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: 1234016695524108539}
   choices: []
-  actor: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: Ah I see you know your rights, very well carry on.
 --- !u!114 &-6435393856298316192
@@ -1178,7 +1178,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50569.68, y: 50231.168}
+  scrollPosition: {x: 50261.68, y: 49563.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,7 +1285,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: -790651197228650237}
   choices: []
-  actor: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: Your cooperation is appreciated, we will hand out judgment swiftly to
     the doctor. These rebels are growing stronger everyday and we need more people
@@ -2388,7 +2388,7 @@ MonoBehaviour:
   choices:
   - {fileID: 797666928981739923}
   - {fileID: 1574160897344897110}
-  actor: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: Hello citizen, we are conducting an investigation on a theft of a crashed
     Imperious ship. Would you have any information you could provide us?

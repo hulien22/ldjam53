@@ -193,7 +193,7 @@ MonoBehaviour:
     x: 49897
     y: 50236
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: 615145485743312568}
@@ -303,6 +303,37 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I would, but I don't have enough credits.
+--- !u!114 &-5422244781791950668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: af900455-5e39-490e-a230-f5b19e159488
+  rect:
+    serializedVersion: 2
+    x: 50357.668
+    y: 49869.668
+    width: 200
+    height: 166
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: 4438505951539228628}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 6961205204508734986}
+  actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Ah, many thanks we were worried we long lost that Data log. How did you
+    come across it?
 --- !u!114 &-5293299133069028193
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -498,7 +529,7 @@ MonoBehaviour:
     x: 51503
     y: 50216
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 2
   children:
   - {fileID: -5424950678954783492}
@@ -524,7 +555,7 @@ MonoBehaviour:
     x: 52107
     y: 50328
     width: 100
-    height: 57
+    height: 56
   nodeTitle: End Purchase
   children:
   - {fileID: 824329671792326126}
@@ -549,7 +580,7 @@ MonoBehaviour:
     x: 51486
     y: 50500
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 3
   children:
   - {fileID: -5424950678954783492}
@@ -592,8 +623,25 @@ MonoBehaviour:
   - {fileID: -6992103435224117488}
   - {fileID: 7765635037762421845}
   - {fileID: 6142588543851319823}
+  - {fileID: -5422244781791950668}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 51274.5, y: 49787.5}
+  scrollPosition: {x: 50082.5, y: 49609.5}
+--- !u!114 &98314128178684331
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I have a specail delivery
+  children:
+  - {fileID: -5422244781791950668}
+  _uniqueId: 145c8371-0599-43fe-8da0-740b32441521
 --- !u!114 &615145485743312568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,7 +690,7 @@ MonoBehaviour:
     x: 50390
     y: 50131
     width: 200
-    height: 226
+    height: 246
   nodeTitle: Hub
   children: []
   conditions: []
@@ -652,6 +700,7 @@ MonoBehaviour:
   - {fileID: -2570787605338494142}
   - {fileID: -5437037518463163916}
   - {fileID: -6110527365907126735}
+  - {fileID: 98314128178684331}
   - {fileID: 1761303585876049733}
   actor: {fileID: 11400000, guid: ec4437de8edd0a549bca1b66923e264d, type: 2}
   audio: {fileID: 0}
@@ -768,7 +817,7 @@ MonoBehaviour:
     x: 51485
     y: 49981
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 1
   children:
   - {fileID: -5424950678954783492}
@@ -792,6 +841,23 @@ MonoBehaviour:
   _uniqueId: d472b764-d2cf-4f8c-9ed1-86b67e190da9
   credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   cost: 50
+--- !u!114 &4438505951539228628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 545a9510-7788-42a6-9898-a79b67250379
+  _variable: {fileID: 11400000, guid: a5bc6ef9643f24445b7c6378b164674b, type: 2}
+  _comparison: 0
+  _value: 1
 --- !u!114 &4509914886455597930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -919,6 +985,21 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Yes!
+--- !u!114 &6961205204508734986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Dr.
+  children: []
+  _uniqueId: e092f396-1faf-4a52-b780-7c0e94bdc86d
 --- !u!114 &7145578220908683203
 MonoBehaviour:
   m_ObjectHideFlags: 0
