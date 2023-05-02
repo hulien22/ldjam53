@@ -5,7 +5,7 @@ using CleverCrow.Fluid.Dialogues.Actions.Databases;
 using CleverCrow.Fluid.Dialogues.Conditions;
 using CleverCrow.Fluid.Dialogues.Nodes;
 using UnityEngine;
-using static UnityEditor.FilePathAttribute;
+// using static UnityEditor.FilePathAttribute;
 
 [CreateMenu("Condition/CanTakeJob")]
 public class CanTakeJobCondition : ConditionDataBase {
@@ -23,4 +23,3 @@ public class CanTakeJobCondition : ConditionDataBase {
         return canTake;
     }
 }
-

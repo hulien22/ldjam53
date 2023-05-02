@@ -5,7 +5,7 @@ using CleverCrow.Fluid.Dialogues.Conditions;
 using CleverCrow.Fluid.Dialogues.Nodes;
 using System.Linq;
 using UnityEngine;
-using static UnityEditor.FilePathAttribute;
+// using static UnityEditor.FilePathAttribute;
 
 [CreateMenu("Condition/AnyValidCargo")]
 public class AnyCargoCondition : ConditionDataBase {
@@ -24,4 +24,3 @@ public class AnyCargoCondition : ConditionDataBase {
         return false;
     }
 }
-
