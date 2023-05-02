@@ -6546,10 +6546,10 @@ MonoBehaviour:
   easy: 010000000c000000
   medium: 0400000008000000090000000a000000
   hard: 0200000005000000
-  <SidequestName>k__BackingField: Scrapton
-  <SidequestItemName>k__BackingField: scrap metal
-  <SidequestItem>k__BackingField: {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
-  <Actor>k__BackingField: {fileID: 11400000, guid: d1149cc5eee451f46adf3133c43a6fae, type: 2}
+  <SidequestName>k__BackingField: Taldoris
+  <SidequestItemName>k__BackingField: bottle of mist
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: 2457b70f554b0554d8fea640fd18f7ea, type: 2}
 --- !u!4 &871537407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6038623706498101718, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
@@ -7799,7 +7799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126941880587442377, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: location
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8126941880587442377, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: planetRadius
@@ -30145,7 +30145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126941880587442377, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: location
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8126941880587442377, guid: 711bf8fde5b2a984d8a0fb7d92a285e5, type: 3}
       propertyPath: planetRadius
