@@ -5029,7 +5029,7 @@ PrefabInstance:
       objectReference: {fileID: 1618772601}
     - target: {fileID: 3010262625998475992, guid: 39ea6ec994a73be4891bccd4618187ed, type: 3}
       propertyPath: sunDamagePerTick
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3010262625998475992, guid: 39ea6ec994a73be4891bccd4618187ed, type: 3}
       propertyPath: downThrustModifier
