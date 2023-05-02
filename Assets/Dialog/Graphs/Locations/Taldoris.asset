@@ -15,37 +15,80 @@ MonoBehaviour:
   _uniqueId: 8a6e838c-2b64-44c7-beae-beb62d4b9927
   rect:
     serializedVersion: 2
-    x: 50299
-    y: 50174
+    x: 50268
+    y: 50154
     width: 200
     height: 146
   nodeTitle: Landing
   children:
-  - {fileID: 682471694195964417}
+  - {fileID: 2800159500741110468}
   conditions: []
   enterActions: []
   exitActions: []
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Taldoris. You have asked me to label this as ''Home''. Estimated
-    temperature: 289 K. Affiliation: neutral.'
---- !u!114 &-4432998447507316554
+  dialogue: 'Arrived at Taldoris. <Error: No information available about location>'
+--- !u!114 &-3262442351252973858
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
-  m_Name: Choice
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
   m_EditorClassIdentifier: 
-  text: Any deliveries for me to run?
+  _uniqueId: ab6aa0f4-aecd-495e-99d1-b348551aa562
+  rect:
+    serializedVersion: 2
+    x: 50886.668
+    y: 50153.668
+    width: 200
+    height: 146
+  nodeTitle: 
   children:
-  - {fileID: 4835975802713759729}
-  _uniqueId: 55143477-9999-4cb9-acd7-2f20311095b7
+  - {fileID: -376272157988439462}
+  conditions:
+  - {fileID: 7281141888985248052}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Searching through the ruins of an ancient civilization on the planet,
+    you find a mysterious object...
+--- !u!114 &-376272157988439462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 7490d0a8-aa8f-4e91-bb32-1a02e8306dab
+  rect:
+    serializedVersion: 2
+    x: 51175.668
+    y: 50153.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions:
+  - {fileID: 5162537501492936902}
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Found the SOLARIS KEY!
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,12 +104,12 @@ MonoBehaviour:
   _nodes:
   - {fileID: 8496754195638140556}
   - {fileID: -4737931641735765440}
-  - {fileID: 682471694195964417}
-  - {fileID: 4835975802713759729}
-  - {fileID: 8056340021139199971}
+  - {fileID: 2800159500741110468}
+  - {fileID: -3262442351252973858}
+  - {fileID: -376272157988439462}
   root: {fileID: 8496754195638140556}
-  scrollPosition: {x: 50001.5, y: 49980.5}
---- !u!114 &682471694195964417
+  scrollPosition: {x: 49991.254, y: 49955.5}
+--- !u!114 &2800159500741110468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,26 +121,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
   m_Name: Dialogue
   m_EditorClassIdentifier: 
-  _uniqueId: 428bd1f7-9286-4072-9809-ed0e263ee3d1
+  _uniqueId: d193e5cf-d7bc-4e95-84ac-6a881b03def1
   rect:
     serializedVersion: 2
-    x: 50663
-    y: 50145
+    x: 50578.668
+    y: 50154.668
     width: 200
-    height: 206
-  nodeTitle: Hub
-  children: []
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -3262442351252973858}
   conditions: []
   enterActions: []
   exitActions: []
-  choices:
-  - {fileID: -4432998447507316554}
-  - {fileID: 2042670366940169196}
-  - {fileID: 3732230674982418352}
-  actor: {fileID: 11400000, guid: 2457b70f554b0554d8fea640fd18f7ea, type: 2}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: Welcome to Taldoris.
---- !u!114 &2042670366940169196
+  dialogue: There is an air of serenity as you watch the nebula around you.
+--- !u!114 &5162537501492936902
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,14 +147,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
-  m_Name: Choice
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
   m_EditorClassIdentifier: 
-  text: I have something for you.
-  children:
-  - {fileID: 8056340021139199971}
-  _uniqueId: 041506bb-118d-4025-88e9-9a23316bdc16
---- !u!114 &3732230674982418352
+  _title: SetGlobalBool
+  _uniqueId: cdcffa5a-f06f-4b96-a469-1faae2b53a22
+  _value: 1
+  _variable: {fileID: 11400000, guid: eeaba7849f3fc2d4b94f6955c85ea570, type: 2}
+--- !u!114 &7281141888985248052
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,90 +163,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
-  m_Name: Choice
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
   m_EditorClassIdentifier: 
-  text: Nevermind...
-  children: []
-  _uniqueId: dfab4654-d4aa-40be-b5de-a0157e2b4871
---- !u!114 &4835975802713759729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
-  m_Name: Play Graph
-  m_EditorClassIdentifier: 
-  _uniqueId: 87b41fa8-2e01-4def-ac70-767fd6f54666
-  rect:
-    serializedVersion: 2
-    x: 51046
-    y: 50088
-    width: 200
-    height: 58
-  nodeTitle: Side Job
-  children:
-  - {fileID: 682471694195964417}
-  conditions: []
-  enterActions: []
-  exitActions: []
-  dialogueGraph: {fileID: 11400000, guid: d88fb5eac124d4b44bbf3d1eabca0285, type: 2}
---- !u!114 &6991113469576833855
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c92e080dd085e77449af39c5a9d1a02b, type: 3}
-  m_Name: AnyCargoCondition
-  m_EditorClassIdentifier: 
-  _title: AnyCargoCondition
-  _uniqueId: 21c5d5e4-eadc-4ee9-9311-c075fae96d00
-  variables:
-  - {fileID: 11400000, guid: 990a72f8ebf4fdb468976c13231870f7, type: 2}
-  - {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
-  - {fileID: 11400000, guid: 551efdc53b01f544aa57135d3d08d4c0, type: 2}
-  - {fileID: 11400000, guid: fbaf69bf893ed90488c153dac8771429, type: 2}
-  - {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
-  - {fileID: 11400000, guid: 46fe809b1693c4d419afc964db209cbc, type: 2}
-  - {fileID: 11400000, guid: 1c0068f1e1af86448870d3a89dbe081c, type: 2}
-  - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
-  - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
-  - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
---- !u!114 &8056340021139199971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
-  m_Name: Play Graph
-  m_EditorClassIdentifier: 
-  _uniqueId: 97da8b29-cefa-415f-a845-5684509dc8a2
-  rect:
-    serializedVersion: 2
-    x: 50792
-    y: 50495
-    width: 200
-    height: 58
-  nodeTitle: Side Delivery
-  children:
-  - {fileID: 682471694195964417}
-  conditions:
-  - {fileID: 6991113469576833855}
-  enterActions: []
-  exitActions: []
-  dialogueGraph: {fileID: 11400000, guid: 9432695ee525d524fb31a0ac26b72b4e, type: 2}
+  _title: IsGlobalBool
+  _uniqueId: 8e25a4a2-d155-4f2a-82aa-709da42007cc
+  _variable: {fileID: 11400000, guid: eeaba7849f3fc2d4b94f6955c85ea570, type: 2}
+  _comparison: 0
+  _value: 0
 --- !u!114 &8496754195638140556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +189,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 57
+    height: 56
   nodeTitle: 
   children:
   - {fileID: -4737931641735765440}

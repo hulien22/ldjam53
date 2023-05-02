@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GlobalState : MonoBehaviour
 {
@@ -94,5 +95,10 @@ public class GlobalState : MonoBehaviour
 
         }
         Debug.Log("added planet " + planet + " | " + instance.knownLocations.Count);
+    }
+
+    public static void ChangeScenes(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

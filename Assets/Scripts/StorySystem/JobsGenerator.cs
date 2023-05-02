@@ -73,8 +73,7 @@ namespace Assets.Scripts.StorySystem {
                 case Location.Taldoris:
                     return instance.taldoris;
                 default:
-                    Debug.LogError($"Got side quest from {location} which does not have side quests.");
-                    return instance.terrus;
+                    return null;
             }
         }
 
