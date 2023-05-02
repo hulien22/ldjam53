@@ -432,7 +432,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: 358213513800498935}
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I think I'd rather you go to rest for another eternity..
 --- !u!114 &-2941032053344913438

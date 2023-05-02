@@ -37,7 +37,7 @@ MonoBehaviour:
     height: 56
   nodeTitle: 
   children:
-  - {fileID: 1660672635720439586}
+  - {fileID: 1214335577323605588}
   conditions: []
   enterActions: []
   exitActions: []
@@ -90,8 +90,9 @@ MonoBehaviour:
   _nodes:
   - {fileID: -7602420586871408818}
   - {fileID: 1660672635720439586}
+  - {fileID: 1214335577323605588}
   root: {fileID: -7602420586871408818}
-  scrollPosition: {x: 49651, y: 49758.5}
+  scrollPosition: {x: 49847, y: 49818.5}
 --- !u!114 &891466546281999499
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,6 +109,36 @@ MonoBehaviour:
   _uniqueId: abecf10c-95c5-44a8-8748-e67d0876d1cc
   _value: 1
   _variable: {fileID: 11400000, guid: a5bc6ef9643f24445b7c6378b164674b, type: 2}
+--- !u!114 &1214335577323605588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 522c20d6-745e-48d1-adca-f4b1cd471fce
+  rect:
+    serializedVersion: 2
+    x: 50075.668
+    y: 50326.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 1660672635720439586}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: Signs of Rebel sabotage cover the Imperius Ship broken apart floating
+    in space.
 --- !u!114 &1660672635720439586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,8 +154,8 @@ MonoBehaviour:
   _uniqueId: 61af8b8b-4d57-4acc-8f35-3db32b5b6410
   rect:
     serializedVersion: 2
-    x: 50215.668
-    y: 50165.668
+    x: 50219.668
+    y: 50152.668
     width: 200
     height: 146
   nodeTitle: 

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MiramActor
   m_EditorClassIdentifier: 
   _displayName: Miriam
-  _portrait: {fileID: 0}
+  _portrait: {fileID: 21300000, guid: ddb2fd29657d2c741a6ee85597ed907b, type: 3}

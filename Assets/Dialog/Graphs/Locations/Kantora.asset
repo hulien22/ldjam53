@@ -189,7 +189,7 @@ MonoBehaviour:
   - {fileID: 7174448815327695247}
   - {fileID: -2292144546641636984}
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Yes!
 --- !u!114 &-5982822846189527007
@@ -821,7 +821,7 @@ MonoBehaviour:
   - {fileID: 169492490367455992}
   - {fileID: -8238319316583643774}
   - {fileID: -759325611440276045}
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Welcome to Kantora.
 --- !u!114 &5607792520143616899
@@ -1065,6 +1065,6 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I would, but I don't have enough credits.
