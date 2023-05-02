@@ -90,7 +90,9 @@ public class DialogManager : MonoBehaviour {
         if (!GlobalDatabaseManager.Instance.Database.Bools.Get("completedIntro", false)) return;
         AudioManager.LowerBackground();
         LocationManager.SetLocation(planet);
-        SetupJobDialog(planet);
+        if (JobsGenerator.GetPlanet(planet) != null) {
+            SetupJobDialog(planet);
+        }
         speakerContainer.SetActive(true);
         controller.Play(dialogues[(int)planet]);
     }

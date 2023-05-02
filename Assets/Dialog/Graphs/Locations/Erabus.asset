@@ -65,6 +65,22 @@ MonoBehaviour:
   - {fileID: 6243910066383121371}
   - {fileID: -6355708268092183295}
   _uniqueId: cd670b60-323b-4c5b-b022-b74d274ab34d
+--- !u!114 &-8005232947808019088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: d2178cdd-a3f5-4313-9baf-63b294a58718
+  _value: 1
+  _variable: {fileID: 11400000, guid: 2aa1bee2c82dac54f99b7111f16e05c4, type: 2}
 --- !u!114 &-7758344334080202969
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,6 +232,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: 1367722018017596557}
   - {fileID: 8899905454239185679}
+  - {fileID: -8005232947808019088}
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
@@ -693,7 +710,7 @@ MonoBehaviour:
   - {fileID: 3593941133132853916}
   - {fileID: -5116416164746911647}
   root: {fileID: -2607164416126842985}
-  scrollPosition: {x: 50091.3, y: 49645.5}
+  scrollPosition: {x: 50136.3, y: 49693.5}
 --- !u!114 &877801376912260053
 MonoBehaviour:
   m_ObjectHideFlags: 1
