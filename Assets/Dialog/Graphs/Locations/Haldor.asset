@@ -412,7 +412,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: -1284763371633617561}
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Let it happen, the Imperius need a wake up call.
 --- !u!114 &-5922225714616683339
@@ -558,7 +558,7 @@ MonoBehaviour:
   exitActions:
   - {fileID: -4586963711269113354}
   choices: []
-  actor: {fileID: 11400000, guid: aebb863e25cae0a4495c09b6a617ecf6, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: '*dailing* Captian Imperius Rebels are planning to bomb Alban!'
 --- !u!114 &-4774852323735576257
@@ -832,7 +832,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -5534665457925398196}
@@ -950,7 +950,7 @@ MonoBehaviour:
     x: 51270.668
     y: 50014.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -1027,7 +1027,7 @@ MonoBehaviour:
     x: 51957.668
     y: 49642.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -1095,7 +1095,7 @@ MonoBehaviour:
     x: 51752
     y: 50233
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 1
   children:
   - {fileID: 6862801887806424303}
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50288.68, y: 49994.168}
+  scrollPosition: {x: 50240.68, y: 50308.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,7 +1500,7 @@ MonoBehaviour:
     x: 52410
     y: 50381
     width: 100
-    height: 56
+    height: 57
   nodeTitle: End Purchase
   children:
   - {fileID: -2490743573585313265}
@@ -2163,7 +2163,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I would, but I don't have enough credits.
 --- !u!114 &6950615036634870608
@@ -2307,7 +2307,7 @@ MonoBehaviour:
     x: 51755
     y: 50313
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 2
   children:
   - {fileID: 6862801887806424303}
@@ -2509,7 +2509,7 @@ MonoBehaviour:
     x: 51769
     y: 50538
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 3
   children:
   - {fileID: 6862801887806424303}
