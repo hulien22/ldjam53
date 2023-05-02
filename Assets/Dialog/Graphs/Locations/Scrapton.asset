@@ -286,7 +286,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Gotta go fast.
 --- !u!114 &-2446039188211953188

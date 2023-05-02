@@ -15,8 +15,8 @@ MonoBehaviour:
   _uniqueId: 142f183f-bd59-402e-a328-32c5d21b5fca
   rect:
     serializedVersion: 2
-    x: 50277.668
-    y: 50158.668
+    x: 50276.668
+    y: 50163.668
     width: 200
     height: 146
   nodeTitle: 
@@ -32,7 +32,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: Research Artifact Found! Return to Imperius HQ
+  dialogue: Analyzing ... Research Artifact Found ... Collected
 --- !u!114 &-8409246622262778681
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -71,7 +71,7 @@ MonoBehaviour:
     height: 56
   nodeTitle: 
   children:
-  - {fileID: -8996639896855830478}
+  - {fileID: 6469211514054474265}
   conditions: []
   enterActions: []
   exitActions: []
@@ -106,6 +106,7 @@ MonoBehaviour:
   _nodes:
   - {fileID: -6015648748115676464}
   - {fileID: -8996639896855830478}
+  - {fileID: 6469211514054474265}
   root: {fileID: -6015648748115676464}
   scrollPosition: {x: 49863.5, y: 49792.5}
 --- !u!114 &4564143963044249479
@@ -142,6 +143,35 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: b5954badddb0b264f97e8749efb074f7, type: 2}
   _comparison: 0
   _value: 0
+--- !u!114 &6469211514054474265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 0bcf36b1-e696-4c56-b93a-d84bc2a6c042
+  rect:
+    serializedVersion: 2
+    x: 50106.668
+    y: 50319.668
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -8996639896855830478}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'A Rebel ship shot down with what seems to be Imperius ammunition. '
 --- !u!114 &7724465637624613733
 MonoBehaviour:
   m_ObjectHideFlags: 1
