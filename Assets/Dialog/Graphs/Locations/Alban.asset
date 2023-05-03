@@ -171,7 +171,7 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: 'Truly, I was blinded by my excitement. We need to keep our attention
-    on the ultimate goal, the key and the ancient  power it unlocks. Farwell, see
+    on the ultimate goal, the key and the ancient power it unlocks. Farewell, see
     you at the Sun...
 
 '
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   - {fileID: -8447088828875511330}
   - {fileID: 8494638182491511221}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 50048.5, y: 49708.5}
+  scrollPosition: {x: 50344.5, y: 50479.5}
 --- !u!114 &78123810148889883
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: I have a specail delivery
+  text: I have a special delivery
   children:
   - {fileID: -5422244781791950668}
   - {fileID: -2616594846613180460}

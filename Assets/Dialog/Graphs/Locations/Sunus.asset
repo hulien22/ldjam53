@@ -371,10 +371,10 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
-  dialogue: Many eons ago The Imperious and the Sun God waged a war for the fate
-    of the galaxy and The Imperious barely won. The Sun God was forced into hiding
-    and ever since then The Imperious' Great Purpose has been to find and destroy
-    him completely. If you release him he will destroy us all, not just The Imperius!!
+  dialogue: Many eons ago the Imperius and the Sun God waged a war for the fate of
+    the galaxy and the Imperius barely won. The Sun God was forced into hiding and
+    ever since then the Imperius' Great Purpose has been to find and destroy him
+    completely. If you release him he will destroy us all, not just the Imperius!!
 --- !u!114 &-4504833827641640349
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -626,7 +626,7 @@ MonoBehaviour:
     x: 50483.668
     y: 50411.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: FinishedMission3
   children:
   - {fileID: 2956124566302943919}
@@ -669,7 +669,7 @@ MonoBehaviour:
     x: 50822.668
     y: 50804.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: StartSpeedrunEnding
   children:
   - {fileID: -5330904552264147285}
@@ -711,7 +711,7 @@ MonoBehaviour:
     x: 50740.668
     y: 50259.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: dialog 15
   children:
   - {fileID: 2638374893870865261}
@@ -737,7 +737,7 @@ MonoBehaviour:
     x: 50342.668
     y: 50422.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: Has solaris key
   children:
   - {fileID: -2725637345359521272}
@@ -894,7 +894,7 @@ MonoBehaviour:
     x: 51939.668
     y: 50499.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: snitchedOnShalsar
   children:
   - {fileID: -4902154682870179635}
@@ -972,7 +972,7 @@ MonoBehaviour:
     x: 50783.668
     y: 50443.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: snitchedOnDr
   children:
   - {fileID: -2542456241034128281}
@@ -1015,7 +1015,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -8672566424325143644}
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   - {fileID: 4524884454375790076}
   - {fileID: 5874065409972737713}
   root: {fileID: -619797246911419489}
-  scrollPosition: {x: 51680.684, y: 50621.832}
+  scrollPosition: {x: 51209.684, y: 49996.832}
 --- !u!114 &358213513800498935
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1261,7 +1261,7 @@ MonoBehaviour:
     x: 51939.668
     y: 50626.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: '!snitchedOnShalsar'
   children:
   - {fileID: 1326119684189571387}
@@ -1365,7 +1365,7 @@ MonoBehaviour:
     x: 50468.668
     y: 50519.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: '!FinishedMission3'
   children:
   - {fileID: -2710654619939288145}
@@ -1424,7 +1424,7 @@ MonoBehaviour:
     x: 50884.668
     y: 50217.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: DoneMission6
   children:
   - {fileID: 4131440986166554189}
@@ -1500,7 +1500,7 @@ MonoBehaviour:
     x: 50605.668
     y: 50353.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: '!deliveredToRebel'
   children:
   - {fileID: -2542456241034128281}
@@ -1573,7 +1573,7 @@ MonoBehaviour:
     x: 52702.668
     y: 50456.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children: []
   conditions: []
@@ -1613,7 +1613,7 @@ MonoBehaviour:
     x: 50603.668
     y: 50510.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: deliveredToRebel
   children:
   - {fileID: -906961734878118316}
@@ -1640,7 +1640,7 @@ MonoBehaviour:
     x: 51030.668
     y: 50188.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: '!bombedRebels'
   children:
   - {fileID: -6978459986320724673}
@@ -1696,7 +1696,7 @@ MonoBehaviour:
     x: 51996.668
     y: 50885.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children: []
   conditions: []
@@ -1769,7 +1769,7 @@ MonoBehaviour:
     x: 51033.668
     y: 50304.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: bombedRebels
   children:
   - {fileID: 6192490273872900732}
@@ -1812,7 +1812,7 @@ MonoBehaviour:
     x: 51998.668
     y: 50960.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children: []
   conditions: []
@@ -1960,7 +1960,7 @@ MonoBehaviour:
     x: 50883.668
     y: 50304.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: '!DoneMission6'
   children:
   - {fileID: -2710654619939288145}
@@ -1986,7 +1986,7 @@ MonoBehaviour:
     x: 50783.668
     y: 50542.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: '!snitchedOnDr'
   children:
   - {fileID: 7293640035838823199}

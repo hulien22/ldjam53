@@ -47,7 +47,7 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: e7ea80dcb469f98489d0c8611dd64698, type: 2}
   audio: {fileID: 0}
   dialogue: You have the flame resistant hull. I'd be suprised if anything could
-    your ship that much now.
+    damage your ship that much now.
 --- !u!114 &-8089335687500068800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -710,7 +710,7 @@ MonoBehaviour:
   - {fileID: 3593941133132853916}
   - {fileID: -5116416164746911647}
   root: {fileID: -2607164416126842985}
-  scrollPosition: {x: 50153.3, y: 49952.5}
+  scrollPosition: {x: 50812.3, y: 50337.5}
 --- !u!114 &54539979496233950
 MonoBehaviour:
   m_ObjectHideFlags: 1

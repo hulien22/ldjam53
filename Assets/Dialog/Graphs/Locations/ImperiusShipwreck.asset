@@ -92,7 +92,7 @@ MonoBehaviour:
   - {fileID: 1660672635720439586}
   - {fileID: 1214335577323605588}
   root: {fileID: -7602420586871408818}
-  scrollPosition: {x: 49847, y: 49698.5}
+  scrollPosition: {x: 49886, y: 49900.5}
 --- !u!114 &891466546281999499
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,8 +137,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: Signs of Rebel sabotage cover the Imperius Ship broken apart floating
-    in space.
+  dialogue: Signs of Rebel sabotage cover the Imperius Ship, as it remains broken
+    and floating through space.
 --- !u!114 &1660672635720439586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,8 +172,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Acquired Data log (Player note: This can be delivered to the Imperius
-    on Alban or Scientist on Haldor'
+  dialogue: Acquired Data log. This can be delivered to the Imperius on Alban or
+    the scientists on Haldor.
 --- !u!114 &2030181630977588710
 MonoBehaviour:
   m_ObjectHideFlags: 1
