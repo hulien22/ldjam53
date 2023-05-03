@@ -3918,8 +3918,8 @@ MonoBehaviour:
   hard: 020000000300000005000000
   <SidequestName>k__BackingField: Iris 2
   <SidequestItemName>k__BackingField: eye of newt
-  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
-  <Actor>k__BackingField: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: a332c5c6ed34985479c8033e31da709d, type: 2}
 --- !u!1 &492299997
 GameObject:
   m_ObjectHideFlags: 0
@@ -30781,8 +30781,8 @@ MonoBehaviour:
   hard: 020000000300000005000000
   <SidequestName>k__BackingField: Iris 3
   <SidequestItemName>k__BackingField: eye of newt
-  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
-  <Actor>k__BackingField: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: f6bb0550b3f392244bfe1e14f0d8d6b1, type: 2}
 --- !u!1 &2110158985
 GameObject:
   m_ObjectHideFlags: 0

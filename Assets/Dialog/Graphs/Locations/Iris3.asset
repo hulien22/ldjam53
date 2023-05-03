@@ -1,31 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8604038747085819881
+--- !u!114 &-8075881307713740496
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e67818104cf34e2693b49316191c2be0, type: 3}
-  m_Name: Play Graph
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
   m_EditorClassIdentifier: 
-  _uniqueId: 3185dcb1-98eb-4c10-85dc-0acb37765dfa
-  rect:
-    serializedVersion: 2
-    x: 51067
-    y: 50327
-    width: 200
-    height: 58
-  nodeTitle: 
+  text: No, thanks.
   children:
-  - {fileID: -1880205525754686731}
-  conditions: []
-  enterActions: []
-  exitActions: []
-  dialogueGraph: {fileID: 11400000, guid: fd611129532d2324ca58e14aee72fb95, type: 2}
+  - {fileID: -5038643156000434223}
+  _uniqueId: 9ca3d532-e50d-4626-a911-18a1685a33eb
 --- !u!114 &-7834171245660162299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,6 +46,23 @@ MonoBehaviour:
   audio: {fileID: 0}
   dialogue: 'Arrived at Iris 3. Classification: Triclops.. Estimated temperature:
     154 K. Affiliation: Imperius.'
+--- !u!114 &-7374236334600210034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 2f03c857-6fcc-499b-b315-351e3e08678f
+  _variable: {fileID: 11400000, guid: 1d013de09c28b0040a283eb1a69f13ef, type: 2}
+  _comparison: 0
+  _value: 1
 --- !u!114 &-7367144547839567058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +90,95 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   dialogueGraph: {fileID: 11400000, guid: 9432695ee525d524fb31a0ac26b72b4e, type: 2}
+--- !u!114 &-5603375663388244213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 249af27d-7f1c-4207-be2f-ef7ec2429d29
+  rect:
+    serializedVersion: 2
+    x: 51555
+    y: 50634
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 6179880526023412737}
+  conditions:
+  - {fileID: 2663335103480195518}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I would, but I don't have enough credits.
+--- !u!114 &-5459575232366955138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 0198dcb9-3885-4a55-9614-3076cac52dea
+  rect:
+    serializedVersion: 2
+    x: 51045
+    y: 50237
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -791516596466116561}
+  - {fileID: 405131513846589503}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: What have you got for sale?
+--- !u!114 &-5038643156000434223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: da54a24d-0c1d-4ae5-bffe-a1addde182a1
+  rect:
+    serializedVersion: 2
+    x: 51515
+    y: 50821
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 6179880526023412737}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: No, thanks.
 --- !u!114 &-4890152165338115662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,6 +204,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
   - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+--- !u!114 &-4437932887746227490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9835e5a31a3d9224d8de3ab1165bb3e6, type: 3}
+  m_Name: SpendCreditsAction
+  m_EditorClassIdentifier: 
+  _title: SpendCreditsAction
+  _uniqueId: a24af3e8-5c6d-41e6-8908-62b2d7402adf
+  credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  cost: 100
 --- !u!114 &-1880205525754686731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +252,53 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: f6bb0550b3f392244bfe1e14f0d8d6b1, type: 2}
   audio: {fileID: 0}
   dialogue: I saw that you would come. I know what you will say.
+--- !u!114 &-1182830641595891647
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
+  m_Name: IsGlobalBool
+  m_EditorClassIdentifier: 
+  _title: IsGlobalBool
+  _uniqueId: 9efb24b0-a8ac-4774-bb4b-21e31f56496a
+  _variable: {fileID: 11400000, guid: 1d013de09c28b0040a283eb1a69f13ef, type: 2}
+  _comparison: 0
+  _value: 0
+--- !u!114 &-791516596466116561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 96d9f82a-7b6c-44f8-9692-5ee01fa52c37
+  rect:
+    serializedVersion: 2
+    x: 51349
+    y: 50240
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8074940727228736521}
+  conditions:
+  - {fileID: -7374236334600210034}
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: f6bb0550b3f392244bfe1e14f0d8d6b1, type: 2}
+  audio: {fileID: 0}
+  dialogue: You already have a sensor upgrade.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,9 +317,17 @@ MonoBehaviour:
   - {fileID: -1880205525754686731}
   - {fileID: 3564891745629509218}
   - {fileID: -7367144547839567058}
-  - {fileID: -8604038747085819881}
+  - {fileID: -5459575232366955138}
+  - {fileID: 405131513846589503}
+  - {fileID: -791516596466116561}
+  - {fileID: 5709193889231350358}
+  - {fileID: -5603375663388244213}
+  - {fileID: -5038643156000434223}
+  - {fileID: 6061447283164541724}
+  - {fileID: 6179880526023412737}
+  - {fileID: 8074940727228736521}
   root: {fileID: 333594069837068497}
-  scrollPosition: {x: 50125.5, y: 49862.5}
+  scrollPosition: {x: 51009.5, y: 50089.5}
 --- !u!114 &333594069837068497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +353,38 @@ MonoBehaviour:
   conditions: []
   enterActions: []
   exitActions: []
+--- !u!114 &405131513846589503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 68cb73f6-ba75-467b-bb4d-902f2a990fd7
+  rect:
+    serializedVersion: 2
+    x: 51310
+    y: 50441
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions:
+  - {fileID: -1182830641595891647}
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: 5886070814172140650}
+  - {fileID: -8075881307713740496}
+  actor: {fileID: 11400000, guid: f6bb0550b3f392244bfe1e14f0d8d6b1, type: 2}
+  audio: {fileID: 0}
+  dialogue: We sell that which sees. A new sensor for your ship, to help you see
+    in any conditions. It's yours for 100 credits.
 --- !u!114 &1734424971526619903
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,8 +414,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: What have you got for sale?
   children:
-  - {fileID: -8604038747085819881}
+  - {fileID: -5459575232366955138}
   _uniqueId: 5ccd00a8-de77-4b0a-93bd-a9b6761c4b8f
+--- !u!114 &2663335103480195518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: ea727178-fc55-4e8e-bfca-43a1e9f64fa5
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 2
+  _value: 100
 --- !u!114 &2947815034262705745
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -275,3 +491,168 @@ MonoBehaviour:
   children:
   - {fileID: -7367144547839567058}
   _uniqueId: 5ab36864-faae-44a0-9daf-612ca3d16fcb
+--- !u!114 &5709193889231350358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 8ba9debb-38d5-46f7-be3f-e5321cf47abb
+  rect:
+    serializedVersion: 2
+    x: 51559
+    y: 50458
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 6061447283164541724}
+  conditions:
+  - {fileID: 9134019258578709512}
+  enterActions: []
+  exitActions:
+  - {fileID: -4437932887746227490}
+  - {fileID: 8148474910552584381}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: Yes, I'll take it!
+--- !u!114 &5886070814172140650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: Yes!
+  children:
+  - {fileID: 5709193889231350358}
+  - {fileID: -5603375663388244213}
+  _uniqueId: fb7e67ed-0e1e-451e-92d8-fe187fd329c5
+--- !u!114 &6061447283164541724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 75e53e34-e78c-4e0a-ac76-fb21c86b78fc
+  rect:
+    serializedVersion: 2
+    x: 51810
+    y: 50532
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8074940727228736521}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'New upgrade acquired: Sensors.'
+--- !u!114 &6179880526023412737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4c3c74b6-f479-457d-9b31-7fe51cb9597a
+  rect:
+    serializedVersion: 2
+    x: 51874
+    y: 50737
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 8074940727228736521}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: f6bb0550b3f392244bfe1e14f0d8d6b1, type: 2}
+  audio: {fileID: 0}
+  dialogue: We see that you'll be back.
+--- !u!114 &8074940727228736521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5bb286b3994795a7780dbfc28d37fd, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  _uniqueId: 02844db4-72d0-4ebf-be1c-6ff476441dae
+  rect:
+    serializedVersion: 2
+    x: 52053
+    y: 50467
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -1880205525754686731}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &8148474910552584381
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c82a824e8cd0c4ea223fc74e87cf2a, type: 3}
+  m_Name: UpgradeSensorAction
+  m_EditorClassIdentifier: 
+  _title: UpgradeSensorAction
+  _uniqueId: 064cc2fb-d945-43e4-b19d-d8eb50c0f710
+  variable: {fileID: 11400000, guid: 1d013de09c28b0040a283eb1a69f13ef, type: 2}
+  value: 1
+--- !u!114 &9134019258578709512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b8de77378d4aab95e9a13438e66689, type: 3}
+  m_Name: IsGlobalInt
+  m_EditorClassIdentifier: 
+  _title: IsGlobalInt
+  _uniqueId: 7ee18921-973f-44b9-9e2d-7791ba4e1c7e
+  _variable: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  _comparison: 5
+  _value: 100

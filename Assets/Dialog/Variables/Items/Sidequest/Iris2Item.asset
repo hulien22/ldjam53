@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46977e972fdaf4964884450eac3cc9e7, type: 3}
-  m_Name: IrisItem
+  m_Name: Iris2Item
   m_EditorClassIdentifier: 
-  key: irisItem
+  key: iris2Item
   defaultValue: 0
