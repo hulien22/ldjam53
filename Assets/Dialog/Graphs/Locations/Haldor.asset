@@ -1093,6 +1093,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
   - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+  - {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
+  - {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
 --- !u!114 &-970198653689605016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,7 +1229,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50294.68, y: 49446.168}
+  scrollPosition: {x: 50192.68, y: 49922.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,7 +1947,7 @@ MonoBehaviour:
     y: 49747.668
     width: 200
     height: 146
-  nodeTitle:
+  nodeTitle: 
   children:
   - {fileID: 7596779850433382573}
   conditions:

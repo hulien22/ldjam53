@@ -18,7 +18,7 @@ MonoBehaviour:
     x: 52084
     y: 50523
     width: 100
-    height: 56
+    height: 57
   nodeTitle: End purchase
   children:
   - {fileID: -1209156263514723140}
@@ -138,7 +138,7 @@ MonoBehaviour:
     x: 51429
     y: 50423
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 2
   children:
   - {fileID: -1312876928974138160}
@@ -201,6 +201,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 80d0aa6db7368c4498170269aac08ec9, type: 2}
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
+  - {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
+  - {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
 --- !u!114 &-7580935996352580516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,7 +712,7 @@ MonoBehaviour:
   - {fileID: -7580935996352580516}
   - {fileID: 4727675321738810728}
   root: {fileID: 1961000476301625562}
-  scrollPosition: {x: 51082.668, y: 50133.832}
+  scrollPosition: {x: 50677.668, y: 49857.832}
 --- !u!114 &1561451196376095908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -880,7 +882,7 @@ MonoBehaviour:
     x: 51428
     y: 50729
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 3
   children:
   - {fileID: -1312876928974138160}

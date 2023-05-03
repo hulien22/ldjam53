@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: SpendCreditsAction
   _uniqueId: bf35d428-5c88-461c-ab3a-97c3816e460f
-  credits: {fileID: 0}
+  credits: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   cost: 30
 --- !u!114 &-3539316331284474438
 MonoBehaviour:
@@ -340,7 +340,7 @@ MonoBehaviour:
   _uniqueId: dd592d7d-692a-4192-abb8-13c317a96683
   _variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
   _comparison: 0
-  _value: 0
+  _value: 1
 --- !u!114 &-2318418269204127138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   _uniqueId: a044a1ff-843b-4e30-9799-bb3caa023905
   _variable: {fileID: 11400000, guid: ee6e84243542aa84b9780843bc89ecd5, type: 2}
   _comparison: 0
-  _value: 0
+  _value: 2
 --- !u!114 &-907706243173770595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
   - {fileID: -907706243173770595}
   - {fileID: 2799684460356175917}
   root: {fileID: -3255383222156174597}
-  scrollPosition: {x: 50367.5, y: 50039.5}
+  scrollPosition: {x: 50884.5, y: 50069.5}
 --- !u!114 &169492490367455992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1038,6 +1038,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
   - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+  - {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
+  - {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
 --- !u!114 &9009377467252202774
 MonoBehaviour:
   m_ObjectHideFlags: 0
