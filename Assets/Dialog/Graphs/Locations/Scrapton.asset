@@ -34,7 +34,7 @@ MonoBehaviour:
     x: 51870
     y: 50277
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 1
   children:
   - {fileID: 3849772089594145010}
@@ -252,7 +252,7 @@ MonoBehaviour:
     x: 49909
     y: 50241
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: 8413674322907444842}
@@ -498,7 +498,7 @@ MonoBehaviour:
     x: 52597
     y: 50658
     width: 100
-    height: 56
+    height: 57
   nodeTitle: End Purchase
   children:
   - {fileID: -1895212323732732721}
@@ -544,7 +544,7 @@ MonoBehaviour:
   - {fileID: 8466861129665293031}
   - {fileID: -8969162991295120278}
   root: {fileID: -2475432116886025918}
-  scrollPosition: {x: 49757.5, y: 50110.5}
+  scrollPosition: {x: 51283.5, y: 50466.5}
 --- !u!114 &540140427283351727
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -641,7 +641,7 @@ MonoBehaviour:
     x: 51740
     y: 50699
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 3
   children:
   - {fileID: 3849772089594145010}
@@ -844,7 +844,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: d6a8e0fd1eb801d4ca00320f6b2e9e8b, type: 2}
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I would, but I don't have the credits.
 --- !u!114 &3967710125660167989
@@ -1182,7 +1182,7 @@ MonoBehaviour:
     x: 51879
     y: 50417
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 2
   children:
   - {fileID: 3849772089594145010}

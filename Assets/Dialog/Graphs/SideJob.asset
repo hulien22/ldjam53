@@ -29,7 +29,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I'll take the job to Alban.
+  dialogue: I'll take the job to Miram 5.
 --- !u!114 &-7412957031997298071
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Delivery to Alban.
+  text: Delivery to Miram 5.
   children:
   - {fileID: -8882468678984776102}
   _uniqueId: 5880aa9c-e030-408d-916b-de8f9ab3682d
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: AcquireCargoAction
   _uniqueId: 5626383c-77e3-494f-9b94-84d5acb9a7ea
-  <Target>k__BackingField: 4
+  <Target>k__BackingField: 13
 --- !u!114 &-3410151554461950381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,10 +106,10 @@ MonoBehaviour:
   - {fileID: -7412957031997298071}
   - {fileID: -205605743336952793}
   - {fileID: 2805725690834194877}
-  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  actor: {fileID: 11400000, guid: fda8cbe283602bc4d8a2b9ba1a38eb78, type: 2}
   audio: {fileID: 0}
-  dialogue: There is an easier delivery to Alban for 5 credits, a standard job to
-    Don'atus for 10, and a harder job to Taldoris for 15.
+  dialogue: There is an easier delivery to Miram 5 for 10 credits, a standard job
+    to Lunas for 15, and a harder job to Scrapton for 20.
 --- !u!114 &-2393947445396022785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'New cargo acquired: crate of lumber from Terrus.'
+  dialogue: 'New cargo acquired: shipment of doors from Haldor.'
 --- !u!114 &-2346271715676048395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Delivery to Don'atus.
+  text: Delivery to Lunas.
   children:
   - {fileID: 9171445805501957287}
   _uniqueId: 8a5b68e9-dd29-4eb4-b9ca-e9a5fc811230
@@ -279,7 +279,7 @@ MonoBehaviour:
   - {fileID: -2373607221273400919}
   - {fileID: -2393947445396022785}
   root: {fileID: -1082567340561665149}
-  scrollPosition: {x: 49707.5, y: 49710}
+  scrollPosition: {x: 49782.5, y: 49833}
 --- !u!114 &2805725690834194877
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Delivery to Taldoris.
+  text: Delivery to Scrapton.
   children:
   - {fileID: 6250415625355162646}
   _uniqueId: d98f1798-572e-40d2-b912-370ffd34d92b
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: AcquireCargoAction
   _uniqueId: 9cadd221-de62-41b7-bd99-016e172558d7
-  <Target>k__BackingField: 14
+  <Target>k__BackingField: 5
 --- !u!114 &3849468994490267768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: AcquireCargoAction
   _uniqueId: 72139c08-d31d-4477-b1d3-2e6dcd524da0
-  <Target>k__BackingField: 2
+  <Target>k__BackingField: 12
 --- !u!114 &6003116754560903415
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -402,7 +402,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I'll take the job to Taldoris.
+  dialogue: I'll take the job to Scrapton.
 --- !u!114 &7764102638528565700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -447,7 +447,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 11400000, guid: db2ce86f59a46774790f1102dd40d392, type: 2}
+  actor: {fileID: 11400000, guid: fda8cbe283602bc4d8a2b9ba1a38eb78, type: 2}
   audio: {fileID: 0}
   dialogue: Complete the job I just gave you first.
 --- !u!114 &9171445805501957287
@@ -479,4 +479,4 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I'll take the job to Don'atus.
+  dialogue: I'll take the job to Lunas.

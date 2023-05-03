@@ -125,7 +125,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: No problemo, speed is my legal sur name.
+  dialogue: No problem, speed is my legal surname.
 --- !u!114 &-8061841605945928683
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -561,7 +561,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: '*dailing* Captian Imperius Rebels are planning to bomb Alban!'
+  dialogue: '*dailing* Captain Imperius, rebels are planning to bomb Alban!'
 --- !u!114 &-4774852323735576257
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -848,7 +848,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -5534665457925398196}
@@ -966,7 +966,7 @@ MonoBehaviour:
     x: 51270.668
     y: 50014.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -1043,7 +1043,7 @@ MonoBehaviour:
     x: 51957.668
     y: 49642.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -2490743573585313265}
@@ -1111,7 +1111,7 @@ MonoBehaviour:
     x: 51752
     y: 50233
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 1
   children:
   - {fileID: 6862801887806424303}
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 51154.68, y: 49443.168}
+  scrollPosition: {x: 50294.68, y: 49446.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,7 +1516,7 @@ MonoBehaviour:
     x: 52410
     y: 50381
     width: 100
-    height: 56
+    height: 57
   nodeTitle: End Purchase
   children:
   - {fileID: -2490743573585313265}
@@ -1535,7 +1535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: plead the 23section-b
+  text: plead the 23 section-b
   children:
   - {fileID: 6795335074304206656}
   _uniqueId: f4fd3916-6a9c-4f62-aa11-f2fd6a305f09
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 50994
-    y: 50037
+    y: 50038
     width: 200
     height: 58
   nodeTitle: Side Job
@@ -1945,7 +1945,7 @@ MonoBehaviour:
     y: 49747.668
     width: 200
     height: 146
-  nodeTitle: 
+  nodeTitle:
   children:
   - {fileID: 7596779850433382573}
   conditions:
@@ -2153,7 +2153,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I plead the 293-sectionA-7
+  dialogue: I plead the 23 section-b
 --- !u!114 &6862801887806424303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: Should we be taking stuff from the Imperious?
+  dialogue: Should we be taking stuff from the Imperius?
 --- !u!114 &7606541560476967282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2339,7 +2339,7 @@ MonoBehaviour:
     x: 51755
     y: 50313
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 2
   children:
   - {fileID: 6862801887806424303}
@@ -2541,7 +2541,7 @@ MonoBehaviour:
     x: 51769
     y: 50538
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 3
   children:
   - {fileID: 6862801887806424303}

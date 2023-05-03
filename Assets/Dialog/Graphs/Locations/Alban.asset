@@ -407,8 +407,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
-  dialogue: Oh, real. Good to know thanks for your cooperation, come again soon.
-    We may have more work for you
+  dialogue: Oh, thank you for your cooperation. Come again soon, as we may have more
+    work for you.
 --- !u!114 &-6337244249241693032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: No
+  text: No.
   children:
   - {fileID: -8380168819647889797}
   _uniqueId: 045fda81-e0eb-4c0b-8c17-17df528d147b
@@ -721,7 +721,7 @@ MonoBehaviour:
   enterActions: []
   exitActions:
   - {fileID: -7083600021910376603}
-  - {fileID: 0}
+  - {fileID: 2824782727676746003}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
@@ -946,7 +946,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I'm honored to deliver this key but I feel like the sun is a bit dangerous
+  dialogue: I'm honored to deliver this key, but I feel like the sun is a bit dangerous.
 --- !u!114 &-393943576419183919
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1065,7 +1065,7 @@ MonoBehaviour:
   - {fileID: -8447088828875511330}
   - {fileID: 8494638182491511221}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 50862.5, y: 50204.5}
+  scrollPosition: {x: 50003.5, y: 49784.5}
 --- !u!114 &78123810148889883
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: yes
+  text: Yes.
   children:
   - {fileID: 4738885987314207218}
   _uniqueId: ec067000-8a9d-4d31-a52c-5f17f6b87a4a
@@ -1124,7 +1124,7 @@ MonoBehaviour:
   conditions: []
   enterActions: []
   exitActions:
-  - {fileID: 0}
+  - {fileID: -393943576419183919}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Found it
+  text: Say you found it
   children:
   - {fileID: 6502370631686783522}
   _uniqueId: 3ef57143-a798-4d0c-b48b-fa702c58e8b0
@@ -1755,7 +1755,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I just found it on one of my deliveries for Haldor
+  dialogue: I just found it on one of my deliveries for Haldor.
 --- !u!114 &6961205204508734986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1768,7 +1768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Dr. Mog'rin
+  text: Tell him about Dr. Mog'rin
   children:
   - {fileID: 9178372507922183121}
   _uniqueId: e092f396-1faf-4a52-b780-7c0e94bdc86d
@@ -2055,7 +2055,7 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: 'Upgrade your ship to withstand the sun, and you will be fine. On another
-    note I have tactical bombardments ready to subdue the rebel headquarters. We
+    note, I have tactical bombardments ready to subdue the rebel headquarters. We
     have found some evidence the headquarters maybe Miram 5, can you confirm this?
 
 '
@@ -2087,4 +2087,4 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: Dr. Mog'rin asked me to retrieve it
+  dialogue: Dr. Mog'rin asked me to retrieve it.

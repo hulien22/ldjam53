@@ -3918,8 +3918,8 @@ MonoBehaviour:
   hard: 020000000300000005000000
   <SidequestName>k__BackingField: Iris 2
   <SidequestItemName>k__BackingField: eye of newt
-  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
-  <Actor>k__BackingField: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: a332c5c6ed34985479c8033e31da709d, type: 2}
 --- !u!1 &492299997
 GameObject:
   m_ObjectHideFlags: 0
@@ -8841,9 +8841,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a38fd85ec963252479353a5587bb6c9a, type: 3}
   - {fileID: 8300000, guid: 4f7ec04380e1c524e935ca6de10d67a4, type: 3}
   - {fileID: 8300000, guid: d040a615785eea34aae6d4bed5e5558d, type: 3}
-  - {fileID: 8300000, guid: ee65dfbe7d9bb354bbf5148eb5d2e84e, type: 3}
-  - {fileID: 8300000, guid: 53d33e42e8113bc469564c39163fe983, type: 3}
-  - {fileID: 8300000, guid: 7c51ab30f546a4d44a2e6a79be47597c, type: 3}
+  - {fileID: 8300000, guid: ba22a40e94af7b74f8a33eb01e3fd8f2, type: 3}
+  - {fileID: 8300000, guid: 77572e621b1597e46bf0c321c3f9ad25, type: 3}
+  - {fileID: 8300000, guid: 20ca8ac6897221d449ad3e1415e6935d, type: 3}
   - {fileID: 8300000, guid: 114c0a2e416a70749a63400e7793f291, type: 3}
   - {fileID: 8300000, guid: d62bffc5a8c251b42ba7693741246ea4, type: 3}
   - {fileID: 8300000, guid: 1ee6ba73fcb2b714283840852780fe04, type: 3}
@@ -30781,8 +30781,8 @@ MonoBehaviour:
   hard: 020000000300000005000000
   <SidequestName>k__BackingField: Iris 3
   <SidequestItemName>k__BackingField: eye of newt
-  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 224cbb5fd08910c4f969762e0b494267, type: 2}
-  <Actor>k__BackingField: {fileID: 11400000, guid: c587d6db65112cf42affd6f7e3f55cec, type: 2}
+  <SidequestItem>k__BackingField: {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
+  <Actor>k__BackingField: {fileID: 11400000, guid: f6bb0550b3f392244bfe1e14f0d8d6b1, type: 2}
 --- !u!1 &2110158985
 GameObject:
   m_ObjectHideFlags: 0

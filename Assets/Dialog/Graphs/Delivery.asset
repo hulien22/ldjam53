@@ -31,6 +31,24 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I have a delivery from Miram 5.
+--- !u!114 &-8278294590014341537
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: 848ae3e1-2452-4217-90aa-1f5925532cee
+  _value: 0
+  variable: {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 9
 --- !u!114 &-8174027859540989307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +80,24 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I have a delivery from Don'atus. I promise I didn't eat any.
+--- !u!114 &-8101984206779741581
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4c41d6e1ef3494fa5c38f5f04263c0, type: 3}
+  m_Name: RemoveCargoAction
+  m_EditorClassIdentifier: 
+  _title: RemoveCargoAction
+  _uniqueId: a9eb6e61-ef67-4584-86da-baba36d253ff
+  _value: 0
+  variable: {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
+  creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
+  startLocation: 10
 --- !u!114 &-7906395699867950406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,6 +248,21 @@ MonoBehaviour:
   variable: {fileID: 11400000, guid: c847e0ae4a9f4be4cae5ef1e82246cb5, type: 2}
   creditVar: {fileID: 11400000, guid: 9b500816867fbe240a1630bfea620d3a, type: 2}
   startLocation: 2
+--- !u!114 &-4923103204986450834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 818f5824-e71d-4f47-b76b-279b9ef618f8
+  variable: {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
 --- !u!114 &-4323489114499720679
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -380,8 +431,10 @@ MonoBehaviour:
   - {fileID: 401288770881764148}
   - {fileID: 5242636712137999134}
   - {fileID: -1617215376243769198}
+  - {fileID: 1049599555582462264}
+  - {fileID: 7479260589989953207}
   root: {fileID: 1046622458957242873}
-  scrollPosition: {x: 50296.5, y: 49842.5}
+  scrollPosition: {x: 49974.5, y: 50133.5}
 --- !u!114 &331523295005627315
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -513,13 +566,44 @@ MonoBehaviour:
     x: 50150
     y: 50187
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: 2024389630113845460}
   conditions: []
   enterActions: []
   exitActions: []
+--- !u!114 &1049599555582462264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: fe11283f-339b-4742-add5-dbce643a8062
+  rect:
+    serializedVersion: 2
+    x: 50574
+    y: 50725
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: -4923103204986450834}
+  enterActions: []
+  exitActions:
+  - {fileID: -8278294590014341537}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Iris. Well one of them anyway.
 --- !u!114 &1221525214705737537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,7 +671,7 @@ MonoBehaviour:
     x: 50311
     y: 50188
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: 594369612237473794}
@@ -601,6 +685,8 @@ MonoBehaviour:
   - {fileID: 1221525214705737537}
   - {fileID: -6723666792786543768}
   - {fileID: -1617215376243769198}
+  - {fileID: 7479260589989953207}
+  - {fileID: 1049599555582462264}
   conditions: []
   enterActions: []
   exitActions: []
@@ -745,6 +831,52 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: I have a delivery from Haldor.
+--- !u!114 &6330402168557792249
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4a2a72749211e408a5b86674509fb9, type: 3}
+  m_Name: CargoCondition
+  m_EditorClassIdentifier: 
+  _title: CargoCondition
+  _uniqueId: 1e8b85a0-1d9f-4b99-bb1e-606ce73a078f
+  variable: {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
+--- !u!114 &7479260589989953207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: fa774e90-3ff7-4164-823d-c05c6f3609ec
+  rect:
+    serializedVersion: 2
+    x: 50807
+    y: 50708
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2024389630113845460}
+  conditions:
+  - {fileID: 6330402168557792249}
+  enterActions: []
+  exitActions:
+  - {fileID: -8101984206779741581}
+  choices: []
+  actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
+  audio: {fileID: 0}
+  dialogue: I have a delivery from Iris. Well one of them anyway.
 --- !u!114 &8751578943032723260
 MonoBehaviour:
   m_ObjectHideFlags: 0

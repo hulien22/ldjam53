@@ -28,8 +28,8 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Arrived at Miram 5. The moon of Haldor for science. Temp: 289 K. Affiliation:
-    Rebel.'
+  dialogue: 'Arrived at Miram 5. The moon of Haldor and a science outpost. Temp:
+    289 K. Affiliation: Rebel.'
 --- !u!114 &-8239772032812976618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -8356145000875689526}
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Count on me!
+  text: You can count on me!
   children:
   - {fileID: 8034605845481067334}
   _uniqueId: 1b8fa73b-0e1a-4e7a-aeba-6a6b1afa0533
@@ -309,8 +309,8 @@ MonoBehaviour:
   - {fileID: -396622422562210581}
   actor: {fileID: 11400000, guid: f6201060d8aa0224aa4589b31aa9a1b1, type: 2}
   audio: {fileID: 0}
-  dialogue: Thank goodness you arrive, I need your help. Terry assured me he sent
-    one of his best
+  dialogue: Thank goodness you have arrived, I need your help. Terry assured me he
+    would send one of his best.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
   - {fileID: 2003531001719235317}
   - {fileID: 8666536435186752334}
   root: {fileID: -8239772032812976618}
-  scrollPosition: {x: 50351.324, y: 49699.5}
+  scrollPosition: {x: 50289.324, y: 50049.5}
 --- !u!114 &2003531001719235317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,7 +540,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: This is my first day on the job
+  dialogue: This is my first day on the job.
 --- !u!114 &8034605845481067334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +615,7 @@ MonoBehaviour:
     x: 50949.668
     y: 50162.668
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: -3470781767344879171}
