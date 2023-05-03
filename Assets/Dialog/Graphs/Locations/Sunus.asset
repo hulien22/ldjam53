@@ -1086,7 +1086,7 @@ MonoBehaviour:
   - {fileID: 4524884454375790076}
   - {fileID: 5874065409972737713}
   root: {fileID: -619797246911419489}
-  scrollPosition: {x: 51209.684, y: 49996.832}
+  scrollPosition: {x: 51272.684, y: 50045.832}
 --- !u!114 &358213513800498935
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 58ee4936e837cac4daf4dbe3af87c554, type: 2}
   audio: {fileID: 0}
   dialogue: The key bearer has arrived, please release me. Many eons ago me and my
-    people where destroyed by The Imperius and forced into hiding. Let me finally
+    people were destroyed by The Imperius and forced into hiding. Let me finally
     be free to reunite with what's left of my people.
 --- !u!114 &691902304290200379
 MonoBehaviour:

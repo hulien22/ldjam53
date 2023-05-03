@@ -561,7 +561,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: '*dailing* Captain Imperius, rebels are planning to bomb Alban!'
+  dialogue: '*dailing* Az''kor, rebels are planning to bomb Alban!'
 --- !u!114 &-4774852323735576257
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1229,7 +1229,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50550.68, y: 49526.168}
+  scrollPosition: {x: 50443.68, y: 50363.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Warn captain Az'kor
+  text: Warn Az'kor
   children:
   - {fileID: -4933288520453788581}
   _uniqueId: d74bec96-f5fc-487b-85d4-348ae1e977eb
