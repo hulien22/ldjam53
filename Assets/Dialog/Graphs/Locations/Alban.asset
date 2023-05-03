@@ -272,6 +272,22 @@ MonoBehaviour:
   _uniqueId: 0a959294-63a9-4746-b4dd-abd5223bb5fa
   _value: 0
   _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
+--- !u!114 &-7154399728660049030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
+  m_Name: SetGlobalBool
+  m_EditorClassIdentifier: 
+  _title: SetGlobalBool
+  _uniqueId: 4f536e79-82da-4c23-a804-899c8e59c70c
+  _value: 1
+  _variable: {fileID: 11400000, guid: 214af75233383c84fbbb804bb0662bd7, type: 2}
 --- !u!114 &-7083600021910376603
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -288,20 +304,6 @@ MonoBehaviour:
   _uniqueId: f0cb9ca5-de82-43d9-81d9-44c2f590fe6c
   _value: 1
   _variable: {fileID: 11400000, guid: 38d80a9272fe72647948f0fbf26cad89, type: 2}
---- !u!114 &-7069994326992750483
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 674c2fde10b1e8a49ac3d9f9cf04f8f8, type: 3}
-  m_Name: RemoveSpecialCargoAction
-  m_EditorClassIdentifier: 
-  _title: RemoveSpecialCargoAction
-  _uniqueId: 7f1d32b2-76b9-4ea7-92d9-f2e8aae2a384
 --- !u!114 &-6992103435224117488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,22 +335,6 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
   dialogue: 'New upgrade acquired: hull Mk 1.'
---- !u!114 &-6878703470998561929
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
-  m_Name: SetGlobalBool
-  m_EditorClassIdentifier: 
-  _title: SetGlobalBool
-  _uniqueId: 814d4a19-dfd0-43b1-a065-017046f40115
-  _value: 0
-  _variable: {fileID: 11400000, guid: a5bc6ef9643f24445b7c6378b164674b, type: 2}
 --- !u!114 &-6706933719884099577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,42 +375,22 @@ MonoBehaviour:
   _uniqueId: 1a0259b7-e289-4449-8938-7f6b93472e55
   rect:
     serializedVersion: 2
-    x: 50752.668
-    y: 49845.668
+    x: 50736.668
+    y: 49837.668
     width: 200
     height: 146
   nodeTitle: 
   children:
   - {fileID: 824329671792326126}
-  conditions:
-  - {fileID: 5888009726159487136}
+  conditions: []
   enterActions: []
   exitActions:
-  - {fileID: -6337244249241693032}
-  - {fileID: -7069994326992750483}
-  - {fileID: -6878703470998561929}
   - {fileID: 556650718799471722}
   choices: []
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: Oh, thank you for your cooperation. Come again soon, as we may have more
     work for you.
---- !u!114 &-6337244249241693032
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc39c8b552b94c01a6ae86d4b8cce494, type: 3}
-  m_Name: SetGlobalBool
-  m_EditorClassIdentifier: 
-  _title: SetGlobalBool
-  _uniqueId: 912f3d64-e5e7-472d-b593-3a395b287ded
-  _value: 0
-  _variable: {fileID: 11400000, guid: 068d7767eef17dd4a8cdb8f3be3419db, type: 2}
 --- !u!114 &-6183820200805078779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,8 +526,8 @@ MonoBehaviour:
   _uniqueId: af900455-5e39-490e-a230-f5b19e159488
   rect:
     serializedVersion: 2
-    x: 50245.668
-    y: 49867.668
+    x: 50204.668
+    y: 49868.668
     width: 200
     height: 186
   nodeTitle: 
@@ -726,11 +692,11 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 7b7e0d14d7e8ccb44a08cc619e07780d, type: 2}
   audio: {fileID: 0}
   dialogue: Go recover a research Artifact from a rebel shipwreck and bring it back
-    to Alban. I'm not sure how the shipwreck happened but we can't have Imperius
-    around that area as it may incite more rebellions. Those dam pests never make
-    my job boring. Anyways this Artifact may greatly harm us if recovered by the
-    rebels. I suspect their rebel base is on Miram 5, if you find any information
-    let me know.
+    to Alban. I'm not sure how the shipwreck happened, but we can't have Imperius
+    around that area as it may incite more rebellions. Those pests never make my
+    job boring. Anyways this Artifact may greatly harm us if recovered by the rebels.
+    I suspect their rebel base is on Miram 5, if you find any information let me
+    know.
 --- !u!114 &-2616594846613180460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,7 +1031,7 @@ MonoBehaviour:
   - {fileID: -8447088828875511330}
   - {fileID: 8494638182491511221}
   root: {fileID: -6706933719884099577}
-  scrollPosition: {x: 49939.5, y: 49958.5}
+  scrollPosition: {x: 50048.5, y: 49708.5}
 --- !u!114 &78123810148889883
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1468,7 +1434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Say you found it
+  text: I found it unexpectedly.
   children:
   - {fileID: 6502370631686783522}
   _uniqueId: 3ef57143-a798-4d0c-b48b-fa702c58e8b0
@@ -1632,23 +1598,6 @@ MonoBehaviour:
   _variable: {fileID: 11400000, guid: 0b3864dfaea9fe84aa2d4464af0eec0b, type: 2}
   _comparison: 0
   _value: 1
---- !u!114 &5888009726159487136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a21642593dc640d08d902334f670b149, type: 3}
-  m_Name: IsGlobalBool
-  m_EditorClassIdentifier: 
-  _title: IsGlobalBool
-  _uniqueId: dffbfa66-f773-4000-a18f-5297e67ee5ec
-  _variable: {fileID: 11400000, guid: a5bc6ef9643f24445b7c6378b164674b, type: 2}
-  _comparison: 0
-  _value: 1
 --- !u!114 &6142588543851319823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1742,8 +1691,8 @@ MonoBehaviour:
   _uniqueId: 39823dd5-b766-4efd-9476-c0caae0d610c
   rect:
     serializedVersion: 2
-    x: 50493.668
-    y: 49964.668
+    x: 50465.668
+    y: 49961.668
     width: 200
     height: 146
   nodeTitle: 
@@ -1768,7 +1717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: Tell him about Dr. Mog'rin
+  text: Dr. Mog'rin told me about it.
   children:
   - {fileID: 9178372507922183121}
   _uniqueId: e092f396-1faf-4a52-b780-7c0e94bdc86d
@@ -1845,6 +1794,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db3026d43635e94498fa2e9652813d00, type: 2}
   - {fileID: 11400000, guid: 816e2936e4dcf7a4b8ba2e0b85b42813, type: 2}
   - {fileID: 11400000, guid: da4ce1deaf03e464abad29c37382febb, type: 2}
+  - {fileID: 11400000, guid: 69dc44cbc5b6f2a4fa28f7aa4c8f0dba, type: 2}
+  - {fileID: 11400000, guid: 9f8ee7dd732da804796ce5aea612c0e2, type: 2}
 --- !u!114 &7431036884664873547
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2074,8 +2025,8 @@ MonoBehaviour:
   _uniqueId: 1eeccd4e-745f-4663-a1b2-3001b810d63a
   rect:
     serializedVersion: 2
-    x: 50501.668
-    y: 49812.668
+    x: 50467.668
+    y: 49799.668
     width: 200
     height: 146
   nodeTitle: 
@@ -2083,7 +2034,8 @@ MonoBehaviour:
   - {fileID: -6566493925489260393}
   conditions: []
   enterActions: []
-  exitActions: []
+  exitActions:
+  - {fileID: -7154399728660049030}
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}

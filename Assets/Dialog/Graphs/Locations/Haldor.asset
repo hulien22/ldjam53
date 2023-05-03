@@ -733,7 +733,7 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
   dialogue: Dr. Mog'rin made me do it, I told him we shouldn't but he insisted we
-    steal the data log, please don't arrest me
+    steal the data log. Please don't arrest me.
 --- !u!114 &-3843079175058427562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1229,7 +1229,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50192.68, y: 49922.168}
+  scrollPosition: {x: 50404.68, y: 50277.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: snitch
+  text: It was Dr. Mog'rin.
   children:
   - {fileID: -4262224809475327510}
   _uniqueId: 580a04cb-c1a9-413d-ac53-85caf221b76b
@@ -1537,7 +1537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
   m_Name: Choice
   m_EditorClassIdentifier: 
-  text: plead the 23 section-b
+  text: Plead the 23 section-b.
   children:
   - {fileID: 6795335074304206656}
   _uniqueId: f4fd3916-6a9c-4f62-aa11-f2fd6a305f09
@@ -1835,7 +1835,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 6d4e8c88118734a4a8cf5cc2a2c99630, type: 2}
   audio: {fileID: 0}
-  dialogue: I keep my guard up
+  dialogue: I'll keep my guard up.
 --- !u!114 &3614272747926508189
 MonoBehaviour:
   m_ObjectHideFlags: 1
