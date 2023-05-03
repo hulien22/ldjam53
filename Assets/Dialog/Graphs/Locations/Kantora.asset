@@ -151,12 +151,13 @@ MonoBehaviour:
   _uniqueId: fbe08dcb-dd69-4d0c-9cfd-8b5f4c636cb4
   rect:
     serializedVersion: 2
-    x: 52299
-    y: 50587
+    x: 52288
+    y: 50519
     width: 100
     height: 57
   nodeTitle: End Purchase
-  children: []
+  children:
+  - {fileID: 5470640505418174604}
   conditions: []
   enterActions: []
   exitActions: []
@@ -563,7 +564,7 @@ MonoBehaviour:
   - {fileID: -907706243173770595}
   - {fileID: 2799684460356175917}
   root: {fileID: -3255383222156174597}
-  scrollPosition: {x: 50884.5, y: 50069.5}
+  scrollPosition: {x: 51429.5, y: 50231.5}
 --- !u!114 &169492490367455992
 MonoBehaviour:
   m_ObjectHideFlags: 1

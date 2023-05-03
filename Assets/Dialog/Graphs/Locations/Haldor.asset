@@ -1229,7 +1229,7 @@ MonoBehaviour:
   - {fileID: -6193863826639096526}
   - {fileID: -7728541332840066651}
   root: {fileID: -2576579757685207430}
-  scrollPosition: {x: 50404.68, y: 50277.168}
+  scrollPosition: {x: 50550.68, y: 49526.168}
 --- !u!114 &36342056742225873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,7 +1431,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 07235a138f0f53041a744b95f0d1d134, type: 2}
   audio: {fileID: 0}
-  dialogue: I can explain more once you safety return the Data Log. Just know delivering
+  dialogue: I can explain more once you safely return the Data Log. Just know delivering
     it to us will help many more people. The last thing we want is that data log
     back in the Imperious hands.
 --- !u!114 &909339581657070973

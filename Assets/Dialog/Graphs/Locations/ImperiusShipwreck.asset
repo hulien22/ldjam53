@@ -34,7 +34,7 @@ MonoBehaviour:
     x: 50050
     y: 50200
     width: 100
-    height: 56
+    height: 57
   nodeTitle: 
   children:
   - {fileID: 1214335577323605588}
@@ -92,7 +92,7 @@ MonoBehaviour:
   - {fileID: 1660672635720439586}
   - {fileID: 1214335577323605588}
   root: {fileID: -7602420586871408818}
-  scrollPosition: {x: 49847, y: 49818.5}
+  scrollPosition: {x: 49847, y: 49698.5}
 --- !u!114 &891466546281999499
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,8 +154,8 @@ MonoBehaviour:
   _uniqueId: 61af8b8b-4d57-4acc-8f35-3db32b5b6410
   rect:
     serializedVersion: 2
-    x: 50219.668
-    y: 50152.668
+    x: 50260.668
+    y: 50114.668
     width: 200
     height: 146
   nodeTitle: 
@@ -172,7 +172,7 @@ MonoBehaviour:
   choices: []
   actor: {fileID: 11400000, guid: 42286ef766ce5144e971559459f4b08d, type: 2}
   audio: {fileID: 0}
-  dialogue: 'Acquired Data log (Player note: This can be delivered to the Imperious
+  dialogue: 'Acquired Data log (Player note: This can be delivered to the Imperius
     on Alban or Scientist on Haldor'
 --- !u!114 &2030181630977588710
 MonoBehaviour:
